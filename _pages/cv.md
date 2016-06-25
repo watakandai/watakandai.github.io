@@ -3,7 +3,7 @@ permalink: /cv/
 title: CV
 ---
 
-You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here](../docs/lansdell_cv.pdf).
+You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
 
 ## Journal articles
 
