@@ -1,6 +1,6 @@
 ---
-permalink: /cv/
-title: CV
+permalink: /research/
+title: Research
 ---
 
 You can see my Google Scholar page here, and a complete CV can be found here.
