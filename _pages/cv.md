@@ -3,7 +3,7 @@ permalink: /cv/
 title: CV
 ---
 
-You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here](../blob/master/lansdell_cv.pdf).
+You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
 
 ## Journal articles
 
@@ -11,8 +11,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 7. **Lansdell B**, Kluck R, Hockings C, Fairlie D, Lee E, Landman K, Frascoli F, Speed T, “Computational model of Bcl-2 family pro-apoptotic Bak activation through BH3-only stimulation: activation efficacies and dynamic regulation mechanisms”, *in preparation*
 6. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", *in preparation*
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
-4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, http://dx.doi.org/10.1016/j.neuron.2016.05.039 
-3. **Lansdell B**, Ford K, Jutz JN, “A reaction-diffusion model of cholinergic retinal waves”, *PLoS Computational Biology* 2014 (pdf)
+4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 
+3. **Lansdell B**, Ford K, Jutz JN, “A reaction-diffusion model of cholinergic retinal waves”, *PLoS Computational Biology* 2014 ([pdf](../docs/retinalwaves.pdf))
 2. Garsed DW, Marshall OJ, Corbin VDA, Hsu A, Stefano LD, Schroder J, Li J, Feng Z, Kim BW, Kowarsky M, **Lansdell B**, Brookwell R, Myklebost O, Meza-Zepeda L, Holloway AJ, Pedeutour F, Choo KH, Damore MA, Deans AJ, Papenfuss AT, Thomas DM, “The Architecture and Evolution of Cancer Neochromosomes”, *Cancer Cell* 2014 (online)
 1. Renfree MB, Papenfuss AT, Deakin JE, Lindsay J, Heider T, Belov K, Rens W, Waters PD, Pharo EA, Shaw G, Wong ES, Lefèvre CM, Nicholas KR, Kuroki Y, Wakeﬁeld MJ, Zenger  R, Wang C, Ferguson-Smith M, Nicholas FW, Hickford D, Yu H, Short KR, Siddle HV, Frankenberg SR, Chew KY, Menzies BR, Stringer JM, Suzuki S, Hore TA, Delbridge ML, Mohammadi A, Schneider NY, Hu Y, O’Hara W, Al Nadaf S, Wu C, Feng ZP, Cocks BG, Wang J, Flicek P, Searle SM, Fairley S, Beal K, Herrero J, Carone DM, Suzuki Y, Sugano S, Toyoda A, Sakaki Y, Kondo S, Nishida Y, Tatsumoto S, Mandiou I, Hsu A, McColl KA, **Lansdell B**, Weinstock G, Kuczek E, McGrath A, Wilson P, Men A, Hazar-Rethinam M, Hall A, Davis J, Wood D, Williams S, Sundaravadanam Y, Muzny DM, Jhangiani SN, Lewis LR, Morgan MB, Okwuonu GO, Ruiz SJ, Santibanez J, Nazareth L, Cree A, Fowler G, Kovar CL, Dinh HH, Joshi V, Jing C, Lara F, Thornton R, Chen L, Deng J, Liu Y, Shen JY, Song XZ, Edson J, Troon C, Thomas D, Stephens A, Yapa L, Levchenko T, Gibbs RA, Cooper DW, Speed TP, Fujiyama A, Graves JA, O’Neill RJ, Pask AJ, Forrest SM, Worley KC, “Genome sequence of an Australian kangaroo, Macropus eugenii, provides insight into the evolution of mammalian reproduction and development.”, Genome Biology 2011, 12:R81. (pdf)
 
