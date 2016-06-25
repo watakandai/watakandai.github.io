@@ -8,7 +8,7 @@ header:
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
 
-## Peer-reviewed articles
+## Articles
 
 8. **Lansdell B**, Deconinck B, “Pole dynamics of the non-linear Schrödinger equation”, *in preparation*
 7. **Lansdell B**, Kluck R, Hockings C, Fairlie D, Lee E, Landman K, Frascoli F, Speed T, “Computational model of Bcl-2 family pro-apoptotic Bak activation through BH3-only stimulation: activation efficacies and dynamic regulation mechanisms”, *in preparation*
