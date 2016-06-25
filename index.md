@@ -3,10 +3,10 @@ title: About Me
 layout: single
 author_profile: true
 ---
-I'm a PhD candidate in Applied Mathematics at the University of Washington. I'm expecting to complete my PhD early next year.
+I'm a PhD candidate in Applied Mathematics at the University of Washington, expecting to complete my PhD early next year.
 
 ## Interests
-I work in statistical modeling and computational neuroscience under the supervision of Professor Adrienne Fairhall.
+I work in statistical modeling and computational neuroscience under the supervision of Professor Adrienne Fairhall. My interests are in the development of statistical methods for analyzing high-dimensional datasets provided by electrophysiological recording and optical imaging technologies, and the relation of this data to an organism's behavior. 
 
 ## Bio
 I moved to Seattle for graduate school, but have spent most of my life in or around Melbourne, Australia. I completed a BSc with honours, majoring in mathematics, at the University of Melbourne. My interests then were in bioinformatics, which lead me to work as a research technician and then complete a Master's of Philosophy joint between the University of Melbourne and the Walter and Eliza Hall Institute (WEHI).
