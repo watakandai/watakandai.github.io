@@ -1,6 +1,6 @@
 ---
 permalink: /research/
-title: Research
+title: Research interests
 ---
 
 Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ of our body, the brain *computes*.
