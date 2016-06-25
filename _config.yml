@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Webspace of Ben Lansdell"
+title                    : "Website of Ben Lansdell"
 title_separator          : "-"
 name                     : "Ben Lansdell"
 description              : "Computational neuroscience and applied mathematics"
@@ -62,8 +62,8 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Ben Lansdell"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  avatar           : "lansdell.jpg"
+  bio              : "Computational neuroscience and applied mathematics."
   location         : "Seattle, WA, USA"
   email            : "lansdell at uw dot edu"
   uri              :
