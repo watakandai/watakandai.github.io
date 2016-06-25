@@ -2,6 +2,7 @@
 permalink: /about/
 title: About
 layout: single
+author_profile: true
 ---
 
 PhD candidate in Applied Mathematics at the University of Washington. 
