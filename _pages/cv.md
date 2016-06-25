@@ -1,6 +1,7 @@
 ---
 permalink: /cv/
 title: CV
+header.image: http://www.oist.jp/sites/default/files/img/news/20120202_deschuter-fiery-neurons/hong_fig1-3.jpg
 ---
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
