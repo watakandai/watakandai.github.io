@@ -1,3 +1,7 @@
+---
+permalink: /about/
+title: About
+---
 
 PhD candidate in Applied Mathematics at the University of Washington. 
 
