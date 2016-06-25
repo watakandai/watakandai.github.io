@@ -1,7 +1,9 @@
 ---
 permalink: /cv/
 title: CV
-header.image: http://www.oist.jp/sites/default/files/img/news/20120202_deschuter-fiery-neurons/hong_fig1-3.jpg
+header:
+  overlay_image: http://www.oist.jp/sites/default/files/img/news/20120202_deschuter-fiery-neurons/hong_fig1-3.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
