@@ -2,7 +2,7 @@
 permalink: /cv/
 title: CV
 header:
-  overlay_image: http://www.oist.jp/sites/default/files/img/news/20120202_deschuter-fiery-neurons/hong_fig1-3.jpg
+  overlay_image: {{site.baseurl}}/images/spiketrain.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
