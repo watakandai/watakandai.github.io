@@ -1,9 +1,6 @@
 ---
 permalink: /cv/
 title: CV
-header:
-  overlay_image: {{ site.baseurl }}/images/spiketrain.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
