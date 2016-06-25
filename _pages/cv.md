@@ -1,8 +1,6 @@
 ---
-permalink: /about/
+permalink: /cv/
 title: CV
-layout: single
-author_profile: true
 ---
 
 You can see my Google Scholar page here, and a complete CV can be found here.
