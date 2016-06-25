@@ -18,14 +18,14 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Conference Posters
 
-8. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, ``Neural activity in a simultaneous BCI and manual task'', Neurofutures Meeting 2016, Allen Institute for Brain Science, WA, USA.
-7. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, ``Neural activity in a simultaneous BCI and manual task'', BCI Society Meeting 2016, CA, USA. doi:10.3217/978-3-85125-467-9-118
-6. Lansdell B, Kutz JN (September, 2013), “The spatio-temporal dynamics of spontaneous activity in the developing retina”, BMES 2013, Seattle, USA.
-5. Lansdell B, Kutz JN (September, 2013), “A computational model of Bcl-2 regulated apoptosis: bistability revisited”, BMES 2013, Seattle, USA. (pdf)
-4. Lansdell B, Kutz JN (September, 2013), “The spatio-temporal dynamics of spontaneous activity in the developing retina”, University of Washington Computational Neursocience connection 2013, Seattle, USA.
-3. Lansdell B, Kutz JN (July, 2013), “Cholinergic Retinal Waves and Self-Organized Criticality”, CNS 2013, Paris, France. (pdf)
-2. Lansdell B, Kutz JN, Ford K (Sept 10, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, Neuroinformatics 2012, Munich, Germany. (pdf)
-1. Lansdell B, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. (abstract)
+8. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", Neurofutures Meeting 2016, Allen Institute for Brain Science, WA, USA.
+7. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", BCI Society Meeting 2016, CA, USA. doi:10.3217/978-3-85125-467-9-118
+6. **Lansdell B**, Kutz JN (September, 2013), “The spatio-temporal dynamics of spontaneous activity in the developing retina”, BMES 2013, Seattle, USA.
+5. **Lansdell B**, Kutz JN (September, 2013), “A computational model of Bcl-2 regulated apoptosis: bistability revisited”, BMES 2013, Seattle, USA. ([pdf]({{site.baseurl}}/docs/lansdell_BMES.pdf))
+4. **Lansdell B**, Kutz JN (September, 2013), “The spatio-temporal dynamics of spontaneous activity in the developing retina”, University of Washington Computational Neursocience connection 2013, Seattle, USA.
+3. **Lansdell B**, Kutz JN (July, 2013), “Cholinergic Retinal Waves and Self-Organized Criticality”, CNS 2013, Paris, France. ([pdf]({{site.baseurl}}/docs/LansdellCNS2013.pdf))
+2. **Lansdell B**, Kutz JN, Ford K (Sept 10, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, Neuroinformatics 2012, Munich, Germany. ([pdf]({{site.baseurl}}/docs/ICNF2012poster.pdf))
+1. **Lansdell B**, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. ([abstract]({{site.baseurl}}/docs/giw2008poster_submission_103.pdf))
 
 ## Invited talks
 
@@ -38,4 +38,4 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 ## Unpublished work
 
 2. Lansdell B, Understanding the Bcl-2 family through computational modelling, Masters thesis. Department of Mathematics and Statistics, University of Melbourne, 2012.
-1. Lansdell B, Computational Gene Prediction using Generalised Hidden Markov Models and Tiling Arrays, Honours thesis. Department of Mathematics and Statistics, University of Melbourne, 2008. (pdf)
+1. Lansdell B, Computational Gene Prediction using Generalised Hidden Markov Models and Tiling Arrays, Honours thesis. Department of Mathematics and Statistics, University of Melbourne, 2008. ([pdf]({{site.baseurl}}/docs/honours_thesis.pdf))
