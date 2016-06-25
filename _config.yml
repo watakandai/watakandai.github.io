@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Webspace of Ben Lansdell"
 title_separator          : "-"
 name                     : "Ben Lansdell"
-description              : "An amazing website."
+description              : "Computational neuroscience and applied mathematics"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -61,11 +61,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Ben Lansdell"
   avatar           : "bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  location         : "Seattle, WA, USA"
+  email            : "lansdell at uw dot edu"
   uri              :
   bitbucket        :
   codepen          :
