@@ -4,6 +4,7 @@ layout: single
 author_profile: true
 ---
 I'm a PhD candidate in Applied Mathematics at the University of Washington. I'm expect to complete my PhD early next year.
+
 ## Interests
 I work in statistical modeling and computational neuroscience under the supervision of Professor Adrienne Fairhall.
 
