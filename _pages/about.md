@@ -3,6 +3,7 @@ permalink: /about/
 title: About
 layout: single
 author_profile: true
+cover_image: http://www.oist.jp/sites/default/files/img/news/20120202_deschuter-fiery-neurons/hong_fig1-3.jpg
 ---
 
 PhD candidate in Applied Mathematics at the University of Washington. 
