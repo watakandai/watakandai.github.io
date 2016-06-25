@@ -1,6 +1,9 @@
 ---
 permalink: /research/
 title: Research interests
+header:
+  overlay_image: ../images/allen_brain.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*.
