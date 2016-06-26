@@ -2,7 +2,7 @@
 layout: archive
 author_profile: true
 permalink: /posts/
-title: Posts
+title: Overflow
 ---
 
 {% include base_path %}
