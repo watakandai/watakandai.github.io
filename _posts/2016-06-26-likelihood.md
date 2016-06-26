@@ -6,6 +6,7 @@ tags:
   - Post Formats
   - readability
   - standard
+use_math: true
 ---
 
 In this couple of posts I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In later posts I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
