@@ -16,7 +16,7 @@ Representations are apparent in sensory systems, where neural responses can be i
 
 ### Neuron and behavior tracking in a model cnidarian -- Hydra
 
-![alt text](../images/hydra_wireframe_inverted.png "Logo Title Text 1")
+![alt text](../images/hydra_wireframe_inverted.png =200x)
 
 ### Concurrent-use BCIs
 
