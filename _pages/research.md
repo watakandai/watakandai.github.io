@@ -16,17 +16,17 @@ Representations are apparent in sensory systems, where neural responses can be i
 
 ### Neuron and behavior tracking in a model cnidarian -- Hydra
 
-![alt text](../images/hydra_wireframe_inverted.png =200x)
+<img src="../images/hydra_wireframe_inverted.png" width="300">
 
 ### Concurrent-use BCIs
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![bci](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 ## Previous projects
 
 ### Cholinergic retinal waves as traveling pulses in an excitable medium
 
-![alt text](../images/retinalwaves2.png "Logo Title Text 1")
+<img src="../images/retinalwaves2.png" width="300">
 
 Frames from simulation of retinal waves model. Top frames show a spreading wave of depolarizing amacrine cells modulated by a slow refractory field (middle frames) and an extra-cellular acetylcholine concentration (bottom frames).
 In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a reaction-diffusion model of correlated spontaneous activity in the developing retina — activity known as retinal waves. Here, the developing retina was modeled as an excitable medium, allowing for the existence of retinal waves to be predicted above an excitability threshold that is determined from the model’s analysis. The approach is novel in its ability to determine such a criterion in a semi-analytic fashion. This was achieved by separating the dynamics into fast and slow timescales and using numerical continuation software to determine the existence of a traveling wave front for some combinations of the model’s parameters. Above you’ll find a numerical simulation of the model.
@@ -35,7 +35,7 @@ In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a react
 
 ### On bistability as a control mechanism of intrinsic apoptosis
 
-![alt text](../images/bcl2.png "Logo Title Text 1")
+<img src="../images/bcl2.png" width="300">
 
 Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.
 
@@ -45,7 +45,7 @@ Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of 
 
 ### Integrating genomic tiling array data into gene prediction with generalized hidden Markov models
 
-![alt text](../images/tilegene-1024x438.png "Logo Title Text 1")
+<img src="../images/tilegene-1024x438.png" width="600">
 
 Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).
 My first research project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, but not to a degree to make the resulting predictor competitive with then current state of the art predictors.
