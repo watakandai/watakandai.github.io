@@ -1,5 +1,5 @@
 ---
-title: "Post: Modified Date"
+title: "Likelihood and maximum entropy"
 categories:
   - Post Formats
 tags:
