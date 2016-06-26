@@ -1,11 +1,10 @@
 ---
 title: "Likelihood and maximum entropy"
 categories:
-  - Post Formats
+  - statistics
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - mle
+  - maxent
 use_math: true
 ---
 
