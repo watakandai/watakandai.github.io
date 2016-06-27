@@ -1,5 +1,5 @@
 ---
-title: "Likelihood and maximum entropy"
+title: "Maximum likelihood and KL divergence"
 categories:
   - statistics
 tags:
