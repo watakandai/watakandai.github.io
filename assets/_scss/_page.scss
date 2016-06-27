@@ -101,6 +101,10 @@
   }
 }
 
+.page__hero .page__title{
+  margin-bottom:-1em
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
@@ -110,7 +114,7 @@
 
   &--overlay {
     position: relative;
-    margin-bottom: -1em;
+    margin-bottom: 1em;
     padding: 3em 0;
     @include clearfix;
     //text-align: center;
