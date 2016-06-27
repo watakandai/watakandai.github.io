@@ -40,7 +40,7 @@ Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of 
 
 ### Integrating genomic tiling array data into gene prediction with generalized hidden Markov models
 
-<figure style="float: center; width: 600px;"><img src="../images/tilegene-1024x438.png" width="600"><figcaption>Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).</figcaption></figure>
+<figure style="float: center; width: 700px;"><img src="../images/tilegene-1024x438.png" width="700"><figcaption>Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).</figcaption></figure>
 
 My first research project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, to a degree that made the resulting predictor competitive with then state-of-the-art predictors.
 
