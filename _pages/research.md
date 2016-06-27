@@ -6,19 +6,21 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*.
+Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables. Alternatively, perhaps the notion of such encoding is not relevant, and a more *dynamical systems* approach is instead warranted. These issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of sophisticated BCIs will likely rely on being able to properly *interpret the neural code*.
 
-Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables altogether, or perhaps that . Yet these issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of any significantly powerful BCI will likely rely on being able to properly *interpret the neural code*.
+I'm interested in learning the function of primary cortex, and 
+
+Equally, 
 
 ## Ongoing projects
-
-### Neuron and behavior tracking in a model cnidarian -- Hydra
-
-<img src="../images/hydra_wireframe_inverted.png" width="300">
 
 ### Concurrent-use BCIs
 
 ![bci](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+### Neuron and behavior tracking in a model cnidarian -- Hydra
+
+<img src="../images/hydra_wireframe_inverted.png" width="300">
 
 ## Previous projects
 
