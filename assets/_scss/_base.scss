@@ -172,12 +172,19 @@ li ol {
 
 /* Figures and images */
 
+/*inlinefigure {
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}*/
+
 figure {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  //margin: 2em 0;
 
   img,
   iframe,
