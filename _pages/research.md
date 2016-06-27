@@ -29,20 +29,15 @@ Representations are apparent in sensory systems, where neural responses can be i
 Frames from simulation of retinal waves model. Top frames show a spreading wave of depolarizing amacrine cells modulated by a slow refractory field (middle frames) and an extra-cellular acetylcholine concentration (bottom frames).
 In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a reaction-diffusion model of correlated spontaneous activity in the developing retina — activity known as retinal waves. Here, the developing retina was modeled as an excitable medium, allowing for the existence of retinal waves to be predicted above an excitability threshold that is determined from the model’s analysis. The approach is novel in its ability to determine such a criterion in a semi-analytic fashion. This was achieved by separating the dynamics into fast and slow timescales and using numerical continuation software to determine the existence of a traveling wave front for some combinations of the model’s parameters. Above you’ll find a numerical simulation of the model.
 
-* Read more: PLoS Comp Bio Dec 2014
+* Read more: [PLoS Comp Bio Dec 2014](../docs/retinalwaves.pdf)
 
 ### On bistability as a control mechanism of intrinsic apoptosis
-
-    float: left;
-    margin: 0;
-    text-align: center;
-    padding: 0;
 
 <figure style="float: left; width=280;"><img src="../images/bcl2.png" width="280" align="right"><figcaption>Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.</figcaption></figure>
 
 Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of proteins, whose interactions on the mitochondrial membrane, on receiving sufficiently strong pro-apoptotic signals, can initiate caspase activation — a point of no return for the cell. Determining how this regulation is implemented, and how it can malfunction, is important for the development of anti-cancer therapies. With Prof.s Terry Speed, Kerry Landman and Ruth Kluck, we developed a kinetic mass-action model of Bcl-2 interactions relevant to a simplified mitochondrial assay containing only a subset of Bcl-2 members. A proposed theoretical control mechanism through which the Bcl-2 family may regulate apoptosis is a bistable switch. By careful calibration of our model with known and estimated kinetic reaction rates we show that bistability is unlikely to play a role in the reduced assay.
 
-* Read more: BMES poster Sept 2013
+* Read more: [BMES poster Sept 2013](../docs/lansdell_BMES.pdf)
 
 ### Integrating genomic tiling array data into gene prediction with generalized hidden Markov models
 
@@ -51,4 +46,4 @@ Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of 
 Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).
 My first research project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, but not to a degree to make the resulting predictor competitive with then current state of the art predictors.
 
-* Read more: my honours thesis
+* Read more: [my honours thesis](../docs/honours_thesis.pdf)
