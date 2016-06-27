@@ -35,7 +35,8 @@
 }
 
 .page__title {
-  margin-top: 0;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
   line-height: 1;
 
   & + .page__meta {
@@ -113,7 +114,7 @@
     margin-bottom: 2em;
     padding: 3em 0;
     @include clearfix;
-    text-align: center;
+    //text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
