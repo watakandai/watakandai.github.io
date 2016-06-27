@@ -24,9 +24,8 @@ Representations are apparent in sensory systems, where neural responses can be i
 
 ### Cholinergic retinal waves as traveling pulses in an excitable medium
 
-<img src="../images/retinalwaves2.png" width="300" align="left">
+<figure style="float: left; width: 300px;"><img src="../images/retinalwaves2.png" width="280" align="right"><figcaption>Frames from simulation of retinal waves model. Top frames show a spreading wave of depolarizing amacrine cells modulated by a slow refractory field (middle frames) and an extra-cellular acetylcholine concentration (bottom frames).</figcaption></figure>
 
-Frames from simulation of retinal waves model. Top frames show a spreading wave of depolarizing amacrine cells modulated by a slow refractory field (middle frames) and an extra-cellular acetylcholine concentration (bottom frames).
 In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a reaction-diffusion model of correlated spontaneous activity in the developing retina — activity known as retinal waves. Here, the developing retina was modeled as an excitable medium, allowing for the existence of retinal waves to be predicted above an excitability threshold that is determined from the model’s analysis. The approach is novel in its ability to determine such a criterion in a semi-analytic fashion. This was achieved by separating the dynamics into fast and slow timescales and using numerical continuation software to determine the existence of a traveling wave front for some combinations of the model’s parameters. Above you’ll find a numerical simulation of the model.
 
 * Read more: [PLoS Comp Bio Dec 2014](../docs/retinalwaves.pdf)
