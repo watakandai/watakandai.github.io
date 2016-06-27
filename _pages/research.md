@@ -14,11 +14,11 @@ Equally, as a mathematician, I'm excited by the technologies and data driving ne
 
 ### Concurrent-use BCIs
 
-![bci](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+<figure style="float: left; width: 400px;"><img src="../images/transferentropy_clean.png" width="400"><figcaption>Caption</figcaption></figure>
 
 ### Neuron and behavior tracking in a model cnidarian -- Hydra
 
-<img src="../images/hydra_wireframe_inverted.png" width="300">
+<figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Hydra</figcaption></figure>
 
 ## Previous projects
 
