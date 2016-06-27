@@ -10,8 +10,6 @@ Computational neuroscience is unique among areas of theoretical and quantitative
 
 Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables altogether, or perhaps that . Yet these issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of any significantly powerful BCI will likely rely on being able to properly *interpret the neural code*.
 
-
-
 ## Ongoing projects
 
 ### Neuron and behavior tracking in a model cnidarian -- Hydra
@@ -35,7 +33,12 @@ In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a react
 
 ### On bistability as a control mechanism of intrinsic apoptosis
 
-<figure class="image"><img src="../images/bcl2.png" width="280" align="right"><figcaption>Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.</figcaption></figure>
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+
+<figure style="float: left; width=280;"><img src="../images/bcl2.png" width="280" align="right"><figcaption>Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.</figcaption></figure>
 
 Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of proteins, whose interactions on the mitochondrial membrane, on receiving sufficiently strong pro-apoptotic signals, can initiate caspase activation — a point of no return for the cell. Determining how this regulation is implemented, and how it can malfunction, is important for the development of anti-cancer therapies. With Prof.s Terry Speed, Kerry Landman and Ruth Kluck, we developed a kinetic mass-action model of Bcl-2 interactions relevant to a simplified mitochondrial assay containing only a subset of Bcl-2 members. A proposed theoretical control mechanism through which the Bcl-2 family may regulate apoptosis is a bistable switch. By careful calibration of our model with known and estimated kinetic reaction rates we show that bistability is unlikely to play a role in the reduced assay.
 
