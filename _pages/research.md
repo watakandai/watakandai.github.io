@@ -37,7 +37,7 @@ In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a react
 
 Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of proteins, whose interactions on the mitochondrial membrane, on receiving sufficiently strong pro-apoptotic signals, can initiate caspase activation — a point of no return for the cell. Determining how this regulation is implemented, and how it can malfunction, is important for the development of anti-cancer therapies. With Prof.s Terry Speed, Kerry Landman and Ruth Kluck, we developed a kinetic mass-action model of Bcl-2 interactions relevant to a simplified mitochondrial assay containing only a subset of Bcl-2 members. A proposed theoretical control mechanism through which the Bcl-2 family may regulate apoptosis is a bistable switch. By careful calibration of our model with known and estimated kinetic reaction rates we show that bistability is unlikely to play a role in the reduced assay.
 
-* Read more: [BMES poster Sept 2013](../docs/lansdell_BMES.pdf)
+* Read more: [BMES poster Sept 2013](../docs/lansdell_BMES.pdf), [MPhil thesis](../docs/mphil.pdf)
 
 ### Integrating genomic tiling array data into gene prediction with generalized hidden Markov models
 
