@@ -1,11 +1,13 @@
 ---
-title: About Me
+title: ""
 layout: single
 author_profile: true
 header:
   overlay_image: ../images/iceland2.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
+#About Me
+
 I'm a PhD candidate in Applied Mathematics at the University of Washington, expecting to complete my PhD early 2017.
 
 ## Interests
