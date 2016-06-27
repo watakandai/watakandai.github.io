@@ -35,8 +35,7 @@
 }
 
 .page__title {
-  margin-top: 1em;
-  margin-bottom: -0.5em;
+  margin-top: 0;
   line-height: 1;
 
   & + .page__meta {
@@ -111,7 +110,7 @@
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 3em 0;
     @include clearfix;
     //text-align: center;
