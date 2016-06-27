@@ -6,11 +6,9 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables. Alternatively, perhaps the notion of such encoding is not relevant, and a more *dynamical systems* approach is instead warranted. These issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of sophisticated BCIs will likely rely on being able to properly *interpret the neural code*.
+Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables. Alternatively, perhaps the notion of such encoding is not relevant, and a more *dynamical systems* approach is instead warranted. These issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of sophisticated BCIs will likely rely on being able to properly *interpret the neural code*. I'm interested in understanding how the brain performs motor control and how that knowledge can be used to build better BCIs.
 
-I'm interested in learning the function of primary cortex, and 
-
-Equally, 
+Equally, as a mathematician, I'm excited by the technologies and data driving neuroscience forward. Optical imaging can now be performed for whole organisms, in conjunction with free behaviour. This offers the chance for unprecedented insight into the functioning of (lower) organisms. 
 
 ## Ongoing projects
 
