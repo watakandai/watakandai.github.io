@@ -3,6 +3,10 @@ layout: archive
 author_profile: true
 permalink: /posts/
 title: "Overflow"
+header:
+  overlay_image: ../images/computer.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Hi"
 ---
 
 Thoughts on neuroscience, statistics, computing
