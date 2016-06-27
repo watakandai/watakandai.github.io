@@ -35,8 +35,6 @@ In collaboration with Prof. Nathan Kutz and Dr. Kevin Ford, we developed a react
 
 ### On bistability as a control mechanism of intrinsic apoptosis
 
-<img src="../images/bcl2.png" width="280" align="right" caption="Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.">
-
 <figure class="image"><img src="../images/bcl2.png" width="280" align="right"><figcaption>Proposed control mechanism of Bcl-2 regulated apoptosis is through bistable dynamics shown here. Inert Bak is (in)activated in a discontinuous fashion, providing a robust switch.</figcaption></figure>
 
 Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of proteins, whose interactions on the mitochondrial membrane, on receiving sufficiently strong pro-apoptotic signals, can initiate caspase activation — a point of no return for the cell. Determining how this regulation is implemented, and how it can malfunction, is important for the development of anti-cancer therapies. With Prof.s Terry Speed, Kerry Landman and Ruth Kluck, we developed a kinetic mass-action model of Bcl-2 interactions relevant to a simplified mitochondrial assay containing only a subset of Bcl-2 members. A proposed theoretical control mechanism through which the Bcl-2 family may regulate apoptosis is a bistable switch. By careful calibration of our model with known and estimated kinetic reaction rates we show that bistability is unlikely to play a role in the reduced assay.
@@ -45,7 +43,7 @@ Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of 
 
 ### Integrating genomic tiling array data into gene prediction with generalized hidden Markov models
 
-<img src="../images/tilegene-1024x438.png" width="600" align="middle">
+<center><img src="../images/tilegene-1024x438.png" width="600" align="middle"></center>
 
 Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).
 My first research project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, but not to a degree to make the resulting predictor competitive with then current state of the art predictors.
