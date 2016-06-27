@@ -3,7 +3,7 @@ title: About Me
 layout: single
 author_profile: true
 header:
-  overlay_image: ../images/iceland3.jpg
+  overlay_image: ../images/my-mountains.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
