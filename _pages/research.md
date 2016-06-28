@@ -20,9 +20,9 @@ Brain-computer interfaces (BCIs) provide insight into the cognitive processes un
 
 ### Neuron and behavior tracking in a model cnidarian
 
-<figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Tracking Hydra behaviour through video in order to aid calcium imaging neuron tracking</figcaption></figure>
+<figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Kalman filter for tracking Hydra pose through video in order to aid calcium imaging neuron tracking</figcaption></figure>
 
-Large scale recordings of neural activity in freely behaving animals promises to uncover much about the relationship between neural activity and behaviour. Particularly exciting is the possibility of recording intracellular calcium of whole organisms in conjunction with unconstrained behaviour. Tracking neurons throughout such recordings poses a significant image processing problem. Current approaches in both planar and volumetric imaging rely on semi-automatic, curated tracking algorithms, which must be manually checked for consistency. In collaboration with the Yuste lab at Columbia University we are working on methods to improve automated neuron tracking. Using a high-dimensional state-space model to track a parameterized mesh of the Hydra at each frame allows . The method is implemented with GPUs to .
+Large scale recordings of neural activity in freely behaving animals promises to uncover much about the relationship between neural activity and behaviour. Particularly exciting is the possibility of recording intracellular calcium of whole organisms in conjunction with unconstrained behaviour. Tracking neurons throughout such recordings poses a significant image processing problem. Current approaches in both planar and volumetric imaging rely on semi-automatic, curated tracking algorithms, which must be manually checked for consistency. In collaboration with the Yuste lab at Columbia University we are working on methods to improve automated neuron tracking. Using a high-dimensional state-space model to track a parameterized mesh of the Hydra at each frame allows for more robust neuron tracking. The method is implemented with GPUs to improve performance. In the future we hope to explore more realistic, biomechanical models of the Hyrda.
 
 ## Previous projects
 
@@ -46,6 +46,6 @@ Intrinsic apoptosis (programmed cell death) is regulated by the Bcl-2 family of 
 
 <figure style="float: center; width: 700px;"><img src="../images/tilegene-1024x438.png" width="700"><figcaption>Incorporating mRNA expression data (center) with genomic DNA signals to predict coding and non-coding eukaryotic gene structures (top).</figcaption></figure>
 
-My first research project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, to a degree that made the resulting predictor competitive with then state-of-the-art predictors.
+My honours project, with Tony Papenfuss, was in computational gene prediction, in which our goal was to build a generalised hidden Markov model to locate genes in eukaryotic DNA using both the sequence content and evidence from genomic tiling arrays. We showed that the incorporation of tiling array data was able to improve the performance of the gene predictor, to a degree that made the resulting predictor competitive with then state-of-the-art predictors.
 
 * Read more: [my honours thesis](../docs/honours_thesis.pdf)
