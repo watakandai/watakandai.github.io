@@ -10,6 +10,8 @@ Computational neuroscience is unique among areas of theoretical and quantitative
 
 More generally, as a mathematician, I'm excited by the technologies and data driving neuroscience forward. Optical and electrical recording technologies now allow large populations of neurons to be recorded from simultaneously. For instance, optical imaging can now be performed for whole organisms, in conjunction with free behaviour, offering the chance for unprecedented insight into the functioning of (lower) organisms. I'm interested in statistical methods for learning dynamical structure in such high-dimensional datasets. 
 
+Before beginning my PhD my interests were in systems biology and bioinformatics.
+
 ## Ongoing projects
 
 ### Functional connectivity in concurrent-use BCIs
