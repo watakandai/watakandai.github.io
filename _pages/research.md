@@ -12,7 +12,7 @@ More generally, as a mathematician, I'm excited by the technologies and data dri
 
 ## Ongoing projects
 
-### Concurrent-use BCIs
+### Functional connectivity in concurrent-use BCIs
 
 <figure style="float: left; width: 400px;"><img src="../images/transferentropy_clean2.png" width="400"><figcaption>Functional connectivity analysis between populations of co-tuned and BCI-control units</figcaption></figure>
 
