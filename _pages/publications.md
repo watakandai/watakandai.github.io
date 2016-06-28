@@ -1,5 +1,5 @@
 ---
-permalink: /cv/
+permalink: /publications/
 title: Publications
 ---
 
