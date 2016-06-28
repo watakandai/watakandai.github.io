@@ -1,6 +1,6 @@
 ---
 permalink: /cv/
-title: CV
+title: Publications
 ---
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
