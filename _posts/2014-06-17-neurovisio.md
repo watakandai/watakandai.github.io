@@ -1,13 +1,23 @@
+---
+title: "Installing NEURON with python and Neuronvisio"
+categories:
+  - computing
+tags:
+  - NEURON
+  - python
+use_math: false
+published: true
+---
 Since it took some time, I’m going to describe the steps I took to install NEURON with support for python and the 3D visualization tool neuronvisio. I’m running Ubuntu 14.04, python 2.7.
 
 First, I installed the neuron python package found at http://neuralensemble.org/people/eilifmuller/software.html. Note that this installs NEURON 7.1, which is not the latest version.
 I had to install also libreadline-dev to get nrnivmodl (the hoc compiler) working:
 
-  sudo apt-get install libreadline-dev
+    sudo apt-get install libreadline-dev
 
 Then install the prerequisites for neuronvisio:
 
-  sudo apt-get install python-qt4 python-matplotlib python-setuptools python-tables mayavi2 python-pip
+    sudo apt-get install python-qt4 python-matplotlib python-setuptools python-tables mayavi2 python-pip
 
 Install neuronvisio
 
