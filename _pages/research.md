@@ -6,7 +6,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, some other variables. Alternatively, perhaps the notion of such encoding is not relevant, and a more *dynamical systems* approach is instead warranted. These issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of sophisticated BCIs will likely rely on being able to properly *interpret the neural code*. I'm interested in understanding how the brain performs motor control and how that knowledge can be used to build better BCIs.
+Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, or some other variables. Alternatively, perhaps the notion of such explicit encoding is not relevant, and a more *dynamical systems*-based approach is instead warranted. These issues of representation carry weight in the design of brain-computer interfaces (BCIs), where the successful implementation of sophisticated BCIs will likely rely on being able to properly *interpret the neural code*. I'm interested in understanding how the brain performs motor control and how that knowledge can be used to build better BCIs.
 
 More generally, as a mathematician, I'm excited by the technologies and data driving neuroscience forward. Optical and electrical recording technologies now allow large populations of neurons to be recorded from simultaneously. For instance, optical imaging can now be performed for whole organisms, in conjunction with free behaviour, offering the chance for unprecedented insight into the functioning of (lower) organisms. I'm interested in statistical methods for learning dynamical structure in such high-dimensional datasets. 
 
@@ -14,13 +14,11 @@ More generally, as a mathematician, I'm excited by the technologies and data dri
 
 ### Concurrent-use BCIs
 
-<figure style="float: left; width: 400px;"><img src="../images/transferentropy_clean.png" width="400"><figcaption>Caption</figcaption></figure>
+<figure style="float: left; width: 400px;"><img src="../images/transferentropy_clean2.png" width="400"><figcaption>Caption</figcaption></figure>
 
 ### Neuron and behavior tracking in a model cnidarian
 
 <figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Tracking Hydra behaviour through video in order to aid calcium imaging neuron tracking</figcaption></figure>
-
-
 
 ## Previous projects
 
