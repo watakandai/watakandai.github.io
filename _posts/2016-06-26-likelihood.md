@@ -18,7 +18,7 @@ Maximum likelihood has been developed and advocated by many figures throughout t
 Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify these  closest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see, its simplicity hides many treasures.
 
 The theory is easiest to describe in a discrete setting, which we will address first. Let
-
+\\( 1/x^{2} \\)
 $$
 {x}=(x_1, x_2, \cdots, x_N)
 $$
