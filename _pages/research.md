@@ -16,6 +16,8 @@ More generally, as a mathematician, I'm excited by the technologies and data dri
 
 <figure style="float: left; width: 400px;"><img src="../images/transferentropy_clean2.png" width="400"><figcaption>Caption</figcaption></figure>
 
+Brain-computer interfaces (BCIs) provide insight into the cognitive processes underlying sensorimotor control [Golub2016]. While the relevant neural populations involved in control and learning of a new motor task are in general difficult to identify, with a BCI the neurons most directly responsible are known exactly, by construction. This allows the control and learning process to be observed more directly, which in turn is beneficial to understanding the neural adaptations that are required for neuroprosthetic control. Previous research shows that proficient control involves the establishment of stable neural ensembles associated with the BCI [Ganguly2009]. However the design of robust and flexible BCIs that can be operated in conjunction with ongoing behavior requires an understanding of how this circuitry established for brain-control interacts with existing, potentially competing, neural circuits.
+
 ### Neuron and behavior tracking in a model cnidarian
 
 <figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Tracking Hydra behaviour through video in order to aid calcium imaging neuron tracking</figcaption></figure>
