@@ -1,1 +1,17 @@
-asdfasdf
+---
+title: "MathJax and Jekyll"
+categories:
+  - computing
+tags:
+  - mathjax
+  - jekyll
+use_math: false
+published: false
+---
+
+MathJax is a nice feature that can be integrated with Jekyll and Markdown typesetting. 
+
+Many guides were (almost) helpful in acheiving this. 
+
+1. Set markdown engine to 
+2. 
