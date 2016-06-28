@@ -22,7 +22,7 @@ Brain-computer interfaces (BCIs) provide insight into the cognitive processes un
 
 <figure style="float: left; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Tracking Hydra behaviour through video in order to aid calcium imaging neuron tracking</figcaption></figure>
 
-Large scale recordings of neural activity in freely behaving animals promises to uncover much about the relationship between neural activity and behaviour. Particularly exciting is the possibility of recording intracellular calcium of whole organisms in conjunction with unconstrained behaviour. Tracking neurons throughout such recordings poses a significant image processing problem. Current approaches in both planar and volumetric imaging rely on semi-automatic, curated tracking algorithms, which must be manually checked for consistency. In collaboration with the Yuste laboratory at Columbia we are working on 
+Large scale recordings of neural activity in freely behaving animals promises to uncover much about the relationship between neural activity and behaviour. Particularly exciting is the possibility of recording intracellular calcium of whole organisms in conjunction with unconstrained behaviour. Tracking neurons throughout such recordings poses a significant image processing problem. Current approaches in both planar and volumetric imaging rely on semi-automatic, curated tracking algorithms, which must be manually checked for consistency. In collaboration with the Yuste lab at Columbia University we are working on methods to improve automated neuron tracking. Using a high-dimensional state-space model to track a parameterized mesh of the Hydra at each frame allows . The method is implemented with GPUs to .
 
 ## Previous projects
 
