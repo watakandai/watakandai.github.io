@@ -6,10 +6,10 @@ tags:
   - mle
   - maxent
 use_math: true
-published: false
+published: true
 ---
 
-In this couple of posts I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In later posts I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
+In this post I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In a later post I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
 
 Maximum likelihood has been developed and advocated by many figures throughout the history of mathematics. (See [1] for a nice overview.) In a sense it was first considered in a significant way by Lagrange, but it was also considered by Bernoulli, Laplace, and Gauss, among others. Indeed, what was known as the 'Gaussian method' involved maximum aposteriori estimation of a model with normal distributed errors and a uniform prior, resulting in what is now known as the method of least squares. However, its theory and use was advanced most strongly by Fisher in the 1920s and 30s. Fisher worked for many years to demonstrate conditions sufficient for both the consistency of MLE and for a property known as efficiency. While his later results have stood up to scrutiny, the theory, as it stands, does not possess the generality one might hope for. Nonetheless, it remains a cornerstone of contemporary statistics.
 
