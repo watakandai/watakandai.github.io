@@ -14,4 +14,6 @@ The seeds for Sean Carroll's philosophy, dubbed *Poetic Naturalism*, can be foun
 
 But let's take a step back and talk about what is naturalism, why these topics are of a concern to naturalists and what exactly is *poetic* naturalism. Naturalism can perhaps be most usefully defined in contrast to any philosophy or view that contains *supernatural* elements. The supernatural, in turn, includes gods, spirits, ghosts, demons, hidden forces. Naturalism denies the existence of any such things and so asserts that only the thigns that canbe observed and studied by the scientific or other empirical methods constitute part of reality -- to paraphrase Carroll: there is only one world, and that world obeys natural laws we can discover. 
 
+The topics covered are of a concern to, at least a physics focused, naturalist like Carroll. These are of interest because, once supernatural phenomena are off the table, it remains the task of naturalism to provide an account of what is the meaning of our lives, how do we decide what is right and wrong. How do we give an account 
+
 Now to Carroll's latest book, The Big Picture.
