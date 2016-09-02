@@ -4,7 +4,6 @@ categories:
   - statistics
 tags:
   - mle
-  - maxent
 use_math: true
 published: true
 ---
@@ -27,14 +26,16 @@ describe $N$ observations drawn from a discrete probability distribution. Each d
 
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
 
+<div>
 $$
 \begin{align}
-\hat{\mathbf{p}}_{MLE} = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
- = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n} \right) \\
- =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left( p_{x_n} \right) \\
- =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left( p_m \right) 
+\hat{\mathbf{p}}_{MLE} &amp; = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
+&amp; = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n} \right) \\
+&amp; =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left( p_{x_n} \right) \\
+&amp; =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left( p_m \right) 
 \end{align}
 $$
+</div>
 
 For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the change of variables:
 
