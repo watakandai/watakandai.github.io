@@ -29,7 +29,7 @@ Given our observations, how should we estimate the multinomial parameters $\math
 
 $$
 \begin{align}
-asdf\\
+& asdf\\\\
 & asdf
 \end{align}
 $$
