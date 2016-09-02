@@ -29,8 +29,8 @@ Given our observations, how should we estimate the multinomial parameters $\math
 
 $$
 \begin{align}
-a & = asdf \\ 
-& asdf
+a && = asdf \\ 
+&& asdf
 \end{align}
 $$
 
