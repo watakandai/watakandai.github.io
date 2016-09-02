@@ -81,10 +81,10 @@ We have just minimized the relative entropy, or Kullback-Liebler divergence:
 
 $$
 \begin{align*}
-\hat{\mathbf{p}}_{MLE} = \argmin_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
-=\argmin_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
-=\argmin_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
-=\argmax_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right)
+\hat{\mathbf{p}}_{MLE} = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
+=\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
+=\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
+=\text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right)
 \end{align*}
 $$
 
