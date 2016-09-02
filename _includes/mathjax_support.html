@@ -10,8 +10,11 @@
       inlineMath: [ ['$','$'], ['\(', '\)'] ],
       displayMath: [ ['$$','$$'] ],
       processEscapes: true,
+      processEnvironments: false,
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
+    },
+    messageStyle: "none",
+    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
   });
 </script>
 <script type="text/javascript"
@@ -27,13 +30,10 @@ MathJax.Hub.Config({
       }
     },
     tex2jax: {
-    inlineMath: [ ['$', '$'] ],
-    displayMath: [ ['$$', '$$']],
+    inlineMath: [ ['$', '$'], ['\(', '\)'] ],
+    displayMath: [ ['$$', '$$'] ],
     processEscapes: true,
-    processEnvironments: false,
-  },
-  messageStyle: "none",
-  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+  }
 });
 MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
 	  alert("Math Processing Error: "+message[1]);
