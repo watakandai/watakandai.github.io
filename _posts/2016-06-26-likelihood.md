@@ -34,7 +34,7 @@ Given our observations, how should we estimate the multinomial parameters $\math
   \end{align}
   $$
 
-Hi there q
+Hi there asdf
 
 $$
 \begin{align}
