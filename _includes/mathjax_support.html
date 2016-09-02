@@ -9,6 +9,7 @@
       inlineMath: [ ['$','$'], ['\(', '\)'] ],
       displayMath: [ ['$$','$$'] ],
       processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
   });
 </script>
@@ -25,7 +26,6 @@ MathJax.Hub.Config({
     displayMath: [ ['$$', '$$']],
     processEscapes: true,
     processEnvironments: false,
-    skipTags: ['noscript', 'style', 'textarea', 'pre', 'code']
   },
   messageStyle: "none",
   "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
