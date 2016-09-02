@@ -49,8 +49,7 @@ we make when shifting between expectations in terms of a measure $\mu$ and a dis
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem  can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 
 $$
-\begin{align*}\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
-=\text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
+\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m = \text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
@@ -71,31 +70,33 @@ We find that the optimal occurs at, not surprisingly, the empirical estimates fo
 
 We have just minimized the relative entropy, or Kullback-Liebler divergence:
 
+<div>
 $$
 \begin{align*}
-\hat{\mathbf{p}}_{MLE} = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
-=\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
-=\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
-=\text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right)
+\hat{\mathbf{p}}_{MLE} & = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
+& =\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
+& =\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
+& =\text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right)
 \end{align*}
 $$
+</div>
 
 where we have taken as convention $0\log(0) = 0$.
 
 We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The result that maximum likelihood corresponds to minimizing the KL divergence remains. The optimization problem now becomes
 
+<div>
 $$
-\begin{align}\hat{\theta}_{MLE} = \text{argmax}_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
-= \text{argmax}_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
+\begin{align}\hat{\theta}_{MLE} & = \text{argmax}_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
+& = \text{argmax}_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
 $$
+</div>
 
 which is typically found by solving $\mathcal{L}(\theta\|\mathbf{f}) = 0$.
 
 ## Consistency
 
 Note that our result applies to the empirical distribution $\mathbf{f}$, i.e. for a finite amount of data. We need to ask what happens as we take an indefinite number of samples, does our non-parametric estimate $\mathbf{p}$ tend towards the true parameters $\mathbf{p}$, and does our parametric estimate $\hat{\theta}$ tend towards the true parameter $\theta$?
-
-## Asymptotic efficiency
 
 Arriving at equivalent results for general, continuous, distributions will be the subject of my next post.
 
