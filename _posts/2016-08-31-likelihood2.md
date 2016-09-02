@@ -8,3 +8,6 @@ tags:
 use_math: true
 published: false
 ---
+
+A cornerstone of modern statistics, maximum likelihood 
+
