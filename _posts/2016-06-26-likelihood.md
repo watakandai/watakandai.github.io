@@ -38,7 +38,7 @@ Hi there er
 
 $$
 \begin{align}
-\hat{\mathbf{p}}_{MLE} &amp; = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
+\hat{\mathbf{p}}_{MLE} = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
  = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n} \right) \\
  =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left( p_{x_n} \right) \\
  =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left( p_m \right) 
