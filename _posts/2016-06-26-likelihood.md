@@ -35,9 +35,10 @@ a &amp; = asdf \\\\
 Hi there
 
 \begin{align}\hat{\mathbf{p}}_{MLE} & = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
-& = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n}\right)\\
-& =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left(p_{x_n}\right)\\
-& =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left(p_m\right)\end{align}
+& = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n}\right) \\
+& =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left(p_{x_n}\right) \\
+& =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left(p_m\right) 
+\end{align}
 
 For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the change of variables:
 
