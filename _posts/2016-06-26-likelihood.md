@@ -29,19 +29,19 @@ Given our observations, how should we estimate the multinomial parameters $\math
 
   $$
   \begin{align}
-    a & = asdf \\\\
-    & asdf
+    a  = asdf \\
+     asdf
   \end{align}
   $$
 
-Hi there asdf
+Hi there er
 
 $$
 \begin{align}
-\hat{\mathbf{p}}_{MLE} &amp; = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\\\
-&amp; = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n} \right) \\\\
-&amp; =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left( p_{x_n} \right) \\\\
-&amp; =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left( p_m \right) 
+\hat{\mathbf{p}}_{MLE} &amp; = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
+ = \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n} \right) \\
+ =\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left( p_{x_n} \right) \\
+ =\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left( p_m \right) 
 \end{align}
 $$
 
