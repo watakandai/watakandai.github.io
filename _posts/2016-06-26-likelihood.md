@@ -28,6 +28,12 @@ describe $N$ observations drawn from a discrete probability distribution. Each d
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
 
 $$
+\begin{align}asdf\end{align}
+$$
+
+Hi
+
+$$
 \begin{align}\hat{\mathbf{p}}_{MLE} &= \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
 &= \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n}\right)\\
 &=\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left(p_{x_n}\right)\\
