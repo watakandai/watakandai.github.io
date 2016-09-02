@@ -20,7 +20,7 @@ Much of statistics relies on identifying models of data that are, in some sense,
 The theory is easiest to describe in a discrete setting, which we will address first. Let
 
 $$
-{x} \&amp; = (x_1, x_2, \cdots, x_N)
+{x} = (x_1, x_2, \cdots, x_N)
 $$
 
 describe $N$ observations drawn from a discrete probability distribution. Each draw $x_n\in\mathcal{X}$ is taken from an alphabet of $M$ characters, $\mathcal{X}=(a_1, \dots, a_M)$. Let $p_m$ denote the probability of drawing character $m$ in any one draw, and let $f_m$ denote the frequency of character $m$ is observed in the $N$ draws. Note that we're just describing a multinomial distribution having $M$ parameters $p_m$.
