@@ -28,10 +28,10 @@ describe $N$ observations drawn from a discrete probability distribution. Each d
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
 
 $$
-\begin{align}\hat{\mathbf{p}}_{MLE} &= \argmax_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
-&= \argmax_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n}\right)\\
-&=\argmax_{p\in\mathcal{P}}\sum_{n=1}^N\log \left(p_{x_n}\right)\\
-&=\argmax_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left(p_m\right)\end{align}
+\begin{align}\hat{\mathbf{p}}_{MLE} &= \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
+&= \text{argmax}_{p\in\mathcal{P}}\log\left(\prod_{n=1}^Np_{x_n}\right)\\
+&=\text{argmax}_{p\in\mathcal{P}}\sum_{n=1}^N\log \left(p_{x_n}\right)\\
+&=\text{argmax}_{p\in\mathcal{P}}\sum_{m=1}^M f_m \log \left(p_m\right)\end{align}
 $$
 
 For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the change of variables:
@@ -46,8 +46,8 @@ we make when shifting between expectations in terms of a measure $\mu$ and a dis
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem  can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 
 $$
-\begin{align*}&\argmax_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
-&=\argmax_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
+\begin{align*}&\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
+&=\text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
