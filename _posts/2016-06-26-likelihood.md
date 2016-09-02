@@ -92,11 +92,11 @@ where we have taken as convention $0\log(0) = 0$.
 We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The result that maximum likelihood corresponds to minimizing the KL divergence remains. The optimization problem now becomes
 
 $$
-\begin{align}\hat{\theta}_{MLE} = \argmax_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
-= \argmax_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
+\begin{align}\hat{\theta}_{MLE} = \text{argmax}_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
+= \text{argmax}_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
 $$
 
-which is typically found by solving $\mathcal{L}(\theta|\mathbf{f}) = 0$.
+which is typically found by solving $\mathcal{L}(\theta\|\mathbf{f}) = 0$.
 
 ## Consistency
 
