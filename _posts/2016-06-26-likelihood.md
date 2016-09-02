@@ -55,7 +55,7 @@ we make when shifting between expectations in terms of a measure $\mu$ and a dis
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem  can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 
 $$
-\begin{align*}&\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
+\begin{align*}\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
 =\text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
 $$
 
@@ -79,8 +79,8 @@ We have just minimized the relative entropy, or Kullback-Liebler divergence:
 
 $$
 \begin{align*}
-\hat{\mathbf{p}}_{MLE} &= \argmin_{\mathbf{p}\in\mathcal{P}} D_{KL}(\mathbf{p}\|\mathbf{f}) \\
-&=\argmin_{\mathbf{p}\in\mathcal{P}} \sum _{m=1}^M f_m \log\left(\frac{f_m}{p_m}\right)\\
+\hat{\mathbf{p}}_{MLE} = \argmin_{\mathbf{p}\in\mathcal{P}} D_{KL}(\mathbf{p}\|\mathbf{f}) \\
+=\argmin_{\mathbf{p}\in\mathcal{P}} \sum _{m=1}^M f_m \log\left(\frac{f_m}{p_m}\right)\\
 =\argmin_{\mathbf{p}\in\mathcal{P}} \sum _{m=1}^M f_m \log\left(\frac{f_m}\right) - f_m \log\left({p_m}\right)\\
 =\argmax_{\mathbf{p}\in\mathcal{P}} \sum _{m=1}^M f_m \log\left({p_m}\right) \end{align*}
 $$
@@ -90,8 +90,8 @@ where we have taken as convention $0\log(0) = 0$.
 We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The result that maximum likelihood corresponds to minimizing the KL divergence remains. The optimization problem now becomes
 
 $$
-\begin{align}\hat{\theta}_{MLE} &= \argmax_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
-&= \argmax_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
+\begin{align}\hat{\theta}_{MLE} = \argmax_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
+= \argmax_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
 $$
 
 which is typically found by solving $\mathcal{L}(\theta|\mathbf{f}) = 0$.
