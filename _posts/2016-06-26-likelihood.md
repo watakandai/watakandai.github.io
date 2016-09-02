@@ -29,7 +29,7 @@ Given our observations, how should we estimate the multinomial parameters $\math
 
 $$
 \begin{align}
-& asdf\\
+a & = asdf \\ 
 & asdf
 \end{align}
 $$
@@ -56,7 +56,7 @@ The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall
 
 $$
 \begin{align*}&\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m\\
-&=\text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
+=\text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})\end{align*}
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
