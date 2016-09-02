@@ -34,7 +34,7 @@ a \& = asdf \\\\
 \end{align}
 $$
 
-Hi
+Hi there
 
 $$
 \begin{align}\hat{\mathbf{p}}_{MLE} & = \text{argmax}_{p\in \mathcal{P}} \prod_{n=1}^Np_{x_n}\\
