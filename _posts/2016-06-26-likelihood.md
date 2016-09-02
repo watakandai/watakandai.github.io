@@ -20,7 +20,7 @@ Much of statistics relies on identifying models of data that are, in some sense,
 The theory is easiest to describe in a discrete setting, which we will address first. Let
 
 $$
-{x} &amp; = (x_1, x_2, \cdots, x_N)
+  {x} &amp; = (x_1, x_2, \cdots, x_N)
 $$
 
 describe $N$ observations drawn from a discrete probability distribution. Each draw $x_n\in\mathcal{X}$ is taken from an alphabet of $M$ characters, $\mathcal{X}=(a_1, \dots, a_M)$. Let $p_m$ denote the probability of drawing character $m$ in any one draw, and let $f_m$ denote the frequency of character $m$ is observed in the $N$ draws. Note that we're just describing a multinomial distribution having $M$ parameters $p_m$.
@@ -28,13 +28,13 @@ describe $N$ observations drawn from a discrete probability distribution. Each d
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
 
 $$
-    \begin{align}
-        a &amp; = asdf \\\\
-        &amp; asdf
-    \end{align}
+  \begin{align}
+    a &amp; = asdf \\\\
+    &amp; asdf
+  \end{align}
 $$
 
-Hi there a
+Hi there d
 
 $$
 \begin{align}
