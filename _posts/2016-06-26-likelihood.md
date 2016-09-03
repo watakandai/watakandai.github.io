@@ -103,21 +103,21 @@ $$
 p_D(x) = \frac{1}{N}\sum_{i=1}^{N}\delta(x-x_i)
 $$
 
-the empirical density, then trying the same argument gives:
+the 'empirical density', then trying the same argument gives:
 
 <div>
 $$
 \begin{align*}
 \hat{\theta}_{MLE} 
 & = \text{argmax}_{\theta} \sum_{i=1}^N \log \left( f(x_i;\theta) \right) \\
-& = \text{argmax}_{\theta} \int p_D(x) \log \left( {f(x;\theta)} \right) \,dx\\
+\text{(??)} \qquad & = \text{argmax}_{\theta} \int p_D(x) \log \left( {f(x;\theta)} \right) \,dx\\
 \text{(??)} \qquad & = \text{argmin}_{\theta} \int p_D(x) \log \left( \frac{p_D(x)}{f(x;\theta)} \right) \,dx\\
 & = \text{argmin}_{\theta} D_{KL}( p_D | f(\dot; \theta)) \\
 \end{align*}
 $$
 </div>
 
-However, the question marked line doesn't make sense -- it's unclear what the $log p_D(x)$ is in a continuous setting. For such a line to make sense the empirical distribution would have to be absolutely continuous so that $p_D$ was actually a density. 
+However, the question marked lines don't quite make sense -- it's unclear what the $log p_D(x)$ is in a continuous setting. For such a line to make sense the empirical distribution would have to be absolutely continuous so that $p_D$ was actually a density. 
 
 ## Consistency
 
