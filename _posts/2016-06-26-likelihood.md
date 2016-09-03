@@ -117,7 +117,7 @@ $$
 $$
 </div>
 
-However, the question marked line doesn't make sense -- it's unclear what the $log p_D(x)$ is in a continuous setting. For such a line to make sense the empirical distribution would have to be absolutely continuous. 
+However, the question marked line doesn't make sense -- it's unclear what the $log p_D(x)$ is in a continuous setting. For such a line to make sense the empirical distribution would have to be absolutely continuous so that $p_D$ was actually a density. 
 
 ## Consistency
 
