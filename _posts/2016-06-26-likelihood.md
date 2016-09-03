@@ -157,3 +157,7 @@ $$
 [1] "The Epic Story of Maximum Likelihood" Stephen M. Stigler. 2007.
 [2] https://terrytao.wordpress.com/2015/09/29/275a-notes-0-foundations-of-probability-theory/
 [3] https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
+
+Some blogs posts covering similar material:
+* http://www.hongliangjie.com/2012/07/12/maximum-likelihood-as-minimize-kl-divergence/
+* https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/
