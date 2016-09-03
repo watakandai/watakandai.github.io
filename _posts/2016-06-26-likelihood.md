@@ -5,7 +5,7 @@ categories:
 tags:
   - mle
 use_math: true
-published: true
+published: false
 ---
 
 In this post I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In a later post I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
@@ -52,12 +52,12 @@ $$
 p_m = \frac{1}{\lambda + \mu_m} f_m
 $$
 
-It's useful to consider the empirical distribution:
+## KL-divergence
+
+It's useful to define the empirical distribution:
 $$
 \hat{q}_m = \frac{\sum_{n=1}^N\mathbf{I}}{\|\mathbf{f}\|_1} = \frac{f_m}{N}
 $$
-
-## KL-divergence
 
 We find that the optimal occurs at, not surprisingly, the empirical estimates for the mean. Thus we have that the MLE estimates for our multinomial distribution are maximized at the empirical distribution. I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case the answer requires no measure theory, so we can state it right now. In the continuous case we need to be more careful.
 
