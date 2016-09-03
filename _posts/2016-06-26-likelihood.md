@@ -139,13 +139,15 @@ $$
 \lim_{N\to\infty} M_N(\theta) =M(\theta) = \mathbb{E}_{\theta^*} \log(f(X;\theta)).
 $$
 
-But maximizing $M(\theta)$ is the same as minimizing $D_{KL}(f(\theta^*)|f(\theta))$ since:
+But maximizing $M(\theta)$ is the same as minimizing $D_{KL}(f(\theta^*)\|f(\theta))$ since:
 
 <div>
 $$
-\max_{\theta} M(\theta) = \max_{\theta} \mathbb{E}_{\theta^*} \log \left(\frac{f(X;\theta)}{f(X;\theta^*)}\right)
+\max_{\theta} M(\theta) = \max_{\theta} \mathbb{E}_{\theta^*} \log \left(\frac{f(X;\theta)}{f(X;\theta^*)}\right) = \min_{\theta} D_{KL}(f(\theta^*)\|f(\theta))
 $$
 </div>
+
+Note that since $D_{KL} \ge 0$ and $D_{KL}(f\|g) = 0 \iff f = g$ then, under regularity conditions not specified here, this result implies the consistency of the MLE -- that $\theta_N \to^{P} \theta^*$ as $N\to\infty$. 
 
 ## Some useful references
 
