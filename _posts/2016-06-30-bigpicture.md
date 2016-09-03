@@ -16,7 +16,13 @@ But let's take a step back and talk about what is naturalism, why these topics a
 
 The topics covered are of a concern to, at the least, a physics-focused naturalist like Carroll. They are of interest because once supernatural phenomena are off the table it remains the task of naturalism to provide an account of what provides meaning to our lives, how we decide what is right and wrong, indeed how we decide on what exactly counts as a part of our reality -- our ontology. 
 
-Arguably since the movement early last century known as logical positivism, science has had a tendency to be somewhat *eliminative* -- to explain away metaphysical concepts in terms of psychology, biology, chemistry, etc. A tendency for concepts like the soul and free-will to be discarded, thrown away as mere 'illusions'. More recently, the works of those like Dawkins, Hitchen and Harris has promoted a naturalistic picture of the world, a picture aggresively devoid of religion. The problem with such developments is that, if naturalism is ever to be adopted as a true alternative to a world-view that includes religion, there must be more therapy to accompany the eliminativism, lest the common accusation that atheists live in a spiritually devoid world ring true. Effort must be made to explain to a general audience how meaningful lives can be lead in purely material world -- what Owen Flannigan describes as the 'really hard problem'. 
+Arguably since the movement early last century known as logical positivism, science has had a tendency to be somewhat *eliminative* -- to explain away metaphysical concepts in terms of psychology, biology, chemistry, etc. A tendency for concepts like the soul, free-will and God to be discarded, thrown away as mere 'illusions' or worse as 'delusions'. More recently, the works of those like Dawkins, Hitchen and Harris has promoted a naturalistic picture of the world, a picture aggresively devoid of religion. The problem with such developments is that, if naturalism is ever to be adopted as a true alternative to a world-view that includes religion, there must be more therapy to accompany the eliminativism, lest the common accusation that atheists live in a spiritually devoid world ring true. Effort must be made to explain to a general audience how meaningful lives can be lead in purely material world. Owen Flannigan describes this as the 'really hard problem' -- which seems in some ways to be a dig at Chalmer's Hard problem. 
 
 Carroll's book is an attempt at addressing this problem.
 
+Topics -- 
+
+* Bayesian philosophy
+* what is poetic naturalism
+* different levels
+* Attack at 
