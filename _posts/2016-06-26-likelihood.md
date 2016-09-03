@@ -109,7 +109,7 @@ the empirical density, then trying the same argument gives:
 $$
 \begin{align*}
 \hat{\theta}_{MLE} 
-& = \text{argmax}_{\theta} \sum_{m=1}^M f_m \log \left( {p_m} \right) \\
+& = \text{argmax}_{\theta} \sum_{i=1}^N \log \left( f(x_i;\theta) \right) \\
 & = \text{argmax}_{\theta} \int p_D(x) \log \left( {f(x;\theta)} \right) \,dx\\
 \text{(??)} \qquad & = \text{argmin}_{\theta} \int p_D(x) \log \left( \frac{p_D(x)}{f(x;\theta)} \right) \,dx\\
 & = \text{argmin}_{\theta} D_{KL}( p_D | f(\dot; \theta)) \\
