@@ -17,9 +17,11 @@ Maximum likelihood was developed and advocated by many figures throughout the hi
 Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify theseclosest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see its simplicity is somewhat deceiving.
 
 The theory is easiest to describe in a discrete setting, which we will address first. Let
+
 $$
 x = (x_1, x_2, \cdots, x_N)
 $$
+
 describe $N$ observations drawn from a discrete probability distribution. Each draw $x_n\in\mathcal{X}$ is taken from an alphabet of $M$ characters, $\mathcal{X}=(a_1, \dots, a_M)$. Let $p_m$ denote the probability of drawing character $m$ in any one draw, and let $f_m$ denote the frequency of character $m$ is observed in the $N$ draws. Note that we're just describing a multinomial distribution having $M$ parameters $p_m$.
 
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
@@ -36,18 +38,22 @@ $$
 </div>
 
 For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the pushforward change of variables:
+
 $$
 \begin{align*}
 \int_\mathbb{R} \log (p(x)) dF(x) = \int_\Omega \log(p(X(\omega)) d\mu(\omega)\end{align*}
 $$
+
 we make when shifting between expectations in terms of a measure $\mu$ and a distribution function $F$. The LHS being given by a Lebesgue-Stieltjes integral, the RHS by a Lebesgue integral.)
 
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
+
 $$
 \text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m = \text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
+
 $$
 p_m = \frac{1}{\lambda + \mu_m} f_m
 $$
@@ -59,30 +65,39 @@ We find that the optimal occurs at, not surprisingly, the empirical estimates fo
 I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case, we have just minimized the relative entropy, or Kullback-Liebler divergence between the empirical distribution and the model:
 
 Recall the empirical distribution is:
+
 $$
 \hat{q}_m = \frac{\sum_{n=1}^N\mathbf{I}}{\|\mathbf{f}\|_1} = \frac{f_m}{N}
 $$
+
 then
+
 <div>
 $$
 \begin{align*}
-\hat{\mathbf{p}}_{MLE} & = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
-& =\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
-& =\text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
-& =\text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right)
+\hat{\mathbf{p}}_{MLE} 
+& = \text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
 \end{align*}
 $$
 </div>
-where we have taken as convention $0\log(0) = 0$. Thus in the discrete case, at least, maximizing likelihood corresponds to minimizing the KL divergence. In the continuous case things are not so straightforward.
+
+where we have taken as convention $0\log(0) = 0$. _Thus in the discrete case, at least, maximizing likelihood corresponds to minimizing the KL divergence._
 
 We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The optimization problem now becomes
+
 <div>
 $$
 \begin{align}\hat{\theta}_{MLE} & = \text{argmax}_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
 & = \text{argmax}_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
 $$
 </div>
-which is typically found by solving $\mathcal{L}(\theta\|\mathbf{f}) = 0$. The result is the same however. 
+
+which is typically found by solving $\frac{\partial}{\partial \theta}\mathcal{L}(\theta\|\mathbf{f}) = 0$. The result is the same however -- we minimize the difference between the empirical distribution and the parametric model. 
+
+In the continuous case things are not so straightforward.
 
 ## Consistency
 
