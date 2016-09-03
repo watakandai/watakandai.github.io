@@ -49,7 +49,7 @@ we make when shifting between expectations in terms of a measure $\mu$ and a dis
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 
 $$
-\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m = \text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})
+\text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M f_m \log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m = \text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
@@ -62,24 +62,24 @@ We find that the optimal occurs at, not surprisingly, the empirical estimates fo
 
 ## KL-divergence
 
-I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case, we have just minimized the relative entropy, or Kullback-Liebler divergence between the empirical distribution and the model:
+I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case, we have just minimized the relative entropy, or Kullback-Liebler divergence between the empirical distribution and the model.
 
-Recall the empirical distribution is:
+Recall the empirical distribution is
 
 $$
 \hat{q}_m = \frac{\sum_{n=1}^N\mathbf{I}}{\|\mathbf{f}\|_1} = \frac{f_m}{N}
 $$
 
-then
+so that:
 
 <div>
 $$
 \begin{align*}
 \hat{\mathbf{p}}_{MLE} 
 & = \text{argmax}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( {p_m} \right) \\
-& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( f_m \right) - f_m \log \left( {p_m} \right) \\
-& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M f_m \log \left( \frac{f_m}{p_m} \right) \\
-& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{p} | \mathbf{f}) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M \hat{q}_m \log \left( \hat{q}_m \right) - \hat{q}_m \log \left( {p_m} \right) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} \sum_{m=1}^M \hat{q}_m \log \left( \frac{\hat{q}_m}{p_m} \right) \\
+& = \text{argmin}_{\mathbf{p}\in\mathcal{P}} D_{KL}( \mathbf{q} | \mathbf{p}) \\
 \end{align*}
 $$
 </div>
@@ -97,7 +97,27 @@ $$
 
 which is typically found by solving $\frac{\partial}{\partial \theta}\mathcal{L}(\theta\|\mathbf{f}) = 0$. The result is the same however -- we minimize the difference between the empirical distribution and the parametric model. 
 
-In the continuous case things are not so straightforward.
+In the continuous case things are not so straightforward. We try the same argument for a real-valued random variable, $N$ observations $X^n = \{x_1, \dots, x_N \}$, and a parametric model $f(x; \theta)$. If we denote by
+
+$$
+p_D(x) = \frac{1}{N}\sum_{i=1}^{N}\delta(x-x_i)
+$$
+
+the empirical density, then trying the same argument gives:
+
+<div>
+$$
+\begin{align*}
+\hat{\theta}_{MLE} 
+& = \text{argmax}_{\theta} \sum_{m=1}^M f_m \log \left( {p_m} \right) \\
+& = \text{argmax}_{\theta} \int p_D(x) \log \left( {f(x;\theta)} \right) \,dx\\
+\text{(??)} \qquad & = \text{argmin}_{\theta} \int p_D(x) \log \left( \frac{p_D(x)}{f(x;\theta)} \right) \,dx\\
+& = \text{argmin}_{\theta} D_{KL}( \mathbf{q} | \mathbf{p}) \\
+\end{align*}
+$$
+</div>
+
+However, the question marked line doesn't make sense -- it's unclear what the log of $p_D(x)$ is in a continuous setting. For such a line to make sense the empirical distribution would have to be absolutely continuous. 
 
 ## Consistency
 
@@ -105,6 +125,8 @@ Note that our result applies to the empirical distribution $\mathbf{f}$, i.e. fo
 
 Arriving at equivalent results for general, continuous, distributions will be the subject of my next post.
 
-## References:
+## Some useful references
 
 [1] "The Epic Story of Maximum Likelihood" Stephen M. Stigler. 2007.
+[2] https://terrytao.wordpress.com/2015/09/29/275a-notes-0-foundations-of-probability-theory/
+[3] https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
