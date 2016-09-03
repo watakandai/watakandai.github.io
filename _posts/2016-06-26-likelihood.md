@@ -5,16 +5,16 @@ categories:
 tags:
   - mle
 use_math: true
-published: false
+published: true
 ---
 
-In this post I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In a later post I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
+In this post I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In a later post I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. 
 
-Maximum likelihood has been developed and advocated by many figures throughout the history of mathematics. (See [1] for a nice overview.) In a sense it was first considered in a significant way by Lagrange, but it was also considered by Bernoulli, Laplace, and Gauss, among others. Indeed, what was known as the 'Gaussian method' involved maximum aposteriori estimation of a model with normal distributed errors and a uniform prior, resulting in what is now known as the method of least squares. However, its theory and use was advanced most strongly by Fisher in the 1920s and 30s. Fisher worked for many years to demonstrate conditions needed for both the consistency of MLE and efficiency. While his later results have stood up to scrutiny, the theory, as it stands, does not possess the generality one might hope for. Nonetheless, it remains a cornerstone of contemporary statistics.
+Maximum likelihood was developed and advocated by many figures throughout the history of mathematics (see [1] for a nice overview). In a sense it was first considered in a significant way by Lagrange, but it was also considered by Bernoulli, Laplace, and Gauss, among others. Indeed, what was known as the 'Gaussian method' involved maximum aposteriori estimation of a model with normal distributed errors and a uniform prior, resulting in what is now known as the method of least squares. However, its theory and use was advanced most strongly by Fisher in the 1920s and 30s. Fisher worked for many years to demonstrate conditions needed for both the consistency of MLE and efficiency. While his later results have stood up to scrutiny, the theory, as it stands, does not possess the quite generality he sought after. Nonetheless, it remains a cornerstone of contemporary statistics.
 
 ## Maximum likelihood estimation
 
-Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify theseclosest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see, its simplicity it deceiving.
+Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify theseclosest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see its simplicity is somewhat deceiving.
 
 The theory is easiest to describe in a discrete setting, which we will address first. Let
 $$
