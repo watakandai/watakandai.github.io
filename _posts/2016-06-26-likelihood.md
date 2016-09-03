@@ -10,18 +10,16 @@ published: false
 
 In this post I describe some of the theory of maximum likelihood estimation (MLE), highlighting its relation to information theory. In a later post I will develop the theory of maximum entropy models, also drawing connections to information theory, hoping to clarify the relation between MLE and MaxEnt. This serves as only a brief introduction that is relatively basic. That said, some prior familiarity with probability and statistics is of course assumed.
 
-Maximum likelihood has been developed and advocated by many figures throughout the history of mathematics. (See [1] for a nice overview.) In a sense it was first considered in a significant way by Lagrange, but it was also considered by Bernoulli, Laplace, and Gauss, among others. Indeed, what was known as the 'Gaussian method' involved maximum aposteriori estimation of a model with normal distributed errors and a uniform prior, resulting in what is now known as the method of least squares. However, its theory and use was advanced most strongly by Fisher in the 1920s and 30s. Fisher worked for many years to demonstrate conditions sufficient for both the consistency of MLE and for a property known as efficiency. While his later results have stood up to scrutiny, the theory, as it stands, does not possess the generality one might hope for. Nonetheless, it remains a cornerstone of contemporary statistics.
+Maximum likelihood has been developed and advocated by many figures throughout the history of mathematics. (See [1] for a nice overview.) In a sense it was first considered in a significant way by Lagrange, but it was also considered by Bernoulli, Laplace, and Gauss, among others. Indeed, what was known as the 'Gaussian method' involved maximum aposteriori estimation of a model with normal distributed errors and a uniform prior, resulting in what is now known as the method of least squares. However, its theory and use was advanced most strongly by Fisher in the 1920s and 30s. Fisher worked for many years to demonstrate conditions needed for both the consistency of MLE and efficiency. While his later results have stood up to scrutiny, the theory, as it stands, does not possess the generality one might hope for. Nonetheless, it remains a cornerstone of contemporary statistics.
 
 ## Maximum likelihood estimation
 
-Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify these  closest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see, its simplicity hides many treasures.
+Much of statistics relies on identifying models of data that are, in some sense, close to our observations. Indeed, in many cases it seems sensible that we seek models that are the closest to our observations. Maximum likelihood provides one principle by which we may identify theseclosest distributions. It has many appealing properties that make it an appropriate measure, and is a broadly applicable method. As we will see, its simplicity it deceiving.
 
 The theory is easiest to describe in a discrete setting, which we will address first. Let
-
 $$
-  {x} = (x_1, x_2, \cdots, x_N)
+x = (x_1, x_2, \cdots, x_N)
 $$
-
 describe $N$ observations drawn from a discrete probability distribution. Each draw $x_n\in\mathcal{X}$ is taken from an alphabet of $M$ characters, $\mathcal{X}=(a_1, \dots, a_M)$. Let $p_m$ denote the probability of drawing character $m$ in any one draw, and let $f_m$ denote the frequency of character $m$ is observed in the $N$ draws. Note that we're just describing a multinomial distribution having $M$ parameters $p_m$.
 
 Given our observations, how should we estimate the multinomial parameters $\mathbf{p}$? The principle of maximum likelihood states simply that we take parameters that result in our observations having highest probability, when compared with all other possible choices of parameters. If we assume that each draw is independently and identically distributed (i.i.d.) then this is
@@ -38,28 +36,23 @@ $$
 </div>
 
 For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the change of variables:
-
 $$
 \begin{align*}
 \int_\mathbb{R} \log (p(x)) dF(x) = \int_\Omega \log(p(X(\omega)) d\mu(\omega)\end{align*}
 $$
-
 we make when shifting between expectations in terms of a measure $\mu$ and a distribution function $F$. The LHS being given by a Riemann-Stieltjes integral, the RHS by a Lebesgue integral.)
 
-The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem  can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
-
+The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 $$
 \text{argmax}_{p\in\mathcal{P}} \sum_{m=1}^M\log \left(p_{x_n}\right) - \lambda (\sum_{m=1}^Mq_m - 1) + \sum_{m=1}^M\mu_m p_m = \text{argmax}_{p\in\mathcal{P}} \mathcal{\tilde{L}}(\mathbf{p}, \mathbf{f})
 $$
 
 We set the partial derivative of the Lagrangian $\mathcal{\tilde{L}}$ taken with respect to $p_m$ to zero to obtain
-
 $$
 p_m = \frac{1}{\lambda + \mu_m} f_m
 $$
 
 It's useful to consider the empirical distribution:
-
 $$
 \hat{q}_m = \frac{\sum_{n=1}^N\mathbf{I}}{\|\mathbf{f}\|_1} = \frac{f_m}{N}
 $$
