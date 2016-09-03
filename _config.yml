@@ -18,9 +18,9 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # , "facebook", "google-plus", custom"
+  provider               : #"disqus" # , "facebook", "google-plus", custom"
   disqus:
-    shortname            : overflow-1 # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : #overflow-1 # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -50,9 +50,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-83614748-1
 
 # Google AdSense
 google_ad_client         :
