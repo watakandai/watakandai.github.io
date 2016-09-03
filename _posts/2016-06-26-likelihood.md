@@ -35,12 +35,12 @@ $$
 $$
 </div>
 
-For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the change of variables:
+For many reasons, some of which will become clear here, expressing the maximization problem in terms of logarithms is the natural choice, so the last line above is one we will be optimizing. (As a brief aside, note the step taken to reach the last line appears a trivial manipulation, but if we were to write out what was happening in a general probability space, it is roughly analogous to the pushforward change of variables:
 $$
 \begin{align*}
 \int_\mathbb{R} \log (p(x)) dF(x) = \int_\Omega \log(p(X(\omega)) d\mu(\omega)\end{align*}
 $$
-we make when shifting between expectations in terms of a measure $\mu$ and a distribution function $F$. The LHS being given by a Riemann-Stieltjes integral, the RHS by a Lebesgue integral.)
+we make when shifting between expectations in terms of a measure $\mu$ and a distribution function $F$. The LHS being given by a Lebesgue-Stieltjes integral, the RHS by a Lebesgue integral.)
 
 The problem is constrained by the fact that $\sum q_m = 1$ and $q_m\ge 0 \forall m$. This constrained optimization problem can be solved using Lagrange multipliers. Recall this involves augmenting our objective function with our constraints
 $$
@@ -52,17 +52,17 @@ $$
 p_m = \frac{1}{\lambda + \mu_m} f_m
 $$
 
+We find that the optimal occurs at, not surprisingly, the empirical estimates for the mean. Thus we have that the MLE estimates for our multinomial distribution are maximized at the empirical distribution. 
+
 ## KL-divergence
 
-It's useful to define the empirical distribution:
+I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case, we have just minimized the relative entropy, or Kullback-Liebler divergence between the empirical distribution and the model:
+
+Recall the empirical distribution is:
 $$
 \hat{q}_m = \frac{\sum_{n=1}^N\mathbf{I}}{\|\mathbf{f}\|_1} = \frac{f_m}{N}
 $$
-
-We find that the optimal occurs at, not surprisingly, the empirical estimates for the mean. Thus we have that the MLE estimates for our multinomial distribution are maximized at the empirical distribution. I mentioned earlier that we would like some measure of closeness, and would like to find distributions that are 'close' our observations. What measure of closeness have we just minimized? In the discrete case the answer requires no measure theory, so we can state it right now. In the continuous case we need to be more careful.
-
-We have just minimized the relative entropy, or Kullback-Liebler divergence:
-
+then
 <div>
 $$
 \begin{align*}
@@ -73,19 +73,16 @@ $$
 \end{align*}
 $$
 </div>
+where we have taken as convention $0\log(0) = 0$. Thus in the discrete case, at least, maximizing likelihood corresponds to minimizing the KL divergence. In the continuous case things are not so straightforward.
 
-where we have taken as convention $0\log(0) = 0$.
-
-We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The result that maximum likelihood corresponds to minimizing the KL divergence remains. The optimization problem now becomes
-
+We have discussed only the case where $\mathbf{p}$ is estimated non-parameterically. What if we instead have some probability model described by a parameter $\theta$? The optimization problem now becomes
 <div>
 $$
 \begin{align}\hat{\theta}_{MLE} & = \text{argmax}_{\theta\in\Theta}\mathcal{L}(\theta|\mathbf{f})\\
 & = \text{argmax}_{\theta\in\Theta}\sum_{m=1}^M f_m \log \left(p_m(\theta)\right)\\\end{align}
 $$
 </div>
-
-which is typically found by solving $\mathcal{L}(\theta\|\mathbf{f}) = 0$.
+which is typically found by solving $\mathcal{L}(\theta\|\mathbf{f}) = 0$. The result is the same however. 
 
 ## Consistency
 
