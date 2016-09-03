@@ -139,25 +139,21 @@ $$
 \lim_{N\to\infty} M_N(\theta) =M(\theta) = \mathbb{E}_{\theta^*} \log(f(X;\theta)).
 $$
 
-Now the above argument goes through:
+But maximizing $M(\theta)$ is the same as minimizing $D_{KL}(f(\theta^*)|f(\theta))$ since:
+
 <div>
 $$
-\begin{align*}
-\hat{\theta}_{MLE} 
-& = \text{argmax}_{\theta} \sum_{n=1}^N \log \left( f(x_i;\theta) \right) \\
-& = \text{argmax}_{\theta} \int p_D(x) \log \left( {f(x;\theta)} \right) \,dx\\
-\text{(??)} \qquad & = \text{argmin}_{\theta} \int p_D(x) \log \left( \frac{p_D(x)}{f(x;\theta)} \right) \,dx\\
-& = \text{argmin}_{\theta} D_{KL}( p_D | f(\dot; \theta)) \\
-\end{align*}
+\max_{\theta} M(\theta) = \max_{\theta} \mathbb{E}_{\theta^*} \log \left(\frac{f(X;\theta)}{f(X;\theta^*)}\right)
 $$
 </div>
 
 ## Some useful references
 
-[1] "The Epic Story of Maximum Likelihood" Stephen M. Stigler. 2007.
-[2] https://terrytao.wordpress.com/2015/09/29/275a-notes-0-foundations-of-probability-theory/
-[3] https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
+1. "The Epic Story of Maximum Likelihood" Stephen M. Stigler. 2007.
+2. https://terrytao.wordpress.com/2015/09/29/275a-notes-0-foundations-of-probability-theory/
+3. https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
 
 Some blogs posts covering similar material:
+
 * http://www.hongliangjie.com/2012/07/12/maximum-likelihood-as-minimize-kl-divergence/
 * https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/
