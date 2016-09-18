@@ -10,4 +10,3 @@ use_math: true
 published: true
 ---
 
-{% include theano_svm.html %}
