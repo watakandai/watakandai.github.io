@@ -1,3 +1,15 @@
+---
+title: "The intertwined histories of computer science and neuroscience"
+categories:
+  - neuroscience
+tags:
+  - Turing
+  - von Neumann
+  - computer science
+use_math: false
+published: True
+---
+
 Computational neuroscience is the study of the function of nervous systems and brains, both using computers as tools to simulate that which cannot be modeled otherwise and using metaphors of computation [Churchland1987a]. In the latter sense Marr's now famous tri-level analysis provides a foundational framework. Marr proposed that a given neural circuit can be analysed at three levels: we can first ask what computation is being performed, second what is the algorithm used to perform the computation, and third what is the physical implementation of this algorithm[Marr]. Marr's framework inspired many founders of the field, including Hopfield, Sejnowski, and Poggio. However, antecedents to this connection between brains, minds and computers can be identified long before Marr. 
 
 Starting with Frege, Boole and arguably, though less significantly, Leibniz, there has been a strong desire for formal systems capable of expressing thought and for formal rules of reasoning.Frege's Begriffsschrift and Leibniz's calculus ratiocinator, for instance. The desire to make mathematical reasoning a purely algorithmic, or formal, process lead ultimately to Hilbert's formalist program, and to Turing's formulation of an ideal, mechanical, rule-following computer. Though ultimately Turing's universal machines were physically realized as actual computing devices, originally they were devised purely as theoretical tools, models of mechanical reasoning to be used in proofs of statements in metamathematics [Turing1936]. It is helpful to note that in the 1930s a computer referred to a person performing calculations, and that Turing's original paper described a machine having a finite number of `states of mind' -- finite due to our own limited mental capacities. Starting with McCulloch and Pitts [McCulloch1990a], Turing machines were envisioned as a kind of model of the mind. Indeed, his eponymous machines provided the basis for early functionalist philosophies of mind[Putnam1960], and they still provide the basis for contemporary theories in cognitive science -- the dominant view being that cognition is a type of computation (cite something). Turing maintained a strong interest in the relation between computers and the mind throughout his life[Turing1950]. 
