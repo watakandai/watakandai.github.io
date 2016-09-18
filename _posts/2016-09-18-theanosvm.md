@@ -7,7 +7,7 @@ tags:
   - SVM
   - classifier
 use_math: true
-published: true
+published: false
 ---
 
 
