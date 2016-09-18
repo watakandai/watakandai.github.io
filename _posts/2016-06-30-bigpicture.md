@@ -28,8 +28,14 @@ Carroll's book is an attempt at addressing this problem. He describes his world-
  
 These 'ways of talking about the world' can also be described as theories, stories, levels, etc, depending on the particular case.
 
-Topics -- 
+By adopting such a philosophy Carroll hopes to provide a worldview that is entirely naturalistic but that maintains a place for concepts that mean something to how we lead our lives -- again concepts such as morality and free-will.
+
+## Bayesian thinking
 
 * Bayesian philosophy
-* different levels of reality
+
+## Topics in the book
+
 * Attack at religion and Penrose
+
+## Success?
