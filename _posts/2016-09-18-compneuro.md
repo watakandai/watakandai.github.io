@@ -7,7 +7,7 @@ tags:
   - von Neumann
   - computer science
 use_math: false
-published: True
+published: false
 ---
 
 Computational neuroscience is the study of the function of nervous systems and brains, both using computers as tools to simulate that which cannot be modeled otherwise and using metaphors of computation [Churchland1987a]. In the latter sense Marr's now famous tri-level analysis provides a foundational framework. Marr proposed that a given neural circuit can be analysed at three levels: we can first ask what computation is being performed, second what is the algorithm used to perform the computation, and third what is the physical implementation of this algorithm[Marr]. Marr's framework inspired many founders of the field, including Hopfield, Sejnowski, and Poggio. However, antecedents to this connection between brains, minds and computers can be identified long before Marr. 
