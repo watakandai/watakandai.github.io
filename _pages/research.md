@@ -14,4 +14,4 @@ More generally I'm excited by technologies and datasets driving neuroscience for
 
 Before beginning my PhD my interests were in systems biology and bioinformatics.
 
-<figure style="float: right; width: 300px;"><img src="../images/hydra_wireframe_inverted.png" width="300"><figcaption>Kalman filter for tracking Hydra pose through video in order to aid neuron tracking</figcaption></figure>
+<figure style="width: 500px;"><img src="../images/combined.png" width="500"></figure>
