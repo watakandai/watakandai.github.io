@@ -6,7 +6,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-<figure style="float: right; width: 336px;"><img src="../images/combined2.png" width="336"></figure>
+<figure style="float: right; width: 224px;"><img src="../images/combined2.png" width="224"></figure>
 
 Computational neuroscience is unique among areas of theoretical and quantitative biology for its emphasis on *representation* and *information processing* -- more than any other organ, the brain *computes*. Representations are apparent in sensory systems, where neural responses can be interpretted as encoding information about features of a visual scene, for example. Notions of representation in the motor system are less clear, and it remains an open question whether primary motor cortex is best thought of as encoding information about limb kinetics, kinematics, or some other variables. 
 
