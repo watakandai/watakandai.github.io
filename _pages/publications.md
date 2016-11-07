@@ -7,8 +7,6 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Articles
 
-8. **Lansdell B**, Deconinck B, “Pole dynamics of the non-linear Schrödinger equation”, *in preparation*
-7. **Lansdell B**, Kluck R, Hockings C, Fairlie D, Lee E, Landman K, Frascoli F, Speed T, “Computational model of Bcl-2 family pro-apoptotic Bak activation through BH3-only stimulation: activation efficacies and dynamic regulation mechanisms”, *in preparation*
 6. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", *in preparation*
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf))
