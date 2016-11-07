@@ -2,7 +2,7 @@
 permalink: /research/
 title: Research interests
 header:
-  overlay_image: ../images/combined2.png
+  overlay_image: ../images/dst2_background.png
   overlay_filter: 0.7 # same as adding an opacity of 0.5 to a black background
 ---
 
