@@ -1,5 +1,5 @@
 ---
-title: "Maximum likelihood and KL divergence"
+title: "On the relation between maximum likelihood and KL divergence"
 categories:
   - statistics
 tags:
