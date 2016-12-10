@@ -7,7 +7,7 @@ tags:
   - von Neumann
   - computer science
 use_math: false
-published: true
+published: false
 ---
 
 Doing the rounds recently was an article posted on Aeon about how the brain is not a computer ([here](https://aeon.co/essays/your-brain-does-not-process-information-and-it-is-not-a-computer)). How there is a fundamental difference between computers and brains in their structure, function and purpose. While it may be true that the brain does not function in the same way the laptop in front of me functions -- processing bits of information in a predominantly serial fashion, with separated memory and processing components -- this does not mean that the brain is not a computer in a more general sense. Though not directed explicitly at the article in question, this post will describe computation in this more general sense, and present a perspective on the brain/computer connection that makes the relation seem not so surprising. 
