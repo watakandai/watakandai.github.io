@@ -149,13 +149,6 @@ $$
 
 Note that since $D_{KL} \ge 0$ and $D_{KL}(f\|g) = 0 \iff f = g$ then, under regularity conditions not specified here, this result implies the consistency of the MLE -- that $\theta_N \to^{P} \theta^*$ as $N\to\infty$. 
 
-## Some useful references
+## A reference
 
 1. "The Epic Story of Maximum Likelihood" Stephen M. Stigler. 2007.
-2. https://terrytao.wordpress.com/2015/09/29/275a-notes-0-foundations-of-probability-theory/
-3. https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
-
-Some blogs posts covering similar material:
-
-* http://www.hongliangjie.com/2012/07/12/maximum-likelihood-as-minimize-kl-divergence/
-* https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/
