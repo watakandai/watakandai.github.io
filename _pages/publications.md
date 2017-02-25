@@ -24,7 +24,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 1. **Lansdell B**, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. ([abstract]({{site.baseurl}}/docs/giw2008poster_submission_103.pdf))
 
 ## Talks
-
+4. Lansdell B (January 23, 2017), "Unraveling principles of motor control: from nerve nets to neural prosthetics", _Neurotheory group talk_, Columbia University, New York. (Invited)
+3. Lansdell B (January 24, 2017), "Unraveling principles of motor control: from nerve nets to neural prosthetics", _Special seminar_, Janelia Research Campus, Ashburn VA. (Invited)
 2. Lansdell B (June 12, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, SIAM Conference on Non-linear Waves and Coherent Structures, University of Washington, Seattle. *Invited*
 1. Lansdell B (February 11, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, Frontiers in Biophysics, Simon Fraser University, Vancouver. *Contributed*
 
