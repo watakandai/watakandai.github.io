@@ -7,7 +7,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Articles
 
-6. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *submitted*
+6. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", [arXiv](https://arxiv.org/abs/1702.07368)*
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf)) ([F1000 Prime recommended article](https://f1000.com/prime/726562212))
 3. **Lansdell B**, Ford K, Jutz JN, “A reaction-diffusion model of cholinergic retinal waves”, *PLoS Computational Biology* 2014 ([pdf]({{site.baseurl}}/docs/retinalwaves.pdf))
