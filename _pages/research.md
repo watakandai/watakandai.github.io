@@ -12,5 +12,5 @@ Alternatively, perhaps the notion of such explicit encoding is not relevant, and
 
 More generally I'm excited by technologies and datasets driving neuroscience forward. Optical and electrical recording technologies now allow large populations of neurons to be recorded from simultaneously. For instance, optical imaging can now be performed for whole animals, while freely behaving, providing an unprecedented window into the functioning of (lower) organisms. I'm interested in statistical methods for learning dynamical structure in such high-dimensional datasets. 
 
-Before beginning my PhD my interests were in systems biology and bioinformatics.
+Before my doctoral studies, my interests were in systems biology and bioinformatics.
 
