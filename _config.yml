@@ -187,6 +187,8 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+collections:
+- trips
 
 # Archives
 #  Type
