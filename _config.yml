@@ -188,7 +188,8 @@ whitelist:
   - jemoji
 
 collections:
-- trips
+  - trips:
+      output: true
 
 # Archives
 #  Type
