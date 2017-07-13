@@ -170,6 +170,13 @@ defaults:
       comments: true
       share: true
       related: true
+  # _trips
+  - scope:
+      path: ""
+      type: trips
+    values:
+      layout: single
+      author_profile: true
 
 # Plugins
 gems:
@@ -188,8 +195,8 @@ whitelist:
   - jemoji
 
 collections:
-  - trips:
-      output: true
+  trips:
+    output: true
 
 # Archives
 #  Type
