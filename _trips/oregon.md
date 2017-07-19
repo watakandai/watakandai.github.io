@@ -2,6 +2,7 @@
 layout: trip
 title: Cycling the Oregon Coast
 overlay_image: https://farm5.staticflickr.com/4215/35596908201_784694238c_k_d.jpg
+date: 2017-06-19
 ---
 
 Bike ride from Seattle to California border. June 19th -- June 30th 2017.
