@@ -8,8 +8,8 @@ header:
 
 I enjoy bicycle touring. Here are some trip reports. 
 
+<ul>
 {% for trip in site.trips %}
-  <div class="trip">
-    <h2><a href="{{ trip.url }}">{{ trip.title }}</a></h2>
-  </div>
+    <li>{{ trip.date }} <a href="{{ trip.url }}">{{ trip.title }}</a></h2>
 {% endfor %}
+</ul>
