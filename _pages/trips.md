@@ -6,6 +6,8 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
+I enjoy bicycle touring. Here are some trip reports. 
+
 {% for trip in site.trips %}
   <div class="trip">
     <h2><a href="{{ trip.url }}">{{ trip.title }}</a></h2>
