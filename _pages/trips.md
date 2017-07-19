@@ -10,6 +10,6 @@ I enjoy bicycle touring. Here are some trip reports.
 
 <ul>
 {% for trip in site.trips %}
-    <li>{{ trip.date }} <a href="{{ trip.url }}">{{ trip.title }}</a></h2>
+<li>{{ trip.date }} <a href="{{ trip.url }}">{{ trip.title }}</a></li>
 {% endfor %}
 </ul>
