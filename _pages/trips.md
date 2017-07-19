@@ -2,7 +2,7 @@
 permalink: /trips/
 title: Tours and trips
 header:
-  overlay_image: ../images/dst2_background.png
+  overlay_image: ../images/glacier.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
