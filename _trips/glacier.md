@@ -1,6 +1,7 @@
 ---
 title: Cycling Glacier National Park
 layout: trip
+date: 2016-08-20
 ---
 
 Caught the train to Whitefish, MT and rode to and around Glacier NP. 
