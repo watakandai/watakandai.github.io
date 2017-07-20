@@ -1,6 +1,6 @@
 ---
-title: Hurricane Ridge
-date: 2013-08-01
+title: Hurricane Ridge -- Olympic National Park
+date: 2013-09-06
 layout: trip
 ---
 
