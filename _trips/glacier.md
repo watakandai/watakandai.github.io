@@ -1,5 +1,5 @@
 ---
-title: Cycling Glacier National Park
+title: Glacier National Park
 layout: trip
 date: 2016-08-21
 ---
