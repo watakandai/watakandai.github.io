@@ -4,8 +4,7 @@ date: 2013-08-01
 layout: trip
 ---
 
-Caught the Dungeness line (here)[https://olympicbuslines.com/] to Port Angeles. Rode half way up the mountain to the 'Heart o' the hills' campsite.
-
+Quick weekend trip: caught the Dungeness line [here](https://olympicbuslines.com/) to Port Angeles. Rode half way up the mountain to the 'Heart o' the hills' campground. Continued up to the ridge early morning. Made it up before most of the day riders coming across from Vancouver Island. The descent was a quick one. You're basically able to roll all the way back to the heart of Port Angeles. Caught the bus back the same day after a milkshake. 
 
 ## Photos
 
