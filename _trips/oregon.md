@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: Cycling the Oregon Coast
+title: Oregon coast
 date: 2017-06-19
 header:
   overlay_image: https://farm5.staticflickr.com/4215/35596908201_784694238c_k_d.jpg
