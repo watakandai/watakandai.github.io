@@ -1,0 +1,1 @@
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/149922637@N08/albums/72157683023986634" title="Olympics 2015"><img src="https://farm5.staticflickr.com/4265/35558888522_677ae218ac_c.jpg" width="800" height="602" alt="Olympics 2015"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
