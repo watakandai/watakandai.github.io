@@ -1,6 +1,7 @@
 ---
 permalink: /trips/
 title: Bicycle Touring
+author_profile: false
 header:
   overlay_image: ../images/glacier.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
