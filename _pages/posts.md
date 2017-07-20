@@ -1,6 +1,6 @@
 ---
 layout: archive
-author_profile: true
+author_profile: false
 permalink: /posts/
 title: "Overflow"
 excerpt: "Thoughts on neuroscience, statistics, computing"
