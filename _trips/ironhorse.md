@@ -1,6 +1,7 @@
 ---
 title: Iron Horse Trail 2016
 layout: trip
+date: 2016-05-10
 --- 
 
 Cycled with Jenn some miles along the Iron Horse trail, as it is known in the Iron Horse state park. What used to be a railroad, the trail is the western most part of the longer 'John Wayne' trail that runs to near the Idaho border.
