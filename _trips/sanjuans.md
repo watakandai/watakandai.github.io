@@ -2,9 +2,12 @@
 title: San Juan Islands
 date: 2014-08-02
 layout: trip
+header:
+  overlay_image: https://farm5.staticflickr.com/4152/35341403320_926565fc9b_z_d.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
-August 2nd - 4th 2014.
+Weekend trip around San Juan and Orcas Island. August 2nd - 4th 2014.
 
 Long weekend trip. Caught Amtrak up to Mt Vernon Saturday morning. The rode to the Anacortes ferry terminal and caught a ferry to Orcas island. Rode over the island to the Moran state park. Orcas is a bit hillier than San Juan, but not too bad. Decided to get up early the following morning to see the sunrise as the top of Mt Constitution. Was definitely worth the effort. Used the remainder of the day to ride around San Juan island before returning to camp at Moran. Monday rode back to San Juan island and hung around Friday Harbor until the ferry arrived. Caught train back home Monday night. 
 
