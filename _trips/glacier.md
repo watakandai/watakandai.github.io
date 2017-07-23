@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
-Caught the train to Whitefish, MT and rode to and around Glacier NP. 
+Caught the train to Whitefish, MT and rode to and around Glacier NP. August 21st - 28th 2016.
 
 The 'Empire Builder' Amtrak drops you early in the morning in Whitefish. The first day was a simple ride to the Sprague Creek campground along Lake MacDonald, within the park. The parts of Going to the Sun road are closed to bikes during peak hour -- 11am to 4pm. Thus the ride up to Logan's pass -- the peak -- has to be done early in the morning. 
 
