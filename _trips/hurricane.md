@@ -2,8 +2,10 @@
 title: Hurricane Ridge -- Olympic National Park
 date: 2013-09-06
 layout: trip
+header:
+  overlay_image: https://farm5.staticflickr.com/4258/35559718242_51ef311e2e_k_d.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
-
 Quick weekend trip: caught the Dungeness line [here](https://olympicbuslines.com/) to Port Angeles. Rode half way up the mountain to the 'Heart o' the hills' campground. Continued up to the ridge early morning. Made it up before most of the day riders coming across from Vancouver Island. The descent was a quick one. You're basically able to roll all the way back to the heart of Port Angeles. Caught the bus back the same day after a milkshake. 
 
 ## Route
