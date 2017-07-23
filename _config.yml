@@ -90,6 +90,8 @@ author:
   xing             :
   youtube          :
 
+sass:
+    sass_dir: assets/_scss
 
 # Reading Files
 include:
