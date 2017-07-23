@@ -3,7 +3,7 @@ title: Glacier National Park
 layout: trip
 date: 2016-08-21
 header:
-  overlay_image: ../images/glacier2.jpg
+  overlay_image: ../../images/glacier2.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
