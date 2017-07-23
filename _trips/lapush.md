@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
-Long weekend trip to La Push. September 21st - 23rd 2015.
+Long weekend trip to La Push. September 21st - 24th 2015.
 
 Was wanting to take a trip after completing my general exam. Another long weekend trip, I caught the Dungeness line [here](https://olympicbuslines.com/) to Port Angeles. The same evening I had planned to make it to the campground at the far end of Crescent lake, along the 101. 
 
