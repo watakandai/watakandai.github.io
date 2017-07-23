@@ -2,9 +2,12 @@
 title: Iron Horse Trail
 layout: trip
 date: 2016-05-10
+header:
+  overlay_image: https://farm5.staticflickr.com/4060/35559392812_076f4b6e17_k_d.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 --- 
 
-Short overnight trip. ~40 miles. 
+Short overnight trip. April 10th - 11th 2016.
 
 Cycled with Jenn some miles along the Iron Horse trail, as it is known in the Iron Horse state park. What used to be a railroad, the trail is the western most part of the longer 'John Wayne' trail that runs to near the Idaho border.
 We started near North Bend, and made our way through the Hyak tunnel, and a little ways further, before turning around. Trip included a particularly poorly planned tent setup/site choice... I woke up in a puddle half way through the night.
