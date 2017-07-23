@@ -14,9 +14,9 @@ I decided to stay in Many Glacier campground for an extra night, and hike during
 
 The next day I continued on bike, back to St Mary, and then south to the Two Medicine campground. Most of the riding was outside the park, on fairly quiet roads. It was a nice ride. Met some interesting regular visitors of the park in the hiker/biker site. One guy who spends his summers on the road, doing a similar route each year around the US. Half of his life on a bike. 
 
-The following day I rode along highway 2, back to West Glacier and the Apgar campground. The ride was a bit precarious... a larger highway, little shoulder at times. The second half of the ride was all downhill, I made good time to west glacier. 
+The following day I rode along highway 2, back to West Glacier and the Apgar campground. The ride was a bit precarious... a larger highway, little shoulder at times. The second half of the ride was all downhill, I made good time to west glacier. I stayed in Whitefish an extra night, explored the pubs a bit and a folk music festival. Seemed like a nice town. I sat at the bar of some of the pubs, chatted with some staunch Trump supporters. 
 
-I stayed in Whitefish an extra night, explored the pubs a bit and a folk music festival. Seemed like a nice town. I sat at the bar of some of the pubs. 
+All in all, a great area to explore on bike.
 
 ## Route
 
