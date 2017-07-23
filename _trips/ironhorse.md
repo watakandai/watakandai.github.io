@@ -1,5 +1,5 @@
 ---
-title: Iron Horse Trail 2016
+title: Iron Horse Trail
 layout: trip
 date: 2016-05-10
 --- 
