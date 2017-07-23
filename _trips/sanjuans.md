@@ -3,7 +3,7 @@ title: San Juan Islands
 date: 2014-08-02
 layout: trip
 header:
-  overlay_image: https://farm5.staticflickr.com/4152/35341403320_926565fc9b_z_d.jpg
+  overlay_image: https://farm5.staticflickr.com/4152/35341403320_9da6e19a65_h_d.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
