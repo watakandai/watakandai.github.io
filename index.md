@@ -3,7 +3,7 @@ title: About
 layout: single
 author_profile: true
 header:
-  overlay_image: ../images/my-mountains2.jpg
+  overlay_image: https://farm5.staticflickr.com/4209/35599426862_e969f73b74_h_d.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
