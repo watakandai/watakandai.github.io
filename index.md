@@ -11,7 +11,7 @@ header:
 I'm a postdoctoral researcher in the Department of Bioengineering at the University of Pennsylvania, working with Professor Konrad Kording.
 
 ## Interests
-I work in statistical and computational neuroscience under the supervision of Professor Adrienne Fairhall. My interests are in the development of statistical methods for analyzing high-dimensional datasets provided by electrophysiological recording and optical imaging technologies, and the relation of this data to an organism's behavior. 
+I work in statistical and computational neuroscience under the supervision of Professor Konrad Kording. My interests are in the development of statistical methods for analyzing high-dimensional datasets provided by electrophysiological recording and optical imaging technologies, and the relation of this data to an organism's behavior. 
 
 ## Bio
 
