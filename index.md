@@ -16,4 +16,4 @@ I work in statistical and computational neuroscience. I am interested in develop
 
 ## Bio
 
-I completed my PhD in Applied Mathematics at UW in Seattle. I have spent most of my life in or around Melbourne, Australia, completing a BSc with honours, majoring in mathematics, at the University of Melbourne. My interests then were in bioinformatics, which lead me to work as a research technician and then complete a Master's of Philosophy joint between the University of Melbourne and the Walter and Eliza Hall Institute (WEHI).
+I completed my PhD in Applied Mathematics at UW in Seattle, under the supervision of Adrienne Fairhall. I have spent most of my life in or around Melbourne, Australia, completing a BSc with honours, majoring in mathematics, at the University of Melbourne. My interests then were in bioinformatics, which lead me to work as a research technician and then complete a Master's of Philosophy joint between the University of Melbourne and the Walter and Eliza Hall Institute (WEHI).
