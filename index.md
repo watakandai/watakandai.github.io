@@ -12,7 +12,7 @@ I'm a postdoctoral researcher in the Department of Bioengineering at the Univers
 
 ## Interests
 
-I work in statistical and computational neuroscience. I am interested in developing tools for causal inference in neuroscience. This is a broad project, and involves things like network inference when stimulation data (interventions) are available, connections between reinforcement learning and causal inference, and credit assignment in neural networks as a causal inference problem. 
+I work in statistical and computational neuroscience. I am interested in developing tools for causal inference in neuroscience, and in understanding how we and/or neural networks can solve causal inference problems. This is a broad project, and involves things like connectivity inference when stimulation data (interventions) are available, connections between reinforcement learning and causal inference, and viewing credit assignment in neural networks as a causal inference problem. 
 
 ## Bio
 
