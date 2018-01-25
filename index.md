@@ -8,11 +8,11 @@ header:
   exceprt: "                                                                               "                                                          
 ---
 
-I'm a postdoctoral researcher in the Department of Bioengineering at the University of Pennsylvania, working with Professor Konrad Kording.
+I am a postdoctoral researcher in the Department of Bioengineering at the University of Pennsylvania, working with Professor Konrad Kording.
 
 ## Interests
 
-I work in statistical and computational neuroscience. I am interested in developing tools for causal inference in neuroscience, and in understanding how we and/or neural networks can solve causal inference problems. This is a broad project, and involves things like connectivity inference when stimulation data (interventions) are available, connections between reinforcement learning and causal inference, and viewing credit assignment in neural networks as a causal inference problem. 
+I work in computational neuroscience and machine learning. I am interested in how we learn causal relations, and how machines can perform causal learning. This involves understanding the limits of current reinforcement learning-based methods in AI to learn causal models of an environment, what types of causal learning an agent can 'learn to learn', and what types may be innate.
 
 ## Bio
 
