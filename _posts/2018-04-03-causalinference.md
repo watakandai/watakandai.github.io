@@ -7,7 +7,7 @@ tags:
   - "Pearl"
   - "counter factual"
 use_math: true
-published: false
+published: true
 ---
 
 But what is causality?
