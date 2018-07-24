@@ -12,7 +12,7 @@ I am a postdoctoral researcher in the Department of Bioengineering at the Univer
 
 ## Interests
 
-I work in computational neuroscience and machine learning. I am interested in how we learn causal relations, and how machines can perform causal learning. This involves understanding the limits of current reinforcement learning-based methods in AI to learn causal models of an environment, what types of causal learning a human/agent can 'learn to learn', and what types may be innately specified.
+I work in computational neuroscience and machine learning. I am interested in how we learn causal relations, and how machines can perform causal learning. 
 
 ## Bio
 
