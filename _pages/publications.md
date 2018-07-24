@@ -18,6 +18,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select conference posters and proceedings
 
+8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying the effect of staining methods on extracted neuron morphology", CCN Meeting 2018, PA, USA.
+7. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", Cosyne 2018, CO, USA.
 6. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", BCI Society Meeting 2016, CA, USA. doi:10.3217/978-3-85125-467-9-118
 5. **Lansdell B**, Kutz JN (September, 2013), “The spatio-temporal dynamics of spontaneous activity in the developing retina”, BMES 2013, Seattle, USA.
 4. **Lansdell B**, Kutz JN (September, 2013), “A computational model of Bcl-2 regulated apoptosis: bistability revisited”, BMES 2013, Seattle, USA. ([pdf]({{site.baseurl}}/docs/lansdell_BMES.pdf))
@@ -26,6 +28,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 1. **Lansdell B**, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. ([abstract]({{site.baseurl}}/docs/giw2008poster_submission_103.pdf))
 
 ## Talks
+6. Lansdell B (June 5 2017), "Neural population dynamics in motor control and development", _Geffen Lab_, University of Pennsylvania, PA (Invited)
+5. Lansdell B (May 30 2017), "Neural population dynamics in motor control and development", _Kording Lab_, Northwestern University, Chicago (Invited)
 4. Lansdell B (January 23, 2017), "Unraveling principles of motor control: from nerve nets to neural prosthetics", _Neurotheory group talk_, Columbia University, New York. (Invited)
 3. Lansdell B (January 24, 2017), "Unraveling principles of motor control: from nerve nets to neural prosthetics", _Special seminar_, Janelia Research Campus, Ashburn VA. (Invited)
 2. Lansdell B (June 12, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, SIAM Conference on Non-linear Waves and Coherent Structures, University of Washington, Seattle. *Invited*
