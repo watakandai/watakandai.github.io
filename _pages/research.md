@@ -3,7 +3,7 @@ permalink: /research/
 title: Research interests
 header:
   overlay_image: ../images/dst2_background.png
-  overlay_filter: 0.8 # same as adding an opacity of 0.5 to a black background
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
 ## Observational and causal learning
