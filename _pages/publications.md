@@ -29,6 +29,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 1. **Lansdell B**, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. ([abstract]({{site.baseurl}}/docs/giw2008poster_submission_103.pdf))
 
 ## Talks
+7. Lansdell B (August 21, 2018), "Causality and reinforcement learning: considerations for smarter agents", _Neuro+ML theory talk_, MILA, University of Montreal, QC
 6. Lansdell B (June 5 2017), "Neural population dynamics in motor control and development", _Geffen Lab_, University of Pennsylvania, PA (Invited)
 5. Lansdell B (May 30 2017), "Neural population dynamics in motor control and development", _Kording Lab_, Northwestern University, Chicago (Invited)
 4. Lansdell B (January 23, 2017), "Unraveling principles of motor control: from nerve nets to neural prosthetics", _Neurotheory group talk_, Columbia University, New York. (Invited)
