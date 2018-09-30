@@ -315,7 +315,7 @@ vice versa. Some examples of DAGs that are Markov equivalent are shown
 in Figure \[fig:dags\].
 
 ![Examples of DAGs in the same Markov equivalence class.<span
-data-label="fig:dags"></span>](dags.pdf)
+data-label="fig:dags"></span>](./../images/dags.svg)
 
 In fact a simple graphical rule tells us if two DAGs are in the same
 Markov equivalence class. The *skeleton* of a network is the undirected
@@ -383,7 +383,7 @@ and $X_j$.
 
 ![Three criteria through which conditioning on $Z$ will render the
 effect of $X$ on $Y$ identifiable.<span
-data-label="fig:criteria"></span>](dags_criteria.pdf)
+data-label="fig:criteria"></span>](../../images/dags_criteria.svg)
 
 Some common methods
 ===================
@@ -511,7 +511,7 @@ $$\begin{align}\mathbb{E}(X_j|{\text{do}}(X_i = y)) = \int x_j P_{X_i=y}(x_j)\,d
 The idea of intervention is shown in Figure \[fig:inter\].
 
 ![Intervening on $X$ changes the graph and underlying distribution.<span
-data-label="fig:inter"></span>](dags_intervene.pdf)
+data-label="fig:inter"></span>](../../dags_intervene.svg)
 
 Now, given the ability to intervene, the average causal effect between
 an outcome variable $X_j$ and a binary variable $X_i$ can be defined as:
