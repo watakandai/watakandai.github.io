@@ -96,14 +96,24 @@ model considers two *potential outcomes*: an outcome when a subject does
 receive a treatment, $Y(1)$, and an outcome when a subject does not
 receive a treatment, $Y(0)$ (i.e. a control subject). For a given
 subject, $i$, the *causal effect* is the difference in potential
-outcomes: $$E_i = Y_i(1)-Y_i(0).$$
+outcomes: 
 
-If we let $W_i$ be a treatment random variable: $$W_i = \begin{cases}
+$$
+\begin{equation}E_i = Y_i(1)-Y_i(0).\end{equation}
+$$
+
+If we let $W_i$ be a treatment random variable: 
+
+$$\begin{equation}W_i = \begin{cases}
         1, & \text{subject $i$ receives treatment};\\
         0, & \text{subject $i$ assigned control};
-       \end{cases}$$ then assuming consistency between potential and
-observed outcome, $Y_i$, we have: $$\label{eq:consistent}
- Y_i = W_iY_i(0) + (1-W_i)Y_i(1).$$
+       \end{cases}\end{equation}$$ 
+       
+then assuming consistency between potential and
+observed outcome, $Y_i$, we have: 
+
+$$\begin{equation}\label{eq:consistent}
+ Y_i = W_iY_i(0) + (1-W_i)Y_i(1).\end{equation}$$
 
 As an aside, note that the potential outcomes $Y(i)$ are treated as
 kinds of hypothetical random variables. In a sense neither is observed,
@@ -117,7 +127,8 @@ Per the *fundamental problem of causal inference*, only one of these
 potential outcomes is ever observed. To get around this, causal effects
 can be measured over a population of subjects, some of which receive the
 treatment and some of which do not. Over a population we can consider
-the *average causal effect*: $$\tau = \mathbb{E}(Y_I(1)-Y_I(0)).$$
+the *average causal effect*: 
+$$\begin{equation}\tau = \mathbb{E}(Y_I(1)-Y_I(0)).\begin{equation}$$
 
 If $W_i$ is assigned to each subject at random then $\tau$ can be
 computed directly from the treatment and control subpopulation means. In
@@ -144,7 +155,8 @@ They are:
 
 2.  (**Consistency**) This assumption links the hypothetical potential
     outcomes to observed data. If we assume consistency then we are
-    assuming: $$Y_i = W_iY_i(0) + (1-W_i)Y_i(1),$$ as discussed above.
+    assuming:
+    $$\begin{equation}Y_i = W_iY_i(0) + (1-W_i)Y_i(1),\end{equation}$$ as discussed above.
 
 3.  (**No unmeasured confounders/ignorability**) The treatment
     assignment is independent of the potential outcomes:
