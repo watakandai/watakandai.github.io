@@ -157,12 +157,12 @@ They are:
 
 3.  (**No unmeasured confounders/ignorability**) The treatment
     assignment is independent of the potential outcomes:
-    $$\begin{align}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W.\end{align}$$
+    $$\begin{align}Y(1),Y(0) {\mathrel{\text{$\perp\mkern-10mu\perp$}}}W.\end{align}$$
 
     In most cases of interest both the outcome and treatment variable
     are related to a set of observed covariates, $X$. Causal inference
     then requires:
-    $$\begin{align}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.\end{align}$$
+    $$\begin{align}Y(1),Y(0) {\mathrel{\text{$\perp\mkern-10mu\perp$}}}W | X.\end{align}$$
     In RCTs this assumption may be reasonable. This says that the
     distribution of potential outcomes $(Y(1), Y(0))$ is the same across
     treatment levels $W$, conditioned on $X$. In observational settings
@@ -337,7 +337,7 @@ Now we know some of the behavior of Bayesian networks we can return to
 the question of identifying variables that can be controlled for to
 remove confounding. This means we want to identify variables $X$ such
 that ignorability holds:
-$$\begin{align}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.\end{align}$$
+$$\begin{align}Y(1),Y(0) {\mathrel{\text{$\perp\mkern-10mu\perp$}}}W | X.\end{align}$$
 
 Note that the observed outcome is of the form $Y = W Y(1) + (1-W)Y(0)$,
 which induces a conditional dependence between $W$ and $Y$ – the
