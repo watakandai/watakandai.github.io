@@ -549,7 +549,7 @@ Structural equation models
 The above frameworks are non-parametric, dealing simply with
 factorizations of joint distributions. The parametric form of a causal
 Bayesian network is the structural equation model (SEM). Each node is
-described by: $$\begin{equation}X_j = f_j(\text{Pa}(X_j), \epsilon_j; \theta_j),\end{equation}$$ for
+described by: $$\begin{align}X_j = f_j(\text{Pa}(X_j), \epsilon_j; \theta_j),\end{align}$$ for
 some independent noise variable $\epsilon_j$, and parameters $\theta_j$.
 
 Note that the equality here is of a different nature to an algebraic
@@ -571,8 +571,7 @@ equation models, which in some sense subsume the above two frameworks
 can be found in Peters et al 2017.
 
 -   “A Crash Course in Causality: Inferring Causal Effects from
-    Observational Data” Coursera course. Jason Roy (here at
-    Penn Medicine).
+    Observational Data” Coursera course. By Jason Roy.
     [www.coursera.org/learn/crash-course-in-causality/](www.coursera.org/learn/crash-course-in-causality/)
 
 -   “Causality: Models, Reasoning and Inference” Judea Pearl, 2000.
