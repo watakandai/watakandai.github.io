@@ -96,22 +96,19 @@ model considers two *potential outcomes*: an outcome when a subject does
 receive a treatment, $Y(1)$, and an outcome when a subject does not
 receive a treatment, $Y(0)$ (i.e. a control subject). For a given
 subject, $i$, the *causal effect* is the difference in potential
-outcomes: 
-
+outcomes:
 $$
 \begin{equation}E_i = Y_i(1)-Y_i(0).\end{equation}
 $$
 
-If we let $W_i$ be a treatment random variable: 
-
-$$\begin{equation}W_i = \begin{cases}
+If we let $W_i$ be a treatment random variable:
+$$\begin{align}W_i = \begin{cases}
         1, & \text{subject $i$ receives treatment};\\
         0, & \text{subject $i$ assigned control};
-       \end{cases}\end{equation}$$ 
+       \end{cases}\end{align}$$ 
        
 then assuming consistency between potential and
 observed outcome, $Y_i$, we have: 
-
 $$\begin{equation}\label{eq:consistent}
  Y_i = W_iY_i(0) + (1-W_i)Y_i(1).\end{equation}$$
 
@@ -128,7 +125,7 @@ potential outcomes is ever observed. To get around this, causal effects
 can be measured over a population of subjects, some of which receive the
 treatment and some of which do not. Over a population we can consider
 the *average causal effect*: 
-$$\begin{equation}\tau = \mathbb{E}(Y_I(1)-Y_I(0)).\begin{equation}$$
+$$\begin{equation}\tau = \mathbb{E}(Y_I(1)-Y_I(0)).\end{equation}$$
 
 If $W_i$ is assigned to each subject at random then $\tau$ can be
 computed directly from the treatment and control subpopulation means. In
@@ -160,12 +157,12 @@ They are:
 
 3.  (**No unmeasured confounders/ignorability**) The treatment
     assignment is independent of the potential outcomes:
-    $$Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W.$$
+    $$\begin{equation}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W.\end{equation}$$
 
     In most cases of interest both the outcome and treatment variable
     are related to a set of observed covariates, $X$. Causal inference
     then requires:
-    $$Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.$$
+    $$\begin{equation}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.\end{equation}$$
     In RCTs this assumption may be reasonable. This says that the
     distribution of potential outcomes $(Y(1), Y(0))$ is the same across
     treatment levels $W$, conditioned on $X$. In observational settings
@@ -182,7 +179,7 @@ They are:
 
 4.  (**Positivity**) Additionally, causal inference requires a non-zero
     probability of assignment to a treatment group for all subjects:
-    $$0 < \mathbb{P}(W_i = 1|X_i = x) < 1, \quad \forall x.$$ This is
+    $$\begin{equation}0 < \mathbb{P}(W_i = 1|X_i = x) < 1, \quad \forall x.\end{equation}$$ This is
     known as the *positivity*, or overlap, assumption.
 
     Simply, a causal effect cannot be measured if no subjects receive
@@ -217,16 +214,16 @@ $\mathcal{X}$, from which we can talk about a node’s parents, children,
 ancestors or descendants. Note also that any multivariate distribution
 can be decomposed into a product of conditional probabilities for any
 ordering of the variables:
-$$P(X) = \prod_{j=1}^N P(X_j|\{X_k\}_{k>j}).$$
+$$\begin{equation}P(X) = \prod_{j=1}^N P(X_j|\{X_k\}_{k>j}).\end{equation}$$
 
 Given this, if we assume that the variables are ordered in a way that
 respects the ordering of the DAG, then we will say $\mathcal{X}$ is a
 Bayesian network with respect to $\mathcal{G}$ if the joint distribution
 over variables $\mathcal{X}$ factors according to:
-$$P(X) = \prod_{j=1}^N P(X_j|\text{Pa}(X_j)),$$ where $\text{Pa}(X_j)$
+$$\begin{equation}P(X) = \prod_{j=1}^N P(X_j|\text{Pa}(X_j)),\end{equation}$$ where $\text{Pa}(X_j)$
 is the parents of node $X_j$. That is, each node $X_j$ is conditionally
 independent of its non-descendants given its parents:
-$$P(X_j|\{X_k\}_{k>j}) = P(X_j|\text{Pa}(X_j)).$$ This is the *Markov
+$$\begin{equation}P(X_j|\{X_k\}_{k>j}) = P(X_j|\text{Pa}(X_j)).\end{equation}$$ This is the *Markov
 condition*, or Markov assumption, for a Bayesian network. A node is
 conditionally independent of the entire network given its *Markov
 blanket* – its parents, its children, and its children’s other parents.
@@ -260,10 +257,10 @@ Compare the fork and the inverted fork.
     $C$ become dependent. This may seem a little counter-intuitive. An
     example of this phenomenon is if $B$ is determined through tossing
     two independent coins, $A$ and $C$. If $B$ is determined as
-    $$B = \begin{cases}
+    $$\begin{align}B = \begin{cases}
     1, \quad A=H, C = H;\\
     0, \quad \text{else}
-    \end{cases}$$ By itself, knowing $A$ tells you nothing about $C$.
+    \end{cases}\end{align}$$ By itself, knowing $A$ tells you nothing about $C$.
     But knowing $B$ and $A$ now tells you something about $C$.
 
 Note that the fork and the chain have the same behavior:
@@ -340,7 +337,7 @@ Now we know some of the behavior of Bayesian networks we can return to
 the question of identifying variables that can be controlled for to
 remove confounding. This means we want to identify variables $X$ such
 that ignorability holds:
-$$Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.$$
+$$\begin{equation}Y(1),Y(0) {\mathrel{\text{\scalebox{1.0}{$\perp\mkern-10mu\perp$}}}}W | X.\end{equation}$$
 
 Note that the observed outcome is of the form $Y = W Y(1) + (1-W)Y(0)$,
 which induces a conditional dependence between $W$ and $Y$ – the
@@ -400,7 +397,7 @@ Some common methods
 Once a set of variables to control for has been identified, how do we
 actually use this knowledge to identify causal effects? In theory, if we
 observe controls $X$ then we can measure the causal effect from:
-$$\tau = \mathbb{E}(\mathbb{E}(Y|W=1,X)-\mathbb{E}(Y|W=0,X)).$$
+$$\begin{equation}\tau = \mathbb{E}(\mathbb{E}(Y|W=1,X)-\mathbb{E}(Y|W=0,X)).\end{equation}$$
 
 In practice however this requires a lot of data to get reliable
 estimates of each conditional expectation. In biomedical/social science
@@ -420,10 +417,10 @@ Matching
 
 The basic idea of matching is as follows. For each condition $W= 1$ and
 $W=0$ there are only a finite number of samples:
-$$\{y_i^{w=0}, x_i^{w=0}\}_{i=1}^{I_0} \text{ and } \{y_i^{w=1}, x_i^{w=1}\}_{i=1}^{I_1}.$$
+$$\begin{equation}\{y_i^{w=0}, x_i^{w=0}\}_{i=1}^{I_0} \text{ and } \{y_i^{w=1}, x_i^{w=1}\}_{i=1}^{I_1}.\end{equation}$$
 Matching simply pairs one sample in the treatment group with one sample
 in the control group whose control covariates are close:
-$$(y_i^{w=0}, x_i^{w=0})\leftrightarrow (y_j^{w=1}, x_j^{w=1}), \quad x_i^{w=0}\sim x_j^{w=1}.$$
+$$\begin{equation}(y_i^{w=0}, x_i^{w=0})\leftrightarrow (y_j^{w=1}, x_j^{w=1}), \quad x_i^{w=0}\sim x_j^{w=1}.\end{equation}$$
 Since between treatment groups $X$ have roughly the same distribution,
 this dependence does not need to be modeled. This allows the above
 causal effect expectation to be approximated.
@@ -440,7 +437,7 @@ what is known as the *causal effect of treatment on the treated*, often
 a quantity of interest. If we let $C(i)$ represent the sample index in
 the control population that is matched to sample $i$ in the treatment
 population then the causal effect is estimated from:
-$$\tau \approx \frac{1}{I_1}\sum_{i=1}^{I_1} y_i^{w=1} - y_{C(i)}^{w=0}.$$
+$$\begin{equation}\tau \approx \frac{1}{I_1}\sum_{i=1}^{I_1} y_i^{w=1} - y_{C(i)}^{w=0}.\end{equation}$$
 
 Matching can be performed on all covariates, or just covariates that are
 identified as confounders, according to the backdoor or other criterion.
@@ -454,7 +451,7 @@ Propensity score matching
 Matching directly on controls $X$ can be difficult if $X$ is
 high-dimensional. Instead, we can match on what is called the propensity
 score, which is the probability of being treated given a set of
-controls: $$\pi(X) = P(W = 1| X).$$
+controls: $$\begin{equation}\pi(X) = P(W = 1| X).\end{equation}$$
 
 Matching on $\pi(X)$ has the same effect as matching on $X$ directly.
 This is because subjects at the same propensity level have, by
@@ -489,8 +486,7 @@ This is a type of importance sampling.
 Causal Bayesian networks {#sec:cbn}
 ========================
 
-This is the framework developed most significantly by Pearl
-@pearl2000causality. A causal model is a Bayesian network along with a
+This is the framework developed most significantly by Pearl. A causal model is a Bayesian network along with a
 mechanism to determine how the model will respond to intervention. Now,
 rather than using the notion of potential outcomes and counterfactuals,
 causal effects are measured as the result of intervention. In addition
@@ -514,10 +510,10 @@ Intervening on a variable removes the edges to that variable from its
 parents and forces the variable to take on a specific value:
 $P(x_i|{\text{Pa}}_{X_i}=\mathbf{x_i}) = \delta(x_i = y)$. The
 interventional joint distribution, $P_{X_i=y}$, is then defined as:
-$$P_{X_i=y}(\mathbf{x}) {\coloneqq}\prod_{j\ne i}^N P(x_j | {\text{Pa}}_{X_j} = \mathbf{x}_j)\delta(x_i = y),$$
+$$\begin{equation}P_{X_i=y}(\mathbf{x}) {\coloneqq}\prod_{j\ne i}^N P(x_j | {\text{Pa}}_{X_j} = \mathbf{x}_j)\delta(x_i = y),\end{equation}$$
 also abbreviated to $P_{X_i}$. Expectations under interventions then
 take the form:
-$$\mathbb{E}(X_j|{\text{do}}(X_i = y)) {\coloneqq}\int x_j P_{X_i=y}(x_j)\,dx_j {\coloneqq}\mathbb{E}_{X_i=y}(X_j).$$
+$$\begin{equation}\mathbb{E}(X_j|{\text{do}}(X_i = y)) {\coloneqq}\int x_j P_{X_i=y}(x_j)\,dx_j {\coloneqq}\mathbb{E}_{X_i=y}(X_j).\end{equation}$$
 The idea of intervention is shown in Figure \[fig:inter\].
 
 ![Intervening on $X$ changes the graph and underlying distribution.<span
@@ -525,7 +521,7 @@ data-label="fig:inter"></span>](dags_intervene.pdf)
 
 Now, given the ability to intervene, the average causal effect between
 an outcome variable $X_j$ and a binary variable $X_i$ can be defined as:
-$$\tau {\coloneqq}\mathbb{E}(X_j|{\text{do}}(X_i = 1)) - \mathbb{E}(X_j|{\text{do}}(X_i = 0)).$$
+$$\begin{equation}\tau {\coloneqq}\mathbb{E}(X_j|{\text{do}}(X_i = 1)) - \mathbb{E}(X_j|{\text{do}}(X_i = 0)).\end{equation}$$
 
 In general, the ‘do’ conditional is different to standard probabilistic
 conditioning. However criteria exist under which the interventional
@@ -553,7 +549,7 @@ Structural equation models
 The above frameworks are non-parametric, dealing simply with
 factorizations of joint distributions. The parametric form of a causal
 Bayesian network is the structural equation model (SEM). Each node is
-described by: $$X_j = f_j(\text{Pa}(X_j), \epsilon_j; \theta_j),$$ for
+described by: $$\begin{equation}X_j = f_j(\text{Pa}(X_j), \epsilon_j; \theta_j),\end{equation}$$ for
 some independent noise variable $\epsilon_j$, and parameters $\theta_j$.
 
 Note that the equality here is of a different nature to an algebraic
