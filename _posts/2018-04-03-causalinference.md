@@ -101,13 +101,7 @@ $$
 \begin{align}E_i = Y_i(1)-Y_i(0).\end{align}
 $$
 
-If we let $W_i$ be a treatment random variable:
-$$\begin{align}W_i = \begin{cases}
-        1, & \text{subject $i$ receives treatment};\\
-        0, & \text{subject $i$ assigned control};
-       \end{cases}\end{align}$$ 
-       
-then assuming consistency between potential and
+If we let $W_i$ be a treatment random variable then assuming consistency between potential and
 observed outcome, $Y_i$, we have: 
 $$\begin{align}\label{eq:consistent}
  Y_i = W_iY_i(0) + (1-W_i)Y_i(1).\end{align}$$
