@@ -502,12 +502,12 @@ Interventions and causal effects
 An intervention on a single variable is denoted ${\text{do}}(X_i = y)$.
 Intervening on a variable removes the edges to that variable from its
 parents and forces the variable to take on a specific value:
-$P(x_i|{\text{Pa}}_{X_i}=\mathbf{x_i}) = \delta(x_i = y)$. The
+$$P(x_i|{\text{Pa}}_{X_i}=\mathbf{x_i}) = \delta(x_i = y)$$. The
 interventional joint distribution, $P_{X_i=y}$, is then defined as:
-$$\begin{align}P_{X_i=y}(\mathbf{x}) {\coloneqq}\prod_{j\ne i}^N P(x_j | {\text{Pa}}_{X_j} = \mathbf{x}_j)\delta(x_i = y),\end{align}$$
+$$\begin{align}P_{X_i=y}(\mathbf{x}) = \prod_{j\ne i}^N P(x_j | {\text{Pa}}_{X_j} = \mathbf{x}_j)\delta(x_i = y),\end{align}$$
 also abbreviated to $P_{X_i}$. Expectations under interventions then
 take the form:
-$$\begin{align}\mathbb{E}(X_j|{\text{do}}(X_i = y)) {\coloneqq}\int x_j P_{X_i=y}(x_j)\,dx_j {\coloneqq}\mathbb{E}_{X_i=y}(X_j).\end{align}$$
+$$\begin{align}\mathbb{E}(X_j|{\text{do}}(X_i = y)) = \int x_j P_{X_i=y}(x_j)\,dx_j = \mathbb{E}_{X_i=y}(X_j).\end{align}$$
 The idea of intervention is shown in Figure \[fig:inter\].
 
 ![Intervening on $X$ changes the graph and underlying distribution.<span
@@ -515,7 +515,7 @@ data-label="fig:inter"></span>](dags_intervene.pdf)
 
 Now, given the ability to intervene, the average causal effect between
 an outcome variable $X_j$ and a binary variable $X_i$ can be defined as:
-$$\begin{align}\tau {\coloneqq}\mathbb{E}(X_j|{\text{do}}(X_i = 1)) - \mathbb{E}(X_j|{\text{do}}(X_i = 0)).\end{align}$$
+$$\begin{align}\tau = \mathbb{E}(X_j|{\text{do}}(X_i = 1)) - \mathbb{E}(X_j|{\text{do}}(X_i = 0)).\end{align}$$
 
 In general, the ‘do’ conditional is different to standard probabilistic
 conditioning. However criteria exist under which the interventional
