@@ -8,7 +8,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Articles
 
-8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _submitted_
+9. **Lansdell B**, Kording K, "Towards learning-to-learn", _accepted_ Current Opinion in Behavioral Sciences
+8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _accepted_ Frontiers in Neuroinformatics
 7. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", ([biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
 6. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *submitted* ([arXiv](https://arxiv.org/abs/1702.07368))
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
