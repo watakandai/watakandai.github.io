@@ -11,7 +11,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 10. **Lansdell B**, Prakash P, Kording K, "Solving the credit assignment problem through learning to learn" (_submitted_)
 9. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
 8. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *under revision* ([arXiv](https://arxiv.org/abs/1702.07368))
-7. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _under revision_ Frontiers in Neuroinformatics
+7. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _accepted_ Frontiers in Neuroinformatics
 6. **Lansdell B**, Kording K, "Towards learning-to-learn", _accepted_ Current Opinion in Behavioral Sciences
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf)) ([F1000 Prime recommended article](https://f1000.com/prime/726562212))
