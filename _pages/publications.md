@@ -8,11 +8,12 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Articles
 
-10. **Lansdell B**, Prakash P, Kording K, "Solving the credit assignment problem through learning to learn" (_submitted_)
-9. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
-8. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *under revision* ([arXiv](https://arxiv.org/abs/1702.07368))
-7. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _accepted_ Frontiers in Neuroinformatics
-6. **Lansdell B**, Kording K, "Towards learning-to-learn", _accepted_ Current Opinion in Behavioral Sciences
+11. **Lansdell B**, Prakash P, Kording K, "Solving the credit assignment problem through learning to learn" (_submitted_)
+10. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
+9. **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *under revision* ([arXiv](https://arxiv.org/abs/1702.07368))
+8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies", _accepted_ Frontiers in Neuroinformatics
+7. **Lansdell B**, Kording K, "Towards learning-to-learn", _accepted_ Current Opinion in Behavioral Sciences
+6. Lagache T, **Lansdell B**, Tang J, Yuste R, Fairhall A, "Tracking Activity In A Deformable Nervous System With Motion Correction And Point-Set Registration", [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2018/07/20/373035.full.pdf) 2018
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf)) ([F1000 Prime recommended article](https://f1000.com/prime/726562212))
 3. **Lansdell B**, Ford K, Jutz JN, “A reaction-diffusion model of cholinergic retinal waves”, *PLoS Computational Biology* 2014 ([pdf]({{site.baseurl}}/docs/retinalwaves.pdf))
@@ -21,6 +22,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select conference posters and proceedings
 
+9. **Lansdell B**, Prakash P, Kording K, "Do neurons learn how to learn?", Cosyne meeting 2019, Lisbon, Portugal
 8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying the effect of staining methods on extracted neuron morphology", CCN Meeting 2018, PA, USA.
 7. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", Cosyne 2018, CO, USA.
 6. **Lansdell B**, Milovanovic I, Fairhall A, Fetz E, Moritz C, "Neural activity in a simultaneous BCI and manual task", BCI Society Meeting 2016, CA, USA. doi:10.3217/978-3-85125-467-9-118
@@ -30,8 +32,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 2. **Lansdell B**, Kutz JN, Ford K (Sept 10, 2012), “Modeling Retinal Waves in Starburst Amacrine Cells”, Neuroinformatics 2012, Munich, Germany. ([pdf]({{site.baseurl}}/docs/ICNF2012poster.pdf))
 1. **Lansdell B**, Papenfuss AT, Speed TP (Dec 8 2008), “Incorporating Tiling Array Expression Data into a Gene Predictor”, Genome Informatics Workshop 2008, Gold Coast, Australia. ([abstract]({{site.baseurl}}/docs/giw2008poster_submission_103.pdf))
 
-## Talks
-9. Lansdell B (May 1, 2019), "Causality and reinforcement learning: considerations for smarter agents", _CNI +/- seminar_, Department of Neuroscience, University of Pennsylvania, PA
+## Selected talks
+9. Lansdell B (May 8, 2019), "Causality and reinforcement learning: considerations for smarter agents", _CNI +/- seminar_, Department of Neuroscience, University of Pennsylvania, PA
 8. Lansdell B (March 22, 2019), "Optmizing policies with thresholds in neuroscience and medicine", _AMS Sectional Meeting_, University of Hawaii. (Invited)
 7. Lansdell B (August 21, 2018), "Causality and reinforcement learning: considerations for smarter agents", _Neuro+ML theory talk_, MILA, University of Montreal, QC
 6. Lansdell B (June 5 2017), "Neural population dynamics in motor control and development", _Geffen Lab_, University of Pennsylvania, PA (Invited)
