@@ -34,7 +34,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select talks
 9. Lansdell B (May 8, 2019), "Causality and reinforcement learning: considerations for smarter agents", _CNI +/- seminar_, Department of Neuroscience, University of Pennsylvania, PA
-8. Lansdell B (March 22, 2019), "Optmizing policies with thresholds in neuroscience and medicine", _AMS Sectional Meeting_, University of Hawaii. (Invited)
+8. Lansdell B (March 22, 2019), "Optimizing policies with thresholds in neuroscience and medicine", _AMS Sectional Meeting_, University of Hawaii. (Invited)
 7. Lansdell B (August 21, 2018), "Causality and reinforcement learning: considerations for smarter agents", _Neuro+ML theory talk_, MILA, University of Montreal, QC
 6. Lansdell B (June 5 2017), "Neural population dynamics in motor control and development", _Geffen Lab_, University of Pennsylvania, PA (Invited)
 5. Lansdell B (May 30 2017), "Neural population dynamics in motor control and development", _Kording Lab_, Northwestern University, Chicago (Invited)
