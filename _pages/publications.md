@@ -11,7 +11,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 (+ equal first author) 
 
 12. **Lansdell B**, Triantafillou S, Kording K, "Rarely-switching linear bandits: optimization of causal effects for the real world" (_submitted_)
-11. **Lansdell B**, Prakash P, Kording K, "Solving the credit assignment problem through learning to learn" (_submitted_)
+11. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem" (_submitted_)
 10. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
 9. **Lansdell B**+, Milovanovic I+, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", *under revision* ([arXiv](https://arxiv.org/abs/1702.07368))
 8. **Lansdell B**, Kording K, "Towards learning-to-learn", Current Opinion in Behavioral Sciences (29) 2019 [arxiv](https://arxiv.org/abs/1811.00231)
