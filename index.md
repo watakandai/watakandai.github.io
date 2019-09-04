@@ -12,7 +12,7 @@ I am a postdoctoral researcher in the Department of Bioengineering at the Univer
 
 ## Interests
 
-I combine methods from deep learning, reinforcement learning, causal inference and systems neuroscience to build better learning algorithms and to better understand our own learning. 
+I am a **computational scientist** and **applied mathematician** with an interest in **theoretical neuroscience** and **artificial intelligence**. I study how causality can provide better tools and models in both of these areas. This involves building models of how we can do causal learning, and how we combine methods from causal inference with machine learning to provide more efficient learning algorithms. By combining causal inference methods with developments in deep learning, I believe we can create smarter learning algorithms and better understand our own learning. My work thus involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning.
 
 ## Bio
 
