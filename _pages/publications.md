@@ -4,7 +4,7 @@ title: Publications
 author_profile: false
 ---
 
-You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv.pdf).
+You can see my Google Scholar page [here](https://scholar.google.com/citations?user=vM_KsrQAAAAJ&hl=en), and a complete CV can be found [here]({{ site.baseurl }}/docs/lansdell_cv_academic.pdf).
 
 ## Articles
 
@@ -25,6 +25,8 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select conference posters and proceedings
 
+11. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
+10. Cheng J, Benjamin A, **Lansdell B**, Kording K, "Augmenting Supervised Learning by Meta-learning Unsupervised Local Rules", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
 9. **Lansdell B**, Prakash P, Kording K, "Do neurons learn how to learn?", Cosyne meeting 2019, Lisbon, Portugal
 8. Farhoodi R, **Lansdell B**, Kording K, "Quantifying the effect of staining methods on extracted neuron morphology", CCN Meeting 2018, PA, USA.
 7. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", Cosyne 2018, CO, USA.
@@ -49,5 +51,6 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Unpublished work
 
+3. Lagache T, **Lansdell B**, Tang J, Yuste R, Fairhall A, "Tracking Activity In A Deformable Nervous System With Motion Correction And Point-Set Registration", ([biorXiv](https://doi.org/10.1101/373035))
 2. Lansdell B, Understanding the Bcl-2 family through computational modelling, Masters thesis. Department of Mathematics and Statistics, University of Melbourne, 2012. ([pdf]({{site.baseurl}}/docs/mphil.pdf))
 1. Lansdell B, Computational Gene Prediction using Generalised Hidden Markov Models and Tiling Arrays, Honours thesis. Department of Mathematics and Statistics, University of Melbourne, 2008. ([pdf]({{site.baseurl}}/docs/honours_thesis.pdf))
