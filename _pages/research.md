@@ -14,7 +14,7 @@ I am an **applied mathematician** with an interest in **theoretical neuroscience
 
 ### Learning optimal policies, while avoiding unnecessary changes in policy
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](../images/theorem3_pretty.svg)
 
 **Lansdell B**, Triantafillou, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
 
