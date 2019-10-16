@@ -16,7 +16,8 @@ Some examples of current and past projects I've worked on are below.
 
 ### Learning optimal policies, while avoiding unnecessary changes in policy
 
-<img src="../images/theorem3.png" width="55%" style="text-align: center">
+
+<p style="text-align: center"><img src="../images/theorem3.png" width="55%"></p>
 
 **Lansdell B**, Triantafillou S, Kording K, [arXiv](https://arxiv.org/abs/1905.13121) 2019
 
