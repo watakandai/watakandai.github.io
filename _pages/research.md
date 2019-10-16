@@ -6,43 +6,59 @@ header:
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
-Machine learning (ML), particularly deep learning, has made significant advances in the past decades. However, there are many issues remaining before ML models can be safely, fairly and efficiently implemented in real-world applications. Many of these shortcomings are related to **causation**: in order to be safe, a model must make policies based on knowing what will happen when a given action is taken; in order to be fair, a model must not rely on spurious correlations to make predictions; and in order to be efficient, a model must learn relationships that are transferable from its training data to new tasks. By studying learning algorithms that address these issues we may also gain insight and inspiration for models of how we ourselves learn.
+Machine learning (ML), particularly deep learning, has made significant advances in the past decades. However, there are many issues remaining before ML models can be safely, fairly and efficiently implemented in real-world applications. Many of these shortcomings are related to causation: in order to be safe, a model must make policies based on knowing what will happen when a given action is taken; in order to be fair, a model must not rely on spurious correlations to make predictions; and in order to be efficient, a model must learn relationships that are transferable from its training data to new tasks. By studying learning algorithms that address these issues we may also gain insight and inspiration for models of how we ourselves learn.
 
-I am an applied mathematician with an interest in **theoretical neuroscience** and **machine learning**. I use insights from causal inference to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning, as detailed below.
+I am an **applied mathematician** with an interest in **theoretical neuroscience** and **machine learning**. I use insights from **causal inference** to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning, as detailed below.
 
-## Solving the credit assignment problem in neural networks with causal inference
+## Machine learning
 
-### Causal effects via a neuron's spiking discontinuity
+### Learning optimal policies, while avoiding unnecessary changes in policy
 
-**Lansdell B**, Kording K, ([bioRxiv]()) 2019
-
-When a neuron is driven beyond its threshold it spikes, and the fact that it does not communicate its continuous membrane potential is usually seen as a computational liability. Here we show that this spiking mechanism allows neurons to produce an unbiased estimate of their causal influence, and a way of approximating gradient descent learning. Importantly, neither activity of upstream neurons, which act as confounders, nor downstream non-linearities bias the results. By introducing a local discontinuity with respect to their input drive, we show how spiking enables neurons to solve causal estimation and learning problems.
-
-### Learning a feedback network through perturbations
-
-**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
-
-Backpropagation is driving today's artificial neural networks (ANNs). However, despite extensive research, it remains unclear if the brain implements this algorithm. Among neuroscientists, reinforcement learning (RL) algorithms are often seen as a realistic alternative: neurons can randomly introduce change, and use unspecific feedback signals to observe their effect on the cost and thus approximate their gradient. However, the convergence rate of such learning scales poorly with the number of involved neurons. Here we propose a hybrid learning approach. Each neuron uses an RL-type strategy to learn how to approximate the gradients that backpropagation would provide. We provide proof that our approach converges to the true gradient for certain classes of networks. In both feedforward and convolutional networks, we empirically show that our approach learns to approximate the gradient, and can match the performance of gradient-based learning. Learning feedback weights provides a biologically plausible mechanism of achieving good performance, without the need for precise, pre-specified learning rules. 
-
-## Learning optimal policies, while avoiding unnecessary changes in policy
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
 
 **Lansdell B**, Triantafillou, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
 
 Excessively changing policies in many real world scenarios is difficult, unethical, or expensive. After all, doctor guidelines, tax codes, and price lists can only be reprinted so often. We may thus want to only change a policy when it is probable that the change is beneficial. In cases that a policy is a threshold on contextual variables we can estimate causal effects for populations lying at the threshold. This allows for a schedule of incremental policy updates that let us optimize a policy while making few detrimental changes. Using this idea, and the theory of linear contextual bandits, we present a conservative policy updating procedure which updates a deterministic policy only when justified. We provide simulations and an analysis of an infant health well-being causal inference dataset, showing the algorithm efficiently learns a good policy with few changes. Our approach allows efficiently solving problems where excessive changes are to be avoided, with applications in medicine, economics and beyond.
 
+### Learning a feedback network through perturbations
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
+**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
+
+Backpropagation is driving today's artificial neural networks (ANNs). However, despite extensive research, it remains unclear if the brain implements this algorithm. Among neuroscientists, reinforcement learning (RL) algorithms are often seen as a realistic alternative: neurons can randomly introduce change, and use unspecific feedback signals to observe their effect on the cost and thus approximate their gradient. However, the convergence rate of such learning scales poorly with the number of involved neurons. Here we propose a hybrid learning approach. Each neuron uses an RL-type strategy to learn how to approximate the gradients that backpropagation would provide. We provide proof that our approach converges to the true gradient for certain classes of networks. In both feedforward and convolutional networks, we empirically show that our approach learns to approximate the gradient, and can match the performance of gradient-based learning. Learning feedback weights provides a biologically plausible mechanism of achieving good performance, without the need for precise, pre-specified learning rules. 
+
 ## Theoretical neuroscience
 
-In the past I have applied my modeling and data analysis skills to a range of projects in computational neuroscience. Below are two highlights.
+### Estimating causal effects via a neuron's spiking discontinuity
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
+**Lansdell B**, Kording K, ([bioRxiv]()) 2019
+
+When a neuron is driven beyond its threshold it spikes, and the fact that it does not communicate its continuous membrane potential is usually seen as a computational liability. Here we show that this spiking mechanism allows neurons to produce an unbiased estimate of their causal influence, and a way of approximating gradient descent learning. Importantly, neither activity of upstream neurons, which act as confounders, nor downstream non-linearities bias the results. By introducing a local discontinuity with respect to their input drive, we show how spiking enables neurons to solve causal estimation and learning problems.
+
+### Neural data analysis reveals how primary motor cortical activity adapts to ontrol a dual-control brain-computer interface
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
+**Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C *Accepted to IEEE Transactions in neural systems and rehabilitation engineering 2019* [arXiv](https://arxiv.org/abs/1702.07368)
+
+Designing brain-computer interfaces (BCIs) that can be used in conjunction with ongoing motor behavior requires an understanding of how neural activity co-opted for brain control interacts with existing neural circuits. For example, BCIs may be used to regain lost motor function after stroke. This requires that neural activity controlling unaffected limbs is dissociated from activity controlling the BCI. In this study we investigated how primary motor cortex accomplishes simultaneous BCI control and motor control in a task that explicitly required both activities to be driven from the same brain region (i.e. a dual-control task). Single-unit activity was recorded from intracortical, multi-electrode arrays while a non-human primate performed this dual-control task. Compared to activity observed during naturalistic motor control, we found that both units used to drive the BCI directly (control units) and units that did not directly control the BCI (non-control units) significantly changed their tuning to wrist torque. Using a measure of effective connectivity, we observed that control units decrease their connectivity. Through an analysis of variance we found that the intrinsic variability of the control units has a significant effect on task proficiency. When this variance is accounted for, motor cortical activity is flexible enough to perform novel BCI tasks that require active decoupling of natural associations to wrist motion. This study provides insight into the neural activity that enables a dual-control brain-computer interface. 
 
 ### A reaction-diffusion model of spontaneous neural activity in the developing retina
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
 
 **Lansdell B**, Kevin Ford, J Nathan Kutz
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
 
 Prior to receiving visual stimuli, spontaneous, correlated activity in the retina, called retinal waves, drives activity-dependent developmental programs. Early-stage waves mediated by acetylcholine (ACh) manifest as slow, spreading bursts of action potentials. They are believed to be initiated by the spontaneous firing of Starburst Amacrine Cells (SACs), whose dense, recurrent connectivity then propagates this activity laterally. Their inter-wave interval and shifting wave boundaries are the result of the slow after-hyperpolarization of the SACs creating an evolving mosaic of recruitable and refractory cells, which can and cannot participate in waves, respectively. Recent evidence suggests that cholinergic waves may be modulated by the extracellular concentration of ACh. Here, we construct a simplified, biophysically consistent, reaction-diffusion model of cholinergic retinal waves capable of recapitulating wave dynamics observed in mice retina recordings. We are thus able to use non-linear wave theory to connect wave features to underlying physiological parameters, making the model useful in determining appropriate pharmacological manipulations to experimentally produce waves of a prescribed spatiotemporal character.
 
-### Neural data analysis reveals how primary motor cortical activity adapts to ontrol a dual-control brain-computer interface
+## Systems Biology
 
-**Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C *Accepted to IEEE Transactions in neural systems and rehabilitation engineering 2019* [arXiv](https://arxiv.org/abs/1702.07368)
+### 
 
-Designing brain-computer interfaces (BCIs) that can be used in conjunction with ongoing motor behavior requires an understanding of how neural activity co-opted for brain control interacts with existing neural circuits. For example, BCIs may be used to regain lost motor function after stroke. This requires that neural activity controlling unaffected limbs is dissociated from activity controlling the BCI. In this study we investigated how primary motor cortex accomplishes simultaneous BCI control and motor control in a task that explicitly required both activities to be driven from the same brain region (i.e. a dual-control task). Single-unit activity was recorded from intracortical, multi-electrode arrays while a non-human primate performed this dual-control task. Compared to activity observed during naturalistic motor control, we found that both units used to drive the BCI directly (control units) and units that did not directly control the BCI (non-control units) significantly changed their tuning to wrist torque. Using a measure of effective connectivity, we observed that control units decrease their connectivity. Through an analysis of variance we found that the intrinsic variability of the control units has a significant effect on task proficiency. When this variance is accounted for, motor cortical activity is flexible enough to perform novel BCI tasks that require active decoupling of natural associations to wrist motion. This study provides insight into the neural activity that enables a dual-control brain-computer interface. 
+## Bioinformatics
+
+### Compuational gene prediction with genomic tiling microarray data
