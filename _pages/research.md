@@ -22,7 +22,7 @@ Excessively changing policies in many real world scenarios is difficult, unethic
 
 ### Learning a feedback network through perturbations
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](../images/fig1_schematic.png)
 
 **Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
 
@@ -30,17 +30,17 @@ Backpropagation is driving today's artificial neural networks (ANNs). However, d
 
 ## Theoretical neuroscience
 
-### Estimating causal effects via a neuron's spiking discontinuity
+### Neural Spiking for Causal Inference
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](../images/fig1_schematic.png)
 
-**Lansdell B**, Kording K, ([bioRxiv]()) 2019
+**Lansdell B**, Kording K, [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2019/10/15/253351.full.pdf) 2019
 
 When a neuron is driven beyond its threshold it spikes, and the fact that it does not communicate its continuous membrane potential is usually seen as a computational liability. Here we show that this spiking mechanism allows neurons to produce an unbiased estimate of their causal influence, and a way of approximating gradient descent learning. Importantly, neither activity of upstream neurons, which act as confounders, nor downstream non-linearities bias the results. By introducing a local discontinuity with respect to their input drive, we show how spiking enables neurons to solve causal estimation and learning problems.
 
-### Neural data analysis reveals how primary motor cortical activity adapts to ontrol a dual-control brain-computer interface
+### Reconfiguring motor circuits for a joint manual and BCI task
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](../images/Figure 1_monkey.png)
 
 **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C *Accepted to IEEE Transactions in neural systems and rehabilitation engineering 2019* [arXiv](https://arxiv.org/abs/1702.07368)
 
@@ -48,7 +48,7 @@ Designing brain-computer interfaces (BCIs) that can be used in conjunction with 
 
 ### A reaction-diffusion model of spontaneous neural activity in the developing retina
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](../images/retinalwaves2.png)
 
 **Lansdell B**, Kevin Ford, J Nathan Kutz
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
@@ -58,6 +58,8 @@ Prior to receiving visual stimuli, spontaneous, correlated activity in the retin
 ## Systems Biology
 
 ### 
+
+![alt text](../images/fig1_schematic.png)
 
 ## Bioinformatics
 
