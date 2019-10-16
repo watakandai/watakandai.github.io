@@ -25,7 +25,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Learning a feedback network through perturbations
 
-<img src="../images/fig1_schematic.png" width="35%" align="middle">
+<p style="text-align: center"><img src="../images/fig1_schematic.png" width="35%" align="middle"></p>
 
 **Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
 
@@ -35,7 +35,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Neural Spiking for Causal Inference
 
-<img src="../images/fig1_pretty.png" width="70%" align="middle">
+<p style="text-align: center"><img src="../images/fig1_pretty.png" width="70%" align="middle"></p>
 
 **Lansdell B**, Kording K, [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2019/10/15/253351.full.pdf) 2019
 
@@ -43,7 +43,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Reconfiguring motor circuits for a joint manual and BCI task
 
-<img src="../images/Figure%201_monkey.png" width="40%" align="middle">
+<p style="text-align: center"><img src="../images/Figure%201_monkey.png" width="40%" align="middle"></p>
 
 **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C *Accepted to IEEE Transactions in neural systems and rehabilitation engineering 2019* [arXiv](https://arxiv.org/abs/1702.07368)
 
@@ -51,7 +51,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### A reaction-diffusion model of spontaneous neural activity in the developing retina
 
-<img src="../images/retinalwaves2.png" width="60%" align="middle">
+<p style="text-align: center"><img src="../images/retinalwaves2.png" width="60%" align="middle"></p>
 
 **Lansdell B**, Ford K, Kutz JN
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
@@ -62,7 +62,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### A computational model of Bcl-2 regulated apoptosis: bistability revisited
 
-<img src="../images/bcl2-10.png" width="60%" align="middle">
+<p style="text-align: center"><img src="../images/bcl2-10.png" width="60%" align="middle"></p>
 
 **Lansdell B**, Kluck R, Hockings C, Lee E, Fairlie D, Frascoli F, Landman K, Speed T, [BMES 2013](http://benlansdell.github.io/docs/lansdell_BMES.pdf)
 
@@ -72,7 +72,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Compuational gene prediction with genomic tiling microarray data
 
-<img src="../images/tilegene-1024x438.png" width="60%" align="middle">
+<p style="text-align: center"><img src="../images/tilegene-1024x438.png" width="60%" align="middle"></p>
 
 **Lansdell B**, Speed T, Papenfuss A. Genome Informatics Workshops 2008
 
