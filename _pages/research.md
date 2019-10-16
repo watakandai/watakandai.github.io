@@ -42,7 +42,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Reconfiguring motor circuits for a joint manual and BCI task
 
-<img src="../images/Figure_1_monkey.png" width="40%" align="middle">
+<img src="../images/Figure%201_monkey.png" width="40%" align="middle">
 
 **Lansdell B**, Milovanovic I, Mellema C, Fairhall A, Fetz E, Moritz C *Accepted to IEEE Transactions in neural systems and rehabilitation engineering 2019* [arXiv](https://arxiv.org/abs/1702.07368)
 
