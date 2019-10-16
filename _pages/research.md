@@ -16,7 +16,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Learning optimal policies, while avoiding unnecessary changes in policy
 
-<img src="../images/theorem3.png" width="40%">
+<img src="../images/theorem3.png" width="55%">
 
 **Lansdell B**, Triantafillou S, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
 
@@ -24,7 +24,7 @@ Excessively changing policies in many real world scenarios is difficult, unethic
 
 ### Learning a feedback network through perturbations
 
-<img src="../images/fig1_schematic.png" width="40%">
+<img src="../images/fig1_schematic.png" width="35%">
 
 **Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
 
@@ -34,7 +34,7 @@ Backpropagation is driving today's artificial neural networks (ANNs). However, d
 
 ### Neural Spiking for Causal Inference
 
-<img src="../images/fig1_pretty.png" width="40%">
+<img src="../images/fig1_pretty.png" width="70%">
 
 **Lansdell B**, Kording K, [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2019/10/15/253351.full.pdf) 2019
 
@@ -50,7 +50,7 @@ Designing brain-computer interfaces (BCIs) that can be used in conjunction with 
 
 ### A reaction-diffusion model of spontaneous neural activity in the developing retina
 
-<img src="../images/retinalwaves2.png" width="40%">
+<img src="../images/retinalwaves2.png" width="60%">
 
 **Lansdell B**, Ford K, Kutz JN
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
@@ -61,7 +61,7 @@ Prior to receiving visual stimuli, spontaneous, correlated activity in the retin
 
 ### A computational model of Bcl-2 regulated apoptosis: bistability revisited
 
-<img src="../images/bcl2-10.png" width="40%">
+<img src="../images/bcl2-10.png" width="60%">
 
 **Lansdell B**, Kluck R, Hockings C, Lee E, Fairlie D, Frascoli F, Landman K, Speed T, [BMES 2013](http://benlansdell.github.io/docs/lansdell_BMES.pdf)
 
@@ -71,7 +71,7 @@ The Bcl-2 family of 15 or more proteins are key regulators of the intrinsic apop
 
 ### Compuational gene prediction with genomic tiling microarray data
 
-<img src="../images/tilegene-1024x438.png" width="40%">
+<img src="../images/tilegene-1024x438.png" width="60%">
 
 **Lansdell B**, Speed T, Papenfuss A. Genome Informatics Workshops 2008
 
