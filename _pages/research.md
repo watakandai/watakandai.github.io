@@ -15,16 +15,19 @@ I am an applied mathematician with an interest in **theoretical neuroscience** a
 ### Causal effects via a neuron's spiking discontinuity
 
 **Lansdell B**, Kording K, ([bioRxiv]()) 2019
+
 When a neuron is driven beyond its threshold it spikes, and the fact that it does not communicate its continuous membrane potential is usually seen as a computational liability. Here we show that this spiking mechanism allows neurons to produce an unbiased estimate of their causal influence, and a way of approximating gradient descent learning. Importantly, neither activity of upstream neurons, which act as confounders, nor downstream non-linearities bias the results. By introducing a local discontinuity with respect to their input drive, we show how spiking enables neurons to solve causal estimation and learning problems.
 
 ### Learning a feedback network through perturbations
 
-**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Being presented and NeurIPS 2019 workshop on Neuro+AI*
+**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
+
 Backpropagation is driving today's artificial neural networks (ANNs). However, despite extensive research, it remains unclear if the brain implements this algorithm. Among neuroscientists, reinforcement learning (RL) algorithms are often seen as a realistic alternative: neurons can randomly introduce change, and use unspecific feedback signals to observe their effect on the cost and thus approximate their gradient. However, the convergence rate of such learning scales poorly with the number of involved neurons. Here we propose a hybrid learning approach. Each neuron uses an RL-type strategy to learn how to approximate the gradients that backpropagation would provide. We provide proof that our approach converges to the true gradient for certain classes of networks. In both feedforward and convolutional networks, we empirically show that our approach learns to approximate the gradient, and can match the performance of gradient-based learning. Learning feedback weights provides a biologically plausible mechanism of achieving good performance, without the need for precise, pre-specified learning rules. 
 
 ## Learning optimal policies, while avoiding unnecessary changes in policy
 
 **Lansdell B**, Triantafillou, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
+
 Excessively changing policies in many real world scenarios is difficult, unethical, or expensive. After all, doctor guidelines, tax codes, and price lists can only be reprinted so often. We may thus want to only change a policy when it is probable that the change is beneficial. In cases that a policy is a threshold on contextual variables we can estimate causal effects for populations lying at the threshold. This allows for a schedule of incremental policy updates that let us optimize a policy while making few detrimental changes. Using this idea, and the theory of linear contextual bandits, we present a conservative policy updating procedure which updates a deterministic policy only when justified. We provide simulations and an analysis of an infant health well-being causal inference dataset, showing the algorithm efficiently learns a good policy with few changes. Our approach allows efficiently solving problems where excessive changes are to be avoided, with applications in medicine, economics and beyond.
 
 ## Theoretical neuroscience
@@ -35,6 +38,7 @@ In the past I have applied my modeling and data analysis skills to a range of pr
 
 **Lansdell B**, Kevin Ford, J Nathan Kutz
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
+
 Prior to receiving visual stimuli, spontaneous, correlated activity in the retina, called retinal waves, drives activity-dependent developmental programs. Early-stage waves mediated by acetylcholine (ACh) manifest as slow, spreading bursts of action potentials. They are believed to be initiated by the spontaneous firing of Starburst Amacrine Cells (SACs), whose dense, recurrent connectivity then propagates this activity laterally. Their inter-wave interval and shifting wave boundaries are the result of the slow after-hyperpolarization of the SACs creating an evolving mosaic of recruitable and refractory cells, which can and cannot participate in waves, respectively. Recent evidence suggests that cholinergic waves may be modulated by the extracellular concentration of ACh. Here, we construct a simplified, biophysically consistent, reaction-diffusion model of cholinergic retinal waves capable of recapitulating wave dynamics observed in mice retina recordings. We are thus able to use non-linear wave theory to connect wave features to underlying physiological parameters, making the model useful in determining appropriate pharmacological manipulations to experimentally produce waves of a prescribed spatiotemporal character.
 
 ### Neural data analysis reveals how primary motor cortical activity adapts to ontrol a dual-control brain-computer interface
