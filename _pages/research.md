@@ -8,7 +8,9 @@ header:
 
 Machine learning (ML), particularly deep learning, has made significant advances in the past decades. However, there are many issues remaining before ML models can be safely, fairly and efficiently implemented in real-world applications. Many of these shortcomings are related to causation: in order to be safe, a model must make policies based on knowing what will happen when a given action is taken; in order to be fair, a model must not rely on spurious correlations to make predictions; and in order to be efficient, a model must learn relationships that are transferable from its training data to new tasks. By studying learning algorithms that address these issues we may also gain insight and inspiration for models of how we ourselves learn.
 
-I am an **applied mathematician** with an interest in **theoretical neuroscience** and **machine learning**. I use insights from **causal inference** to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning, as detailed below.
+I am an **applied mathematician** with an interest in **theoretical neuroscience** and **machine learning**. I use insights from **causal inference** to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning.
+
+Some examples of current and past projects I've worked on are below.
 
 ## Machine learning
 
@@ -16,7 +18,7 @@ I am an **applied mathematician** with an interest in **theoretical neuroscience
 
 ![alt text](../images/theorem3.png)
 
-**Lansdell B**, Triantafillou, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
+**Lansdell B**, Triantafillou S, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
 
 Excessively changing policies in many real world scenarios is difficult, unethical, or expensive. After all, doctor guidelines, tax codes, and price lists can only be reprinted so often. We may thus want to only change a policy when it is probable that the change is beneficial. In cases that a policy is a threshold on contextual variables we can estimate causal effects for populations lying at the threshold. This allows for a schedule of incremental policy updates that let us optimize a policy while making few detrimental changes. Using this idea, and the theory of linear contextual bandits, we present a conservative policy updating procedure which updates a deterministic policy only when justified. We provide simulations and an analysis of an infant health well-being causal inference dataset, showing the algorithm efficiently learns a good policy with few changes. Our approach allows efficiently solving problems where excessive changes are to be avoided, with applications in medicine, economics and beyond.
 
@@ -32,7 +34,7 @@ Backpropagation is driving today's artificial neural networks (ANNs). However, d
 
 ### Neural Spiking for Causal Inference
 
-![alt text](../images/fig1_schematic.png)
+![alt text](../images/fig1_pretty.png)
 
 **Lansdell B**, Kording K, [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2019/10/15/253351.full.pdf) 2019
 
@@ -50,19 +52,26 @@ Designing brain-computer interfaces (BCIs) that can be used in conjunction with 
 
 ![alt text](../images/retinalwaves2.png)
 
-**Lansdell B**, Kevin Ford, J Nathan Kutz
+**Lansdell B**, Ford K, Kutz JN
 [PLoS computational biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003953) 2014
 
 Prior to receiving visual stimuli, spontaneous, correlated activity in the retina, called retinal waves, drives activity-dependent developmental programs. Early-stage waves mediated by acetylcholine (ACh) manifest as slow, spreading bursts of action potentials. They are believed to be initiated by the spontaneous firing of Starburst Amacrine Cells (SACs), whose dense, recurrent connectivity then propagates this activity laterally. Their inter-wave interval and shifting wave boundaries are the result of the slow after-hyperpolarization of the SACs creating an evolving mosaic of recruitable and refractory cells, which can and cannot participate in waves, respectively. Recent evidence suggests that cholinergic waves may be modulated by the extracellular concentration of ACh. Here, we construct a simplified, biophysically consistent, reaction-diffusion model of cholinergic retinal waves capable of recapitulating wave dynamics observed in mice retina recordings. We are thus able to use non-linear wave theory to connect wave features to underlying physiological parameters, making the model useful in determining appropriate pharmacological manipulations to experimentally produce waves of a prescribed spatiotemporal character.
 
 ## Systems Biology
 
-### 
+### A computational model of Bcl-2 regulated apoptosis: bistability revisited
 
-![alt text](../images/fig1_schematic.png)
+![alt text](../images/bcl2-10.png)
+
+**Lansdell B**, Kluck R, Hockings C, Lee E, Fairlie D, Frascoli F, Landman K, Speed T, [BMES 2013](http://benlansdell.github.io/docs/lansdell_BMES.pdf)
+
+The Bcl-2 family of 15 or more proteins are key regulators of the intrinsic apoptosis pathway. Determining the mechanism two of these proteins (Bak and Bax) use to control mitochondrial outer membrane permeabilisation (MOMP) and subsequent cytochrome c release is therefore the focus of significant research. Here, a deterministic mass-action model of a subset of Bcl-2 family protein interactions is constructed in order to better understand a reduced mitochondrial system in vitro, and its role in apoptosis in vivo. A model which includes direct activation of pro-apoptotic Bak by BH3-only effector proteins is shown to be more consistent with kinetic binding data and Mice Liver Mitochondria (MLM) experiments, compared with a model which does not include direct activation. This represents a novel in vitro model of Bcl-2 mediated apoptosis constrained by experimental and kinetic data. The model does not regulate MOMP through the existence of a bistable switch, as posited by other computational studies. The robustness of the model to parameter variation highlights the different roles pro-survival proteins may play depending on the BH3-only stimulus.
 
 ## Bioinformatics
 
 ### Compuational gene prediction with genomic tiling microarray data
 
 ![alt text](../images/tilegene-1024x438.png)
+
+**Lansdell B**, Speed T, Papenfuss A. Genome Informatics Workshops 2008
+
