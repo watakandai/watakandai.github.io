@@ -14,7 +14,7 @@ I am an **applied mathematician** with an interest in **theoretical neuroscience
 
 ### Learning optimal policies, while avoiding unnecessary changes in policy
 
-![alt text](../images/theorem3_pretty.svg)
+![alt text](../images/theorem3.png)
 
 **Lansdell B**, Triantafillou, Kording K, ([arXiv](https://arxiv.org/abs/1905.13121)) 2019
 
@@ -62,3 +62,5 @@ Prior to receiving visual stimuli, spontaneous, correlated activity in the retin
 ## Bioinformatics
 
 ### Compuational gene prediction with genomic tiling microarray data
+
+![alt text](../images/tilegene-1024x438.png)
