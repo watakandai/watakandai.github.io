@@ -12,7 +12,7 @@ I am a postdoctoral researcher in the Department of Bioengineering at the Univer
 
 ## Interests
 
-I am an applied mathematician and computational scientist with an interest in **theoretical neuroscience** and **artificial intelligence**. I use insights from causal inference to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning.
+I am an applied mathematician and computational scientist with an interest in **theoretical neuroscience** and **artificial intelligence**. I use insights from causal inference to provide better tools and models in both of these areas. This involves building models of how we may do causal learning, with spiking networks in particular, and combining methods from causal inference with machine learning to provide more efficient learning algorithms. I believe that this work, in combination with developments in deep learning, will lead to more human-like learning systems. Thus my work involves a combination of statistics, computational modelling, systems neuroscience and tools from deep learning.
 
 ## Bio
 
