@@ -555,8 +555,7 @@ Some further reading
 An overview of the counterfactual framework can be found in the short
 Coursera course. The interventionist framework of Pearl is described in
 his influential 2000 book. A more modern treatment, based on structural
-equation models, which in some sense subsume the above two frameworks
-can be found in Peters et al 2017.
+equation models, can be found in Peters et al 2017.
 
 -   “A Crash Course in Causality: Inferring Causal Effects from
     Observational Data” Coursera course. By Jason Roy.
