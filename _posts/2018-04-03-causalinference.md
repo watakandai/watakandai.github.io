@@ -10,8 +10,7 @@ use_math: true
 published: true
 ---
 
-But what is causality?
-======================
+A brief overview of how causal inference and causal effects are formalized.
 
 Say we observe a negative relationship between number of apples eaten
 per day and heart disease. Does this relationship mean that apples are
@@ -199,7 +198,7 @@ $\mathcal{E}$ that represent relations between the variables.
 Ignorability requires conditional independence of the outcome from the
 treatment variable, so here we will let the directed edges encode
 conditional independence assumptions. (A *causal Bayesian network* has
-additional semantics that are discussed in Section \[sec:cbn\]. For the
+additional semantics that are discussed below. For the
 moment the directed edges only encode information about conditional
 independence.)
 
@@ -508,10 +507,6 @@ $$\begin{align}P_{X_i=y}(\mathbf{x}) = \prod_{j\ne i}^N P(x_j | {\text{Pa}}_{X_j
 also abbreviated to $P_{X_i}$. Expectations under interventions then
 take the form:
 $$\begin{align}\mathbb{E}(X_j|{\text{do}}(X_i = y)) = \int x_j P_{X_i=y}(x_j)\,dx_j = \mathbb{E}_{X_i=y}(X_j).\end{align}$$
-The idea of intervention is shown in Figure \[fig:inter\].
-
-![Intervening on $X$ changes the graph and underlying distribution.<span
-data-label="fig:inter"></span>](../../dags_intervene.svg)
 
 Now, given the ability to intervene, the average causal effect between
 an outcome variable $X_j$ and a binary variable $X_i$ can be defined as:
@@ -525,8 +520,7 @@ for conditional distributions that satisfy these criteria. These are
 actually the same criteria identified above in the counterfactual
 framework when searching for controls that provide ignorability. The
 interventional and counterfactual frameworks thus are compatible with
-one another. Pearl argues the interventional framework subsumes the
-older counterfactual framework.
+one another. 
 
 For instance, if $S_{ij}$ satisfy the backdoor criteria with respect to
 $X_i\to X_j$ then we can relate the interventional and observational
