@@ -40,12 +40,12 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select talks
 
-16. Lansdell B} (October 24, 2020), (upcoming) "Causality through learning-to-learn", Society for Neuroscience minisymposium. (Invited)
-15. Lansdell B} (February 27, 2020),  "Causal considerations in deep and reinforcement learning", _Applied mathematics seminar_, Drexel University. (Invited)
-14. Lansdell B} (February 13, 2020), "Is the brain a computer?", _Physics undergraduate seminar_, Western University, London, ON.
-13. Lansdell B} (February 13, 2020), "The neuronal credit assignment problem as causal inference", _Physics colloquium_, Western University, London, ON. (Invited)
-12. Lansdell B} (February 6, 2020), "The neuronal credit assignment problem as causal inference", _Rutgers-Newark Department of Mathematics & Computer Science_, Newark, NJ. (Invited)
-11. Lansdell B} (January 24, 2020), "The neuronal credit assignment problem as causal inference", _CNI seminar_, Department of Neuroscience, University of Pennsylvania.
+16. Lansdell B (October 24, 2020), (upcoming) "Causality through learning-to-learn", Society for Neuroscience minisymposium. (Invited)
+15. Lansdell B (February 27, 2020),  "Causal considerations in deep and reinforcement learning", _Applied mathematics seminar_, Drexel University. (Invited)
+14. Lansdell B (February 13, 2020), "Is the brain a computer?", _Physics undergraduate seminar_, Western University, London, ON.
+13. Lansdell B (February 13, 2020), "The neuronal credit assignment problem as causal inference", _Physics colloquium_, Western University, London, ON. (Invited)
+12. Lansdell B (February 6, 2020), "The neuronal credit assignment problem as causal inference", _Rutgers-Newark Department of Mathematics & Computer Science_, Newark, NJ. (Invited)
+11. Lansdell B (January 24, 2020), "The neuronal credit assignment problem as causal inference", _CNI seminar_, Department of Neuroscience, University of Pennsylvania.
 10. Lansdell B (July 1, 2019), "The neuronal credit assignment probem as causal inference", _Cox lab seminar_, IBM Watson AI, Cambridge, MA
 9. Lansdell B (May 1, 2019), "Causality and reinforcement learning: considerations for smarter agents", _CNI +/- seminar_, Department of Neuroscience, University of Pennsylvania, PA
 8. Lansdell B (March 22, 2019), "Optimizing policies with thresholds in neuroscience and medicine", _AMS Sectional Meeting_, University of Hawaii. (Invited)
