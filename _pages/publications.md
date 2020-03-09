@@ -25,7 +25,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select conference posters and proceedings
 
-12. **Lansdell B**, "Towards intervention-centric causal reasoning in learning agents ", ICLR 2020, Ethiopia
+12. **Lansdell B**, "Towards intervention-centric causal reasoning in learning agents", Workshop Causal Learning for Decision Making, ICLR 2020, Ethiopia
 11. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
 10. Cheng J, Benjamin A, **Lansdell B**, Kording K, "Augmenting Supervised Learning by Meta-learning Unsupervised Local Rules", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
 9. **Lansdell B**, Prakash P, Kording K, "Do neurons learn how to learn?", Cosyne meeting 2019, Lisbon, Portugal
