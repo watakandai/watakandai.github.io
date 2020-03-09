@@ -16,18 +16,25 @@ Some examples of current and past projects I've worked on are below.
 
 ### Learning optimal policies, while avoiding unnecessary changes in policy
 
-
 <p style="text-align: center"><img src="../images/theorem3.png" width="55%"></p>
 
 **Lansdell B**, Triantafillou S, Kording K, [arXiv](https://arxiv.org/abs/1905.13121) 2019
 
 *Abstract:* Excessively changing policies in many real world scenarios is difficult, unethical, or expensive. After all, doctor guidelines, tax codes, and price lists can only be reprinted so often. We may thus want to only change a policy when it is probable that the change is beneficial. In cases that a policy is a threshold on contextual variables we can estimate causal effects for populations lying at the threshold. This allows for a schedule of incremental policy updates that let us optimize a policy while making few detrimental changes. Using this idea, and the theory of linear contextual bandits, we present a conservative policy updating procedure which updates a deterministic policy only when justified. We provide simulations and an analysis of an infant health well-being causal inference dataset, showing the algorithm efficiently learns a good policy with few changes. Our approach allows efficiently solving problems where excessive changes are to be avoided, with applications in medicine, economics and beyond.
 
+### Towards intervention-centric causal reasoning in learning agents
+
+<p style="text-align: center"><img src="../images/theorem3.png" width="55%"></p>
+
+**Lansdell B** [pdf]({{site.baseurl}}/docs/Towards_intervention_centric_causal_reasoning_in_learning_agents__long_.pdf) 2020
+
+*Abstract:* Interventions are central to causal learning and reasoning. Yet ultimately an intervention is an abstraction: an agent embedded in a physical environment (perhaps modeled as a Markov decision process) does not typically come equipped with the notion of an intervention -- its action space is typically ego-centric, without actions of the form 'intervene on X'. Such a correspondence between ego-centric actions and interventions would be challenging to hard-code. It would instead be better if an agent learnt which sequence of actions allow it to make targeted manipulations of the environment, and learnt corresponding representations that permitted learning from observation. Here we show how a meta-learning approach can be used to perform causal learning in this challenging setting, where the action-space is not a set of interventions and the observation space is a high-dimensional space with a latent causal structure. A meta-reinforcement learning algorithm is used to learn relationships that transfer on observational causal learning tasks. This work shows how advances in deep reinforcement learning and meta-learning can provide intervention-centric causal learning in high-dimensional environments with a latent causal structure.
+
 ### Learning a feedback network through perturbations
 
 <p style="text-align: center"><img src="../images/fig1_schematic.png" width="35%" align="middle"></p>
 
-**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the NeurIPS 2019 workshop on Neuro+AI*
+**Lansdell B**, Prakash P, Kording K, [arXiv](https://arxiv.org/abs/1906.00889) *Presented at the ICLR 2020 meeting*
 
 *Abstract:* Backpropagation is driving today's artificial neural networks (ANNs). However, despite extensive research, it remains unclear if the brain implements this algorithm. Among neuroscientists, reinforcement learning (RL) algorithms are often seen as a realistic alternative: neurons can randomly introduce change, and use unspecific feedback signals to observe their effect on the cost and thus approximate their gradient. However, the convergence rate of such learning scales poorly with the number of involved neurons. Here we propose a hybrid learning approach. Each neuron uses an RL-type strategy to learn how to approximate the gradients that backpropagation would provide. We provide proof that our approach converges to the true gradient for certain classes of networks. In both feedforward and convolutional networks, we empirically show that our approach learns to approximate the gradient, and can match the performance of gradient-based learning. Learning feedback weights provides a biologically plausible mechanism of achieving good performance, without the need for precise, pre-specified learning rules. 
 
