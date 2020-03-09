@@ -24,7 +24,7 @@ Some examples of current and past projects I've worked on are below.
 
 ### Towards intervention-centric causal reasoning in learning agents
 
-<p style="text-align: center"><img src="../images/fig1_motivating_example.svg" width="55%"></p>
+<p style="text-align: center"><img src="../images/fig1_motivating_example.svg" width="75%"></p>
 
 **Lansdell B** ([pdf]({{site.baseurl}}/docs/Towards_intervention_centric_causal_reasoning_in_learning_agents__long_.pdf)) ICLR 2020 Workshop on Causal Learning for Decision Making
 
