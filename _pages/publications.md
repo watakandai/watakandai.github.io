@@ -12,9 +12,9 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 11. **Lansdell B**, Triantafillou S, Kording K, "Rarely-switching linear bandits: optimization of causal effects for the real world" (_submitted_, [arXiv](https://arxiv.org/pdf/1905.13121.pdf))
 10. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
-9. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem" (ICLR 2020 [arxiv](https://arxiv.org/abs/1906.00889))
+9. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem" ICLR 2020 ([arxiv](https://arxiv.org/abs/1906.00889))
 8. **Lansdell B**+, Milovanovic I+, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", IEEE Trans NSRE ([arXiv](https://arxiv.org/abs/1702.07368))
-7. **Lansdell B**, Kording K, "Towards learning-to-learn", Current Opinion in Behavioral Sciences (29) 2019 [arxiv](https://arxiv.org/abs/1811.00231)
+7. **Lansdell B**, Kording K, "Towards learning-to-learn", Current Opinion in Behavioral Sciences (29) 2019 ([arxiv](https://arxiv.org/abs/1811.00231))
 6. Farhoodi R+, **Lansdell B**+, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies",  [Frontiers in Neuroinformatics](https://www.frontiersin.org/articles/10.3389/fninf.2019.00036/abstract), 2019
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf)) ([F1000 Prime recommended article](https://f1000.com/prime/726562212))
@@ -24,7 +24,7 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 ## Select conference posters and proceedings
 
-12. **Lansdell B**, "Towards intervention-centric causal reasoning in learning agents", Workshop Causal Learning for Decision Making, ICLR 2020, Ethiopia ([pdf]({{site.baseurl}}/docs/Towards_intervention_centric_causal_reasoning_in_learning_agents__long_.pdf))
+12. **Lansdell B**, "Towards intervention-centric causal reasoning in learning agents", Workshop Causal Learning for Decision Making, ICLR 2020 ([pdf]({{site.baseurl}}/docs/Towards_intervention_centric_causal_reasoning_in_learning_agents__long_.pdf))
 11. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
 10. Cheng J, Benjamin A, **Lansdell B**, Kording K, "Augmenting Supervised Learning by Meta-learning Unsupervised Local Rules", NeurIPS Neuro+AI workshop 2019, Vancouver, BC, Canada
 9. **Lansdell B**, Prakash P, Kording K, "Do neurons learn how to learn?", Cosyne meeting 2019, Lisbon, Portugal
