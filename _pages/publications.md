@@ -10,13 +10,12 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?u
 
 (+ equal first author) 
 
-12. **Lansdell B**, Triantafillou S, Kording K, "Rarely-switching linear bandits: optimization of causal effects for the real world" (_submitted_, [arXiv](https://arxiv.org/pdf/1905.13121.pdf))
-11. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
-10. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem" (ICLR 2020 [arxiv](https://arxiv.org/abs/1906.00889))
-9. **Lansdell B**+, Milovanovic I+, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", IEEE Trans NSRE ([arXiv](https://arxiv.org/abs/1702.07368))
-8. **Lansdell B**, Kording K, "Towards learning-to-learn", Current Opinion in Behavioral Sciences (29) 2019 [arxiv](https://arxiv.org/abs/1811.00231)
-7. Farhoodi R+, **Lansdell B**+, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies",  [Frontiers in Neuroinformatics](https://www.frontiersin.org/articles/10.3389/fninf.2019.00036/abstract), 2019
-6. Lagache T, **Lansdell B**, Tang J, Yuste R, Fairhall A, "Tracking Activity In A Deformable Nervous System With Motion Correction And Point-Set Registration", [bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2018/07/20/373035.full.pdf) 2018
+11. **Lansdell B**, Triantafillou S, Kording K, "Rarely-switching linear bandits: optimization of causal effects for the real world" (_submitted_, [arXiv](https://arxiv.org/pdf/1905.13121.pdf))
+10. **Lansdell B**, Kording K, "Spiking allows neurons to estimate their causal effect", (_submitted_ [biorXiv](https://www.biorxiv.org/content/early/2018/01/25/253351))
+9. **Lansdell B**, Prakash P, Kording K, "Learning to solve the credit assignment problem" (ICLR 2020 [arxiv](https://arxiv.org/abs/1906.00889))
+8. **Lansdell B**+, Milovanovic I+, Mellema C, Fairhall A, Fetz E, Moritz C, "Reconfiguring motor circuits for a joint manual and BCI task", IEEE Trans NSRE ([arXiv](https://arxiv.org/abs/1702.07368))
+7. **Lansdell B**, Kording K, "Towards learning-to-learn", Current Opinion in Behavioral Sciences (29) 2019 [arxiv](https://arxiv.org/abs/1811.00231)
+6. Farhoodi R+, **Lansdell B**+, Kording K, "Quantifying how staining methods bias measurements of neuron morphologies",  [Frontiers in Neuroinformatics](https://www.frontiersin.org/articles/10.3389/fninf.2019.00036/abstract), 2019
 5. Pang R, **Lansdell B**, Fairhall A, "Dimensionality Reduction in Neuroscience", *Current Biology* 2016, 26: R1-R5
 4. Aljadeff J, **Lansdell B**, Fairhall A, Kleinfeld D, “Analysis of Neuronal Spike Trains, Deconstructed", *Neuron* 2016, DOI: http://dx.doi.org/10.1016/j.neuron.2016.05.039 ([pdf]({{site.baseurl}}/docs/neuron_primer.pdf)) ([F1000 Prime recommended article](https://f1000.com/prime/726562212))
 3. **Lansdell B**, Ford K, Jutz JN, “A reaction-diffusion model of cholinergic retinal waves”, *PLoS Computational Biology* 2014 ([pdf]({{site.baseurl}}/docs/retinalwaves.pdf))
