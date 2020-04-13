@@ -3,10 +3,9 @@ layout: archive
 author_profile: false
 permalink: /posts/
 title: "Overflow"
-excerpt: "Thoughts on neuroscience, statistics, computing"
 header:
-  overlay_image: ../images/computer.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  overlay_image: images/overlay.jpg
+  overlay_filter: 0 # same as adding an opacity of 0.5 to a black background
 ---
 
 {% include base_path %}

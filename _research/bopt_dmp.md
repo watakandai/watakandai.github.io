@@ -1,0 +1,36 @@
+---
+title: "Action Acquisition using Bayesian Optimization"
+categories:
+  - probabilistic
+tags:
+  - "motion learning"
+  - "bayesian optimization"
+published: false
+---
+
+![bopt_dmp](../images/bot_dmp.gif)
+![bopt_dmp_sim](../images/bot_dmp_sim.gif)
+![bopt_dmp_sim_functions](../images/bot_dmp_sim_functions.gif)
+
+Objective
+----------
+Make the robot “think” and plan to combine actions to complete a task.
+
+To plan each action and combination of actions to complete a long-term task in the uncertain environment
+
+Problem
+---------
+Reinforcement is a strong tool to find an optimal solution, however, it takes a lot of time to converge and inefficient due to the initial random searches.
+
+Approach
+---------
+
+By using Bayesian Optimization, it searches the maximal “change” in the environment by reasoning from the previous actions. Finding the maximal “change” allows a robot to find a hidden dynamics of an object.
+
+Examples
+----------
+
+-1. If a robot wants to reach the goal behind a door, it has to find a solution to open a door and approach the goal. If a robot could find a “change” in the movement of a door or itself, a robot can understand that it was a right action.
+-2. If a robot wants to reach an object behind a tree branch, it has two solutions. One can move itself avoiding the tree branch, but another can hold the tree branch with the other hand and reach the object with another. With our proposed method, it will be able to find the optimal combination (future work)
+
+![bopt_dmp_sim_examples](../images/bot_dmp_sim_examples.png)

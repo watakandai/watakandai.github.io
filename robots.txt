@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /docs/Resume_20200305.pdf
