@@ -172,10 +172,10 @@ defaults:
       comments: true
       share: true
       related: true
-  # _trips
+  # _research
   - scope:
       path: ""
-      type: trips
+      type: research
     values:
       layout: single
       author_profile: false
