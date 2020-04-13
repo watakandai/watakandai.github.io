@@ -6,12 +6,14 @@ tags:
   - "path integration"
   - "Feynman diagram"
 use_math: true
-published: false
+published: true
+description: "Simulation of Inverted Pendulum using Neural Network."
+img: "sim_pendulum_incase.png"
 ---
 
 **[YouTube Link](https://www.youtube.com/watch?v=r7sOc22s1KA)**
 
-[![sim_pendulum](../images/sim_pendulum_incase.png)](https://www.youtube.com/watch?v=r7sOc22s1KA)
+[![sim_pendulum](../../images/sim_pendulum_incase.png)](https://www.youtube.com/watch?v=r7sOc22s1KA)
 
 Simulation of Inverted Pendulum using Neural Network
 

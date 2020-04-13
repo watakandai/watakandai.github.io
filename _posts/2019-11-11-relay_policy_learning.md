@@ -1,7 +1,7 @@
 ---
 title: "Relay Policy Learning: Solving Long-Horizon Tasks via Imitation and Reinforcement Learning"
 categories:
-  - reinforcement learning
+  - rl
 tags:
   - "reinforcement learning"
   - "hierarchical"

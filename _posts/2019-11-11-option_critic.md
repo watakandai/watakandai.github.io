@@ -1,7 +1,7 @@
 ---
 title: "Option-Critic Architecture"
 categories:
-  - reinforcement learning
+  - rl
 tags:
   - "reinforcement learning"
   - "hierarchical"

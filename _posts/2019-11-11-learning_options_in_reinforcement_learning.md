@@ -1,7 +1,7 @@
 ---
 title: "Learning Options in Reinfocement Learning"
 categories:
-  - reinforcement learning
+  - rl
 tags:
   - "reinforcement learning"
   - "hierarchical"

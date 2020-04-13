@@ -3,7 +3,7 @@ permalink: /code/
 title: Code
 author_profile: false
 header:
-  overlay_image: ../images/overlay2.jpg
+  overlay_image: ../images/overlay.jpg
   overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
