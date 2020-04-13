@@ -1,8 +1,10 @@
 ---
+layout: archive
+author_profile: false
 permalink: /research/
-title: Research interests
+title: "Research interests"
 header:
-  overlay_image: images/overlay.jpg
+  overlay_image: ../images/overlay.jpg
   overlay_filter: 0 # same as adding an opacity of 0.5 to a black background
 ---
 
