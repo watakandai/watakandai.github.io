@@ -181,7 +181,7 @@ defaults:
       author_profile: false
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -235,3 +235,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+exclude: [vendor]
