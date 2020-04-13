@@ -1,7 +1,7 @@
 ---
 permalink: /publications/
 title: Publications
-author_profile: false
+author_profile: true
 ---
 
 You can see my Google Scholar page [here](https://scholar.google.com/citations?hl=ja&view_op=list_works&gmla=AJsN-F78rs3tzu2d4Tmxz1z77z_D8Q0J9MixKy_k59hUVpSfnHsbg-N9JTRmNyaiPNXQsKra2pgCUM760ZxnABnYeW-PIhMYJ800LtVLU27ZEKuCnKXX7chv_w57chbCyW-I3a6M56Ak&user=uhTEdqEAAAAJ), and a complete CV can be found [here]({{ site.baseurl }}/docs/Resume_20200305.pdf).

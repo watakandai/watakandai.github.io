@@ -1,11 +1,11 @@
 ---
 layout: archive
-author_profile: false
+author_profile: true
 permalink: /posts/
 title: "Overflow"
 header:
-  overlay_image: ../images/overlay.jpg
-  overlay_filter: 0 # same as adding an opacity of 0.5 to a black background
+  overlay_image: ../images/overlay2.jpg
+  overlay_filter: 0.2 # same as adding an opacity of 0.5 to a black background
 ---
 
 {% include base_path %}
