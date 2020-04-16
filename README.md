@@ -69,6 +69,12 @@ For even more demo pages check the [posts archive][year-archive].
 
 ---
 
+```bash
+bundle exec jekyll serve
+```
+
+---
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Michael Rose
