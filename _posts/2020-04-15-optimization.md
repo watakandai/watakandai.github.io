@@ -170,15 +170,45 @@ Every feasible dictionary is a vertex in polygon, since dictoinary never exists 
 
 
 >Proof: Pivot moves to adjacent vertex.
+
 1 Entry variable becomes a Basic variable, which means it is only changing only 1 face and leaving n-1 faces in common.
 
 
-# Gradient Methods (conjugate/gradient, newton, ... etc.)
+# Gradient Methods
 Apply taylor expansion to function $f(x): \mathbb{R}^n \to \mathbb{R}$ where $x \in \mathbb{R}^n$.
 
 $$
-f(x_0 + \Delta x) = f(x_0) + \nabla_x f(x_0)\Delta x + \frac{1}{2} \Delta x^T \nabla_x^2 f(x_0) \Delta x
+f(x_0 + \Delta x) = f(x_0) + \nabla_x f(x_0)\Delta x + o(\|\Delta x\|)
 $$
+
+Since $\nabla_x f(x_0)\Delta x$ is not 0 and we want this to be negative, setting $\Delta x$ as below is called ***Gradient Method***.
+
+#### Gradient Descent
+
+$$
+\Delta x = - (\nabla_x f(x_0))^T \\
+\nabla_x f(x_0)\Delta x = - \| \nabla_x f(x_0) \|^2 < 0
+$$
+
+#### Conjugate Gradient Method
+However, this doesn't ensure that it is heading straight to the minimum point. The direction of the gradient is orthogonal to the tangential to the contour $f(x)$. If this contour is a sphere, the direction of the gradient is pointing directly to the minimum point. However, the contour could be ellipsoid. Thus, conjugate gradient method is proposed.
+
+#### Newton's Method
+Let $F(x) = \frac{\partial f}{\partial x}(x)$ and apply a taylor expansion around the gradient vector.
+
+$$
+F(x_0 + \Delta x) = F(x_0) + \frac{\partial F}{\partial x}(x_0) \Delta x +o(\| \Delta x\|) = 0
+$$
+Then
+
+$$
+\Delta x = - \Big( \frac{\partial F}{\partial x}(x_0) \Big)^{-1} F(x_0) \\
+\Delta x = - \Big( \frac{\partial^2 f}{\partial x^2}(x_0) \Big)^{-1} \frac{\partial f}{\partial x}(x_0)^T
+$$
+
+#### Quasi-Newton's Method
+Broyden-Fletcher-Goldfarb-Shanno (**BFGS**) Method.
+TODO.
 
 # Mathematical Definitions
 
@@ -213,4 +243,4 @@ ex.) <br>
 
 # References
 - [1] Vanderbei, Linear Programming, p.272 <br>
-- [2] Toshiyuki Otsuka, "Nonlinaer Optimal Control"
+- [2] Toshiyuki Otsuka, "Nonlinear Optimal Control"
