@@ -1,5 +1,5 @@
 ---
-title: "Optimization: Cheatsheet for myself"
+title: "[Cheatsheet] Optimization"
 categories:
   - optimization
 tags:
