@@ -8,7 +8,7 @@ header:
   exceprt: "                                                                               "
 ---
 
-I am a 1st year Ph.D student in [Human Interaction Robotics (HIRO) Group](https://hiro-group.ronc.one) at [University of Colorado Boulder](https://www.colorado.edu/cs/).
+I am a 2nd year Ph.D student in [Assured Reliable Interactive Autonomous (ARIA) Systems Group](https://www.ariasystems.group/) at [University of Colorado Boulder](https://www.colorado.edu/cs/).
 
 ## Previous Work
 
