@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kandai Watanabe"
 title_separator          : "-"
 name                     : "Kandai Watanabe"
-description              : "Robotics, Control Theory, Reinforcement Learning, Motion Learning"
+description              : "Robotics, Formal Method, LfD, Motion Learning"
 url                      : "//watakandai.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -63,7 +63,7 @@ google_ad_slot           :
 author:
   name             : "Kandai Watanabe"
   avatar           : "profile.jpg"
-  bio              : "Ph.D. student in Control Theory and Reinforcement Learning"
+  bio              : "Ph.D. student in Robotics, Formal Method, LfD, Motion Learning"
   location         : "University of Colorado Boulder,<br> CO, USA"
   email            : "kandai dot watanabe at colorado dot edu"
   uri              :

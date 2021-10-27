@@ -12,9 +12,11 @@ You can see my Google Scholar page [here](https://scholar.google.com/citations?h
 
 ## Conference presentations and proceedings
 
-***K. Watanabe***, N. Renninger, S. Sankaranarayanan, and M. Lahijanian, “Probabilistic Specification Learning for Planning with Safety Constraints,” in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2021. (accepted)
-
 ***K. Watanabe***, N. Renninger, S. Sankaranarayanan, and M. Lahijanian, “Task Learning with Preferences for Planning with Safety Constraints,” in Workshop on Accessibility of Robot Programming and the Work of the Future, 2021.
+
+***K. Watanabe***, N. Renninger, S. Sankaranarayanan, and M. Lahijanian, “Probabilistic Specification Learning for Planning with Safety Constraints,” in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2021.
+
+***K. Watanabe***, M. Strong, M. West, C. Escobedo, A. Aramburu, K. C. Kodur, A. Roncone, "Self-Contained Kinematic Calibration of a Novel Whole-Body Artificial Skin for Human-Robot Collaboration", in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2021.
 
 ***K. Watanabe***, M. Takahashi, “Control System Design of a Quadrotor Suppressing the Virtual Reality Sickness,”
 The 2018 AIAA Science and Technology Forum and Exposition (AIAA SciTech 2018), Gyalord Palms, Kissimee, Florida, USA.
