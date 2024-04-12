@@ -15,7 +15,7 @@ Synthesis with Safety Constraints,” IEEE Transactions on Robotics (Under Revie
 
 ## Conference presentations and proceedings
 
-***K. Watanabe***, G. Fainekos, B. Hoxha, M. Lahijanian, H. Okamoto, and S. Sankaranarayanan, “Optimal Planning for Timed Partial Order Specifications,” in 2024 IEEE Conference on Robotics and Automation (ICRA), 2024. (accepted)
+***K. Watanabe***, G. Fainekos, B. Hoxha, M. Lahijanian, H. Okamoto, and S. Sankaranarayanan, “Optimal Planning for Timed Partial Order Specifications,” in 2024 IEEE Conference on Robotics and Automation (ICRA), 2024. (accepted) [PDF](../papers/Optimal__Planning_for_Timed_Partial_Order_Specifications.pdf)
 
 ***K., Watanabe***, G. Fainekos, B. Hoxha, M. Lahijanian, D. Prokhorov, S. Sankaranarayanan, & T. Yamaguchi, "Timed Partial Order Inference Algorithm," Proceedings of the International Conference on Automated Planning and Scheduling, 33(1), 639-647, 2023.
 
