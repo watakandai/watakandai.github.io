@@ -180,6 +180,12 @@ defaults:
     values:
       layout: single
       author_profile: false
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: single
+      author_profile: false
 
 # Plugins
 plugins:

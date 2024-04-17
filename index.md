@@ -27,3 +27,12 @@ I also worked intensively on Control Theory and Reinforcement Learning algorithm
 
 I completed my Bachelor and Master at [Keio University](https://www.keio.ac.jp/) in Japan, under the supervision of [Masaki Takahashi](http://www.yt.sd.keio.ac.jp).
 I also studied at the University of Illinois at Urbana-Champain for a year. Majored in Aerospace Engineering and Computer Science.
+
+# Short Videos
+
+### Optimal Planning for Timed Partial Order Specifications
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/WUuWFlOoKW8" title="Optimal Planning for Timed Partial Order Specifications - Aircraft Turnaround Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+### Probabilistic Specification Learning for Planning with Safety Constraints
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/nfrxq_VGDPQ" title="Probabilistic Specification Learning for Planning with Safety Constraints" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
