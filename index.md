@@ -8,7 +8,7 @@ header:
   exceprt: "                                                                               "
 ---
 
-I am a 5th year Ph.D student in [Assured Reliable Interactive Autonomous (ARIA) Systems Group](https://www.ariasystems.group/) and in [Programming Languages and Verification at the University of Colorado Boulder (CUPLV )](https://plv.colorado.edu/) at the [University of Colorado Boulder](https://www.colorado.edu/cs/).
+I recently received Ph.D. in Computer Science under the supervisions of Morteza Lahijanian (https://www.ariasystems.group/) and Sriram Sankaranarayanan (https://plv.colorado.edu/) at the [University of Colorado Boulder](https://www.colorado.edu/cs/).
 
 
 ## Current Work
@@ -27,6 +27,8 @@ I also worked intensively on Control Theory and Reinforcement Learning algorithm
 
 I completed my Bachelor and Master at [Keio University](https://www.keio.ac.jp/) in Japan, under the supervision of [Masaki Takahashi](http://www.yt.sd.keio.ac.jp).
 I also studied at the University of Illinois at Urbana-Champain for a year. Majored in Aerospace Engineering and Computer Science.
+
+Received Ph.D. at CU Boulder in 2024.
 
 # Short Videos
 
