@@ -1,0 +1,621 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,sans-serif);font-size:13px;color:var(--color-text-primary)}
+h3{font-size:13px;font-weight:500;margin-bottom:.4rem;color:var(--color-text-secondary)}
+.panel{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:.85rem 1rem;margin-bottom:.8rem}
+.g2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.row{display:flex;align-items:center;gap:7px;margin-bottom:7px}
+.row label{font-size:12px;color:var(--color-text-secondary);min-width:155px;margin:0}
+.row span{font-size:12px;font-weight:500;min-width:38px;text-align:right}
+input[type=range]{flex:1}
+.tab-row{display:flex;gap:6px;margin-bottom:.8rem;flex-wrap:wrap}
+.tab{padding:4px 12px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);cursor:pointer;font-size:12px;background:transparent;color:var(--color-text-secondary)}
+.tab.active{background:var(--color-background-secondary);color:var(--color-text-primary);border-color:var(--color-border-secondary)}
+button{padding:5px 13px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);cursor:pointer;font-size:12px}
+button:hover{background:var(--color-background-secondary)}
+button.pri{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+button.pri:hover{opacity:.85}
+button:disabled{opacity:.4;cursor:not-allowed}
+.flex-end{display:flex;justify-content:flex-end;gap:7px;margin-top:.65rem;flex-wrap:wrap;align-items:center}
+.beu{font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);background:#E1F5EE;color:#085041}
+.bus{font-size:11px;padding:2px 7px;border-radius:var(--border-radius-md);background:#E6F1FB;color:#0C447C}
+.sr{display:flex;justify-content:space-between;padding:3px 0;border-bottom:0.5px solid var(--color-border-tertiary);font-size:11px}
+.sr:last-child{border-bottom:none}
+.sn{color:var(--color-text-secondary)}.sv{font-weight:500}
+#log{font-size:11px;font-family:var(--font-mono,monospace);color:var(--color-text-secondary);height:44px;overflow-y:auto;padding:5px 8px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);line-height:1.6;margin-bottom:7px}
+.rw{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:5px;margin-bottom:5px;overflow-x:auto}
+.hdr{font-size:12px;font-weight:500;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+table.s{width:100%;font-size:11px;border-collapse:collapse}
+table.s th{text-align:left;padding:4px 5px;font-weight:500;color:var(--color-text-secondary);border-bottom:1px solid var(--color-border-tertiary)}
+table.s td{padding:3px 5px;border-bottom:0.5px solid var(--color-border-tertiary)}
+table.s tr:last-child td{border-bottom:none}
+.mh{position:relative;height:135px}
+.cr{display:flex;align-items:center;gap:8px;margin-bottom:5px;flex-wrap:wrap}
+.cr span{font-size:11px;color:var(--color-text-secondary)}
+#pb{width:100%;height:3px;background:var(--color-border-tertiary);border-radius:2px;margin:3px 0}
+#pf{height:3px;background:#1D9E75;border-radius:2px;width:0%}
+.info-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:6px 10px;font-size:11px;color:var(--color-text-secondary);margin-bottom:8px;line-height:1.6}
+.info-box strong{color:var(--color-text-primary);font-weight:500}
+canvas{display:block}
+</style>
+
+<div class="panel">
+  <div class="tab-row">
+    <button class="tab active" onclick="setTab('cfg')">Configuration</button>
+    <button class="tab" onclick="setTab('lanes')">Lane speed profiles</button>
+    <button class="tab" onclick="setTab('single')">Single run + animation</button>
+    <button class="tab" onclick="setTab('mc')">Monte Carlo</button>
+  </div>
+
+  <div id="tab-cfg">
+    <div class="info-box">
+      <strong>Fair comparison:</strong> both modes receive an identical pre-generated vehicle roster (same arrival times, speeds, neutral spawn lanes). EU mode reassigns each vehicle to its speed-matched lane on entry; US mode uses the neutral lane as-is.
+    </div>
+    <div class="g2">
+      <div>
+        <h3>Road &amp; time</h3>
+        <div class="row"><label>Lanes</label><input type="range" id="nL" min="2" max="6" step="1" value="3" oninput="upd(this,'nLV');buildLD()"><span id="nLV">3</span></div>
+        <div class="row"><label>Road length (m)</label><input type="range" id="rLen" min="500" max="10000" step="250" value="3000" oninput="upd(this,'rLenV')"><span id="rLenV">3000</span></div>
+        <div class="row"><label>Speed limit (m/s)</label><input type="range" id="sLim" min="20" max="50" step="1" value="33" oninput="upd(this,'sLimV')"><span id="sLimV">33</span></div>
+        <div class="row"><label>Sim duration (s)</label><input type="range" id="simDur" min="120" max="3600" step="60" value="600" oninput="upd(this,'simDurV')"><span id="simDurV">600</span></div>
+        <div class="row"><label>Step dt (s)</label><input type="range" id="dt" min="0.2" max="2.0" step="0.1" value="0.5" oninput="updF(this,'dtV')"><span id="dtV">0.50</span></div>
+      </div>
+      <div>
+        <h3>Shared spawn process</h3>
+        <div class="row"><label>Arrival rate λ (/s)</label><input type="range" id="arr" min="0.05" max="1.5" step="0.05" value="0.35" oninput="updF(this,'arrV')"><span id="arrV">0.35</span></div>
+        <div class="row"><label>Global mean speed μ (m/s)</label><input type="range" id="gMu" min="10" max="40" step="0.5" value="22" oninput="updF(this,'gMuV')"><span id="gMuV">22.0</span></div>
+        <div class="row"><label>Global speed σ (m/s)</label><input type="range" id="gSd" min="1" max="15" step="0.5" value="7" oninput="updF(this,'gSdV')"><span id="gSdV">7.0</span></div>
+        <div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:8px">Speeds clamped to [4, limit+5]. Both modes draw from the same distribution.</div>
+        <h3>Physics</h3>
+        <div class="row"><label>Reaction time T (s)</label><input type="range" id="rT" min="0.5" max="3.0" step="0.1" value="1.2" oninput="updF(this,'rTV')"><span id="rTV">1.20</span></div>
+        <div class="row"><label>Min gap d_min (m)</label><input type="range" id="dMin" min="2" max="15" step="1" value="5" oninput="upd(this,'dMinV')"><span id="dMinV">5</span></div>
+        <div class="row"><label>EU keep-right threshold (m/s)</label><input type="range" id="krT" min="0.5" max="6" step="0.5" value="2.0" oninput="updF(this,'krTV')"><span id="krTV">2.00</span></div>
+        <div class="row"><label>EU yield look-back (m)</label><input type="range" id="yD" min="20" max="200" step="10" value="60" oninput="upd(this,'yDV')"><span id="yDV">60</span></div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:.4rem"><label>MC runs</label><input type="range" id="mcN" min="20" max="300" step="10" value="100" oninput="upd(this,'mcNV')"><span id="mcNV">100</span></div>
+  </div>
+
+  <div id="tab-lanes" style="display:none">
+    <div class="info-box">EU lane assignment: each vehicle's speed is matched to the lane with the closest μ. Used only for EU lane assignment, not for speed sampling.</div>
+    <div id="ld-cont"></div>
+    <div class="flex-end"><button onclick="resetLD()">Reset defaults</button></div>
+  </div>
+
+  <div id="tab-single" style="display:none">
+    <div class="g2" style="gap:10px">
+      <div>
+        <div class="hdr"><span class="beu">EU</span> European — final state</div>
+        <div class="rw"><canvas id="cvEU" height="120"></canvas></div>
+        <div id="eu-s"></div>
+      </div>
+      <div>
+        <div class="hdr"><span class="bus">US</span> American — final state</div>
+        <div class="rw"><canvas id="cvUS" height="120"></canvas></div>
+        <div id="us-s"></div>
+      </div>
+    </div>
+    <div id="anim-wrap" style="display:none;margin-top:7px">
+      <div style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:3px">Playback — EU (top) vs US (bottom). Normal color = cruising, lighter = overtaking.</div>
+      <div class="rw"><canvas id="cvAnim" height="220"></canvas></div>
+      <div id="pb"><div id="pf"></div></div>
+      <div class="cr">
+        <button id="btnPlay" onclick="togglePlay()">Play</button>
+        <button onclick="resetAnim()">Reset</button>
+        <span id="tLbl">t = 0.0 s</span>
+        <span style="margin-left:auto">Speed:</span>
+        <input type="range" id="pSpd" min="1" max="30" step="1" value="6" style="width:80px" oninput="document.getElementById('pSpdV').textContent=this.value+'x'">
+        <span id="pSpdV">6x</span>
+        <button id="btnVid" onclick="exportVid('single')" style="margin-left:6px">Export video</button>
+        <span id="vStat" style="font-size:11px;color:var(--color-text-secondary)"></span>
+      </div>
+    </div>
+    <div id="log">Ready — press Run.</div>
+    <div class="flex-end"><button class="pri" onclick="runSingle()">Run simulation</button></div>
+  </div>
+
+  <div id="tab-mc" style="display:none">
+    <div id="mc-st" style="font-size:12px;color:var(--color-text-secondary);margin-bottom:8px">Configure and press Run Monte Carlo.</div>
+    <div id="mc-body" style="display:none">
+      <div class="g2" style="gap:10px;margin-bottom:8px">
+        <div><div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:2px">Throughput (vehicles)</div><div class="mh"><canvas id="mc1" role="img" aria-label="Throughput histogram">Histogram.</canvas></div></div>
+        <div><div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:2px">Avg speed (m/s)</div><div class="mh"><canvas id="mc2" role="img" aria-label="Speed histogram">Histogram.</canvas></div></div>
+        <div><div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:2px">Avg lane changes / vehicle</div><div class="mh"><canvas id="mc3" role="img" aria-label="Lane changes histogram">Histogram.</canvas></div></div>
+        <div><div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:2px">Congestion events</div><div class="mh"><canvas id="mc4" role="img" aria-label="Congestion histogram">Histogram.</canvas></div></div>
+      </div>
+      <div id="mc-tbl"></div>
+      <div class="flex-end" style="margin-top:7px">
+        <button id="btnMV" onclick="exportVid('mc')">Export MC video</button>
+        <span id="mvStat" style="font-size:11px;color:var(--color-text-secondary)"></span>
+      </div>
+    </div>
+    <div class="flex-end"><button class="pri" onclick="runMC()">Run Monte Carlo</button></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const ROAD_W = 1400;
+const CAR_W = 14, CAR_H = 8, CAR_R = 2;
+
+function setTab(t){
+  ['cfg','lanes','single','mc'].forEach((x,i)=>{
+    document.getElementById('tab-'+x).style.display=x===t?'':'none';
+    document.querySelectorAll('.tab')[i].classList.toggle('active',x===t);
+  });
+}
+function upd(el,v){document.getElementById(v).textContent=el.value}
+function updF(el,v){document.getElementById(v).textContent=parseFloat(el.value).toFixed(2)}
+
+let laneDist=[];
+function defaultLD(n){let a=[];for(let i=0;i<n;i++)a.push({mu:12+i*8,sigma:2+i});return a;}
+function buildLD(){
+  let n=+document.getElementById('nL').value;
+  while(laneDist.length<n)laneDist.push({mu:12+laneDist.length*8,sigma:2+laneDist.length});
+  laneDist=laneDist.slice(0,n);renderLD();
+}
+function resetLD(){laneDist=defaultLD(+document.getElementById('nL').value);renderLD();}
+function renderLD(){
+  let n=+document.getElementById('nL').value;
+  let h='<div style="display:grid;grid-template-columns:auto auto auto;gap:5px 12px;align-items:center;font-size:12px">';
+  h+='<div style="font-weight:500;color:var(--color-text-secondary)">Lane</div><div style="font-weight:500;color:var(--color-text-secondary)">μ (m/s)</div><div style="font-weight:500;color:var(--color-text-secondary)">σ (m/s)</div>';
+  for(let i=0;i<n;i++){
+    let lbl=i===0?'1 (right/slow)':i===n-1?n+' (left/fast)':''+(i+1);
+    h+=`<div style="color:var(--color-text-secondary)">Lane ${lbl}</div>`;
+    h+=`<div><input type="range" min="5" max="48" step="0.5" value="${laneDist[i].mu.toFixed(1)}" style="width:110px" oninput="laneDist[${i}].mu=+this.value;this.nextSibling.textContent=(+this.value).toFixed(1)"> <span style="font-weight:500">${laneDist[i].mu.toFixed(1)}</span></div>`;
+    h+=`<div><input type="range" min="0.5" max="10" step="0.5" value="${laneDist[i].sigma.toFixed(1)}" style="width:80px" oninput="laneDist[${i}].sigma=+this.value;this.nextSibling.textContent=(+this.value).toFixed(1)"> <span style="font-weight:500">${laneDist[i].sigma.toFixed(1)}</span></div>`;
+  }
+  h+='</div>';
+  document.getElementById('ld-cont').innerHTML=h;
+}
+buildLD();
+
+function cfg(){
+  return{
+    nL:+document.getElementById('nL').value,
+    rLen:+document.getElementById('rLen').value,
+    sLim:+document.getElementById('sLim').value,
+    simDur:+document.getElementById('simDur').value,
+    dt:+document.getElementById('dt').value,
+    arr:+document.getElementById('arr').value,
+    gMu:+document.getElementById('gMu').value,
+    gSd:+document.getElementById('gSd').value,
+    rT:+document.getElementById('rT').value,
+    dMin:+document.getElementById('dMin').value,
+    krT:+document.getElementById('krT').value,
+    yD:+document.getElementById('yD').value,
+  };
+}
+
+function randn(){
+  let u=0,v=0;
+  while(!u)u=Math.random();while(!v)v=Math.random();
+  return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
+}
+function safeGap(spd,rT,dMin){return Math.max(dMin,spd*rT+dMin);}
+function bestLaneEU(spd,nL){
+  let best=0,bestD=Infinity;
+  for(let i=0;i<nL;i++){let d=Math.abs(spd-laneDist[i].mu);if(d<bestD){bestD=d;best=i;}}
+  return best;
+}
+function genRoster(c){
+  let roster=[],t=0;
+  while(t<c.simDur){
+    t+=-Math.log(1-Math.random())/c.arr;
+    if(t>=c.simDur)break;
+    let spd=Math.max(4,Math.min(c.sLim+5,c.gMu+c.gSd*randn()));
+    roster.push({t,spd,neutralLane:Math.floor(Math.random()*c.nL)});
+  }
+  return roster;
+}
+function laneIsClear(vehicles,self,tl,c){
+  for(let u of vehicles){
+    if(u===self||u.lane!==tl)continue;
+    let d=u.pos-self.pos;
+    if(d>0&&d<safeGap(self.spd,c.rT,c.dMin))return false;
+    if(d<=0&&Math.abs(d)<safeGap(u.spd,c.rT,c.dMin))return false;
+  }
+  return true;
+}
+function simulate(mode,c,roster,rec){
+  let vehicles=[];
+  let stats={completed:0,laneChanges:0,congestion:0,spdSum:0,spdCount:0,laneOcc:new Array(c.nL).fill(0)};
+  let frames=rec?[]:null;
+  let rIdx=0,t=0,stepN=Math.round(c.simDur/c.dt);
+  for(let step=0;step<stepN;step++){
+    let tEnd=t+c.dt;
+    while(rIdx<roster.length&&roster[rIdx].t<tEnd){
+      let e=roster[rIdx++];
+      let spd=e.spd;
+      let lane=mode==='EU'?bestLaneEU(spd,c.nL):e.neutralLane;
+      let gap=safeGap(spd,c.rT,c.dMin);
+      if(!vehicles.some(v=>v.lane===lane&&v.pos<gap*1.5))
+        vehicles.push({pos:0,spd,lane,naturalLane:lane,overtaking:false,laneChanges:0});
+    }
+    vehicles.sort((a,b)=>b.pos-a.pos);
+    let maxSpd=vehicles.reduce((m,v)=>Math.max(m,v.spd),c.sLim);
+    let subN=Math.max(1,Math.ceil(maxSpd*c.dt/(c.dMin*0.45)));
+    let subDt=c.dt/subN;
+    for(let sub=0;sub<subN;sub++){
+      vehicles.sort((a,b)=>b.pos-a.pos);
+      for(let i=0;i<vehicles.length;i++){
+        let v=vehicles[i];
+        let aD=Infinity,aV=null;
+        for(let j=0;j<i;j++){if(vehicles[j].lane===v.lane){let d=vehicles[j].pos-v.pos;if(d>0&&d<aD){aD=d;aV=vehicles[j];}}}
+        let safeD=safeGap(v.spd,c.rT,c.dMin);
+        let blk=aV&&aD<safeD;
+        if(blk&&sub===0)stats.congestion++;
+        if(mode==='EU'){
+          let moved=false;
+          if(blk){
+            let tl=v.lane+1;
+            if(tl<c.nL&&laneIsClear(vehicles,v,tl,c)){v.lane=tl;v.overtaking=true;v.laneChanges++;stats.laneChanges++;moved=true;}
+          }
+          if(!moved&&(v.overtaking||v.lane>v.naturalLane)){
+            let tl=v.lane-1;
+            if(tl>=0){
+              let aT=null,aTD=Infinity;
+              for(let u of vehicles){if(u===v||u.lane!==tl)continue;let d=u.pos-v.pos;if(d>0&&d<aTD){aTD=d;aT=u;}}
+              if((!aT||aT.spd>=v.spd-1||aTD>safeD*1.8)&&laneIsClear(vehicles,v,tl,c)){
+                v.lane=tl;v.laneChanges++;stats.laneChanges++;moved=true;
+                if(v.lane<=v.naturalLane)v.overtaking=false;
+              }
+            }
+          }
+          if(!moved&&!v.overtaking){
+            if(v.lane>v.naturalLane){
+              let tl=v.lane-1;
+              if(tl>=0&&laneIsClear(vehicles,v,tl,c)){v.lane=tl;v.laneChanges++;stats.laneChanges++;if(v.lane<=v.naturalLane)v.overtaking=false;}
+            } else {
+              let tooSlow=v.lane>0&&v.spd<laneDist[v.lane].mu-c.krT;
+              let fasterBehind=false;
+              if(!tooSlow)for(let u of vehicles){if(u.lane!==v.lane)continue;let d=v.pos-u.pos;if(d>0&&d<c.yD&&u.spd>v.spd+2){fasterBehind=true;break;}}
+              if((tooSlow||fasterBehind)&&v.lane-1>=0&&laneIsClear(vehicles,v,v.lane-1,c)){
+                v.naturalLane=v.lane-1;v.lane=v.lane-1;v.laneChanges++;stats.laneChanges++;
+              }
+            }
+          }
+        } else {
+          if(blk){
+            let cands=[];
+            if(v.lane+1<c.nL)cands.push(v.lane+1);
+            if(v.lane-1>=0)cands.push(v.lane-1);
+            for(let tl of cands){if(laneIsClear(vehicles,v,tl,c)){v.lane=tl;v.laneChanges++;stats.laneChanges++;break;}}
+          }
+        }
+      }
+      vehicles.sort((a,b)=>b.pos-a.pos);
+      for(let i=0;i<vehicles.length;i++){
+        let v=vehicles[i];
+        let aD=Infinity,aV=null;
+        for(let j=0;j<i;j++){if(vehicles[j].lane===v.lane){let d=vehicles[j].pos-v.pos;if(d>0&&d<aD){aD=d;aV=vehicles[j];}}}
+        let safeD=safeGap(v.spd,c.rT,c.dMin);
+        let eff=v.spd;
+        if(aV){let d=aV.pos-v.pos;if(d<safeD)eff=Math.max(0,aV.spd*(d/safeD));}
+        v.pos+=eff*subDt;
+        if(aV&&v.pos>=aV.pos-c.dMin)v.pos=aV.pos-c.dMin;
+        stats.spdSum+=eff;stats.spdCount++;
+        stats.laneOcc[v.lane]++;
+      }
+    }
+    if(frames&&step%3===0)frames.push({t,vehs:vehicles.map(v=>({pos:v.pos,lane:v.lane,spd:v.spd,ot:v.overtaking||false}))});
+    vehicles=vehicles.filter(v=>{if(v.pos>=c.rLen){stats.completed++;return false;}return true;});
+    t+=c.dt;
+  }
+  let avgSpd=stats.spdCount?stats.spdSum/stats.spdCount:0;
+  let tot=stats.laneOcc.reduce((a,b)=>a+b,0)||1;
+  let lu=stats.laneOcc.map(x=>x/tot);
+  let mn=1/c.nL;
+  let lSD=Math.sqrt(lu.map(x=>(x-mn)**2).reduce((a,b)=>a+b,0)/c.nL);
+  return{throughput:stats.completed,avgSpd,laneChanges:stats.laneChanges,avgLC:stats.completed?stats.laneChanges/stats.completed:0,congestion:stats.congestion,lu,lSD,frames,vehicles};
+}
+
+function isDark(){return matchMedia('(prefers-color-scheme:dark)').matches;}
+
+function drawCar(ctx, x, y, w, h, r, color, otColor, isOt, spdFrac){
+  let fill = isOt ? otColor : color;
+  let dark = isDark();
+  ctx.fillStyle = fill;
+  ctx.beginPath();
+  ctx.moveTo(x+r, y);
+  ctx.lineTo(x+w-r, y);
+  ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+  ctx.lineTo(x+w, y+h-r);
+  ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+  ctx.lineTo(x+r, y+h);
+  ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+  ctx.lineTo(x, y+r);
+  ctx.quadraticCurveTo(x, y, x+r, y);
+  ctx.closePath();
+  ctx.fill();
+  let glassColor = dark ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.45)';
+  ctx.fillStyle = glassColor;
+  let gx=x+3, gy=y+2, gw=w-6, gh=h-4;
+  ctx.beginPath();
+  ctx.moveTo(gx+1,gy); ctx.lineTo(gx+gw-1,gy);
+  ctx.quadraticCurveTo(gx+gw,gy,gx+gw,gy+1);
+  ctx.lineTo(gx+gw,gy+gh-1);
+  ctx.quadraticCurveTo(gx+gw,gy+gh,gx+gw-1,gy+gh);
+  ctx.lineTo(gx+1,gy+gh); ctx.quadraticCurveTo(gx,gy+gh,gx,gy+gh-1);
+  ctx.lineTo(gx,gy+1); ctx.quadraticCurveTo(gx,gy,gx+1,gy);
+  ctx.closePath();
+  ctx.fill();
+  let headlightColor = dark ? 'rgba(255,240,180,0.85)' : 'rgba(255,240,180,0.9)';
+  ctx.fillStyle = headlightColor;
+  ctx.fillRect(x+w-2.5, y+1.5, 2, 2);
+  ctx.fillRect(x+w-2.5, y+h-3.5, 2, 2);
+  let tailColor = 'rgba(220,60,60,0.85)';
+  ctx.fillStyle = tailColor;
+  ctx.fillRect(x+0.5, y+1.5, 2, 2);
+  ctx.fillRect(x+0.5, y+h-3.5, 2, 2);
+}
+
+function drawRoad(canvas, vehs, c, colMain, colOt, ROAD_W){
+  let ctx = canvas.getContext('2d');
+  let W = canvas.width, H = canvas.height;
+  let dark = isDark();
+  let laneH = H / c.nL;
+  let roadColor = dark ? '#2a2a2a' : '#c8c8c4';
+  let asphalt = dark ? '#353533' : '#d8d8d4';
+  ctx.fillStyle = roadColor; ctx.fillRect(0,0,W,H);
+  for(let i=0;i<c.nL;i++){
+    ctx.fillStyle = i%2===0 ? asphalt : roadColor;
+    ctx.fillRect(0, i*laneH, W, laneH);
+  }
+  ctx.strokeStyle = dark?'rgba(255,255,255,0.15)':'rgba(255,255,255,0.5)';
+  ctx.setLineDash([20,15]); ctx.lineWidth=1.5;
+  for(let i=1;i<c.nL;i++){ctx.beginPath();ctx.moveTo(0,i*laneH);ctx.lineTo(W,i*laneH);ctx.stroke();}
+  ctx.setLineDash([]);
+  ctx.fillStyle = dark?'rgba(255,255,255,0.2)':'rgba(0,0,0,0.2)';
+  ctx.font='8px var(--font-sans,sans-serif)';
+  for(let i=0;i<c.nL;i++){
+    ctx.fillText(`L${c.nL-i} μ=${laneDist[c.nL-1-i].mu.toFixed(0)}`, 4, i*laneH+laneH/2+3);
+  }
+  for(let v of vehs){
+    let px = (v.pos / c.rLen) * W;
+    if(px < -CAR_W || px > W+CAR_W) continue;
+    let lane = v.lane !== undefined ? v.lane : 0;
+    let py = (c.nL-1-lane)*laneH + (laneH-CAR_H)/2;
+    drawCar(ctx, px-CAR_W/2, py, CAR_W, CAR_H, CAR_R, colMain, colOt, v.ot||false, v.spd/(c.sLim+5));
+  }
+}
+
+function sizeCanvas(cv, W, H){
+  cv.width = W; cv.height = H;
+  cv.style.width = W+'px'; cv.style.height = H+'px';
+  cv.style.maxWidth = '100%';
+}
+
+function renderStats(id,r){
+  let lu=r.lu.map((x,i)=>`L${i+1}:${(x*100).toFixed(0)}%`).join(' ');
+  document.getElementById(id).innerHTML=`
+    <div class="sr"><span class="sn">Throughput</span><span class="sv">${r.throughput} veh</span></div>
+    <div class="sr"><span class="sn">Avg effective speed</span><span class="sv">${r.avgSpd.toFixed(2)} m/s</span></div>
+    <div class="sr"><span class="sn">Total lane changes</span><span class="sv">${r.laneChanges}</span></div>
+    <div class="sr"><span class="sn">Avg LC / completed veh</span><span class="sv">${r.avgLC.toFixed(2)}</span></div>
+    <div class="sr"><span class="sn">Congestion events</span><span class="sv">${r.congestion}</span></div>
+    <div class="sr"><span class="sn">Lane utilization SD</span><span class="sv">${r.lSD.toFixed(4)}</span></div>
+    <div class="sr"><span class="sn">Lane distribution</span><span class="sv" style="font-size:10px">${lu}</span></div>`;
+}
+
+let euRes=null,usRes=null,animPlaying=false,animFrame=0,animRAF=null,lastTs=0;
+
+function drawAnimFrame(fIdx,c,target){
+  let nL=c.nL;
+  let W=ROAD_W, halfH=Math.max(60,nL*22), margin=16;
+  let H=halfH*2+margin*3+12;
+  let cv=target||document.getElementById('cvAnim');
+  if(!target){sizeCanvas(cv,W,H);}
+  let ctx=cv.getContext('2d');
+  let dark=isDark();
+  ctx.fillStyle=dark?'#1a1a18':'#ededea'; ctx.fillRect(0,0,W,H);
+  let lH=halfH/nL;
+  function sec(frames,offY,colMain,colOt,label){
+    let frame=frames?frames[Math.min(fIdx,frames.length-1)]:null;
+    ctx.save();
+    ctx.beginPath();ctx.rect(0,offY,W,halfH);ctx.clip();
+    let roadColor=dark?'#2a2a2a':'#c8c8c4';
+    let asphalt=dark?'#353533':'#d8d8d4';
+    ctx.fillStyle=roadColor;ctx.fillRect(0,offY,W,halfH);
+    for(let i=0;i<nL;i++){
+      ctx.fillStyle=i%2===0?asphalt:roadColor;
+      ctx.fillRect(0,offY+i*lH,W,lH);
+    }
+    ctx.strokeStyle=dark?'rgba(255,255,255,0.15)':'rgba(255,255,255,0.5)';
+    ctx.setLineDash([20,15]);ctx.lineWidth=1.5;
+    for(let i=1;i<nL;i++){ctx.beginPath();ctx.moveTo(0,offY+i*lH);ctx.lineTo(W,offY+i*lH);ctx.stroke();}
+    ctx.setLineDash([]);
+    ctx.fillStyle=dark?'rgba(255,255,255,0.2)':'rgba(0,0,0,0.2)';
+    ctx.font='8px var(--font-sans,sans-serif)';
+    for(let i=0;i<nL;i++)ctx.fillText(`L${nL-i} μ=${laneDist[nL-1-i].mu.toFixed(0)}`,4,offY+i*lH+lH/2+3);
+    if(frame){
+      for(let v of frame.vehs){
+        let px=(v.pos/c.rLen)*W;
+        if(px<-CAR_W||px>W+CAR_W)continue;
+        let py=offY+(nL-1-v.lane)*lH+(lH-CAR_H)/2;
+        drawCar(ctx,px-CAR_W/2,py,CAR_W,CAR_H,CAR_R,colMain,colOt,v.ot||false,v.spd/(c.sLim+5));
+      }
+    }
+    ctx.restore();
+    ctx.fillStyle=dark?'rgba(255,255,255,0.55)':'rgba(0,0,0,0.45)';
+    ctx.font='500 10px var(--font-sans,sans-serif)';
+    ctx.fillText(label,6,offY-3);
+  }
+  let t=euRes&&euRes.frames?euRes.frames[Math.min(fIdx,(euRes.frames.length||1)-1)].t:0;
+  let y0=margin+10, y1=y0+halfH+margin;
+  sec(euRes?euRes.frames:null, y0,'#1D9E75','#EF9F27','EU — keep-right, speed-matched lanes');
+  sec(usRes?usRes.frames:null, y1,'#378ADD','#E24B4A','US — random lane, bidirectional passing');
+  ctx.fillStyle=dark?'rgba(255,255,255,0.2)':'rgba(0,0,0,0.2)';
+  ctx.font='9px var(--font-sans,sans-serif)';
+  ctx.textAlign='right';ctx.fillText(`t=${t.toFixed(0)}s`,W-4,H-3);ctx.textAlign='left';
+  if(!target){
+    document.getElementById('tLbl').textContent=`t = ${t.toFixed(1)} s`;
+    let maxF=Math.max(euRes?euRes.frames.length:1,usRes?usRes.frames.length:1)-1;
+    document.getElementById('pf').style.width=(maxF>0?Math.min(fIdx/maxF,1)*100:0).toFixed(1)+'%';
+  }
+}
+
+function togglePlay(){animPlaying=!animPlaying;document.getElementById('btnPlay').textContent=animPlaying?'Pause':'Play';if(animPlaying)requestAnimationFrame(animLoop);}
+function resetAnim(){animPlaying=false;document.getElementById('btnPlay').textContent='Play';cancelAnimationFrame(animRAF);animFrame=0;if(euRes&&usRes)drawAnimFrame(0,cfg());}
+function animLoop(ts){
+  if(!animPlaying)return;
+  let spd=+document.getElementById('pSpd').value;
+  if(ts-lastTs>1000/30){
+    lastTs=ts;
+    let maxF=Math.max(euRes?euRes.frames.length:1,usRes?usRes.frames.length:1)-1;
+    drawAnimFrame(animFrame,cfg());
+    animFrame=Math.min(animFrame+spd,maxF);
+    if(animFrame>=maxF){animPlaying=false;document.getElementById('btnPlay').textContent='Play';return;}
+  }
+  animRAF=requestAnimationFrame(animLoop);
+}
+
+function runSingle(){
+  let c=cfg();
+  document.getElementById('log').textContent='Generating shared roster...';
+  setTimeout(()=>{
+    let roster=genRoster(c);
+    document.getElementById('log').textContent+=` ${roster.length} vehicles. Running EU...`;
+    setTimeout(()=>{
+      euRes=simulate('EU',c,roster,true);
+      document.getElementById('log').textContent+=` EU done (${euRes.throughput}). Running US...`;
+      setTimeout(()=>{
+        usRes=simulate('US',c,roster,true);
+        document.getElementById('log').textContent+=` US done (${usRes.throughput}). Roster: ${roster.length} vehicles.`;
+        let cvEU=document.getElementById('cvEU'), cvUS=document.getElementById('cvUS');
+        let lH=Math.max(24,120/c.nL)*c.nL;
+        sizeCanvas(cvEU,ROAD_W,lH); sizeCanvas(cvUS,ROAD_W,lH);
+        drawRoad(cvEU,euRes.vehicles,c,'#1D9E75','#EF9F27',ROAD_W);
+        drawRoad(cvUS,usRes.vehicles,c,'#378ADD','#E24B4A',ROAD_W);
+        renderStats('eu-s',euRes); renderStats('us-s',usRes);
+        document.getElementById('anim-wrap').style.display='';
+        animFrame=0; animPlaying=false;
+        document.getElementById('btnPlay').textContent='Play';
+        drawAnimFrame(0,c);
+      },10);
+    },10);
+  },10);
+}
+
+let mcEuAll=null,mcUsAll=null,mcCharts={};
+function destroyMC(){for(let k in mcCharts){mcCharts[k].destroy();delete mcCharts[k];}}
+function mcStat(a){
+  let n=a.length,mean=a.reduce((x,y)=>x+y,0)/n;
+  let sd=Math.sqrt(a.map(x=>(x-mean)**2).reduce((x,y)=>x+y,0)/(n-1||1));
+  let s=[...a].sort((x,y)=>x-y);
+  return{mean,sd,p5:s[Math.floor(n*.05)],p50:s[Math.floor(n*.5)],p95:s[Math.floor(n*.95)],raw:a};
+}
+function welch(a,b){
+  let na=a.length,nb=b.length,ma=a.reduce((x,y)=>x+y,0)/na,mb=b.reduce((x,y)=>x+y,0)/nb;
+  let va=a.map(x=>(x-ma)**2).reduce((x,y)=>x+y,0)/(na-1||1);
+  let vb=b.map(x=>(x-mb)**2).reduce((x,y)=>x+y,0)/(nb-1||1);
+  let se=Math.sqrt(va/na+vb/nb);if(!se)return{t:'—',p:'—'};
+  let t=(ma-mb)/se,z=Math.abs(t);
+  function Phi(z){let tt=1/(1+.2315419*z),d=.3989423*Math.exp(-z*z/2);return 1-d*tt*(.3193815+tt*(-.3565638+tt*(1.7814779+tt*(-1.821256+tt*1.3302744))));}
+  let p=2*(1-Phi(z));
+  return{t:t.toFixed(3),p:p<0.001?'<0.001':p.toFixed(3)};
+}
+function makeHist(cid,euD,usD){
+  let all=[...euD,...usD],minV=Math.min(...all),maxV=Math.max(...all);
+  let nb=14,bw=(maxV-minV)/nb||1;
+  let labs=[];for(let i=0;i<nb;i++)labs.push((minV+(i+.5)*bw).toFixed(1));
+  function bins(d){let b=new Array(nb).fill(0);for(let x of d){b[Math.min(Math.floor((x-minV)/bw),nb-1)]++;}return b;}
+  mcCharts[cid]=new Chart(document.getElementById(cid),{type:'bar',data:{labels:labs,datasets:[
+    {label:'EU',data:bins(euD),backgroundColor:'rgba(29,158,117,0.55)',borderColor:'#1D9E75',borderWidth:1},
+    {label:'US',data:bins(usD),backgroundColor:'rgba(55,138,221,0.50)',borderColor:'#378ADD',borderWidth:1}
+  ]},options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:true,labels:{boxWidth:8,font:{size:10}}}},
+    scales:{x:{ticks:{font:{size:9},maxRotation:0,autoSkip:true,maxTicksLimit:6},grid:{display:false}},y:{ticks:{font:{size:9}}}}}});
+}
+function renderMCTable(euS,usS){
+  let rows=[
+    {n:'Throughput (veh)',eu:euS.throughput,us:usS.throughput,high:true},
+    {n:'Avg effective speed (m/s)',eu:euS.avgSpd,us:usS.avgSpd,high:true},
+    {n:'Avg LC / completed veh',eu:euS.avgLC,us:usS.avgLC,high:false},
+    {n:'Congestion events',eu:euS.congestion,us:usS.congestion,high:false},
+    {n:'Lane utilization SD',eu:euS.lSD,us:usS.lSD,high:false},
+  ];
+  let h=`<div style="overflow-x:auto"><table class="s"><thead><tr>
+    <th>Metric</th><th style="color:#085041">EU mean±SD</th><th style="color:#0C447C">US mean±SD</th>
+    <th>EU p50</th><th>US p50</th><th>EU [p5,p95]</th><th>US [p5,p95]</th>
+    <th>t-stat</th><th>p-value</th><th>Better</th></tr></thead><tbody>`;
+  for(let r of rows){
+    let w=welch(r.eu.raw,r.us.raw);
+    let euB=(r.high&&r.eu.mean>=r.us.mean)||(!r.high&&r.eu.mean<=r.us.mean);
+    h+=`<tr><td style="color:var(--color-text-secondary)">${r.n}</td>
+      <td>${r.eu.mean.toFixed(2)}±${r.eu.sd.toFixed(2)}</td><td>${r.us.mean.toFixed(2)}±${r.us.sd.toFixed(2)}</td>
+      <td style="color:var(--color-text-secondary)">${r.eu.p50.toFixed(2)}</td><td style="color:var(--color-text-secondary)">${r.us.p50.toFixed(2)}</td>
+      <td style="color:var(--color-text-secondary);font-size:10px">[${r.eu.p5.toFixed(1)},${r.eu.p95.toFixed(1)}]</td>
+      <td style="color:var(--color-text-secondary);font-size:10px">[${r.us.p5.toFixed(1)},${r.us.p95.toFixed(1)}]</td>
+      <td style="font-family:var(--font-mono,monospace)">${w.t}</td>
+      <td style="font-family:var(--font-mono,monospace)">${w.p}</td>
+      <td style="font-weight:500;color:${euB?'#0F6E56':'#185FA5'}">${euB?'EU':'US'}</td></tr>`;
+  }
+  h+='</tbody></table></div>';
+  document.getElementById('mc-tbl').innerHTML=h;
+}
+function runMC(){
+  let c=cfg(),n=+document.getElementById('mcN').value;
+  document.getElementById('mc-st').textContent=`Running ${n} paired simulations...`;
+  document.getElementById('mc-body').style.display='none';
+  setTimeout(()=>{
+    mcEuAll=[];mcUsAll=[];
+    let euA={throughput:[],avgSpd:[],avgLC:[],congestion:[],lSD:[]};
+    let usA={throughput:[],avgSpd:[],avgLC:[],congestion:[],lSD:[]};
+    for(let i=0;i<n;i++){
+      let roster=genRoster(c);
+      let eu=simulate('EU',c,roster,true),us=simulate('US',c,roster,true);
+      mcEuAll.push(eu);mcUsAll.push(us);
+      euA.throughput.push(eu.throughput);euA.avgSpd.push(eu.avgSpd);euA.avgLC.push(eu.avgLC);euA.congestion.push(eu.congestion);euA.lSD.push(eu.lSD);
+      usA.throughput.push(us.throughput);usA.avgSpd.push(us.avgSpd);usA.avgLC.push(us.avgLC);usA.congestion.push(us.congestion);usA.lSD.push(us.lSD);
+    }
+    destroyMC();
+    document.getElementById('mc-body').style.display='';
+    makeHist('mc1',euA.throughput,usA.throughput);makeHist('mc2',euA.avgSpd,usA.avgSpd);
+    makeHist('mc3',euA.avgLC,usA.avgLC);makeHist('mc4',euA.congestion,usA.congestion);
+    let euS={},usS={};
+    for(let k of Object.keys(euA)){euS[k]=mcStat(euA[k]);usS[k]=mcStat(usA[k]);}
+    renderMCTable(euS,usS);
+    document.getElementById('mc-st').textContent=`Done — ${n} paired runs.`;
+  },30);
+}
+async function exportVid(mode){
+  let btnId=mode==='mc'?'btnMV':'btnVid', statId=mode==='mc'?'mvStat':'vStat';
+  let btn=document.getElementById(btnId),stat=document.getElementById(statId);
+  if(mode==='single'&&(!euRes||!usRes)){alert('Run simulation first.');return;}
+  if(mode==='mc'&&(!mcEuAll||!mcUsAll)){alert('Run Monte Carlo first.');return;}
+  btn.disabled=true; stat.textContent='Encoding...';
+  let c=cfg(), nL=c.nL;
+  let halfH=Math.max(60,nL*22), margin=16;
+  let H=halfH*2+margin*3+12;
+  let cv=document.createElement('canvas'); cv.width=ROAD_W; cv.height=H;
+  let stream=cv.captureStream(30);
+  let mime=MediaRecorder.isTypeSupported('video/webm;codecs=vp8')?'video/webm;codecs=vp8':'video/webm';
+  let rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:3000000});
+  let chunks=[];
+  rec.ondataavailable=e=>{if(e.data.size>0)chunks.push(e.data);};
+  rec.onstop=()=>{
+    let blob=new Blob(chunks,{type:'video/webm'});
+    let a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download=mode==='mc'?'highway_mc.webm':'highway_single.webm';a.click();
+    stat.textContent='Downloaded!';btn.disabled=false;setTimeout(()=>stat.textContent='',3000);
+  };
+  rec.start();
+  let savedEU=euRes,savedUS=usRes;
+  if(mode==='single'){
+    let maxF=Math.max(euRes.frames.length,usRes.frames.length);
+    for(let f=0;f<maxF;f++){drawAnimFrame(f,c,cv);await new Promise(r=>setTimeout(r,0));}
+  } else {
+    let runs=Math.min(mcEuAll.length,mcUsAll.length);
+    for(let run=0;run<runs;run++){
+      euRes=mcEuAll[run];usRes=mcUsAll[run];
+      stat.textContent=`Encoding run ${run+1}/${runs}...`;
+      let maxF=Math.max(euRes.frames.length,usRes.frames.length);
+      for(let f=0;f<maxF;f+=2){drawAnimFrame(f,c,cv);await new Promise(r=>setTimeout(r,0));}
+    }
+    euRes=savedEU;usRes=savedUS;
+  }
+  rec.stop();
+}
+</script>
